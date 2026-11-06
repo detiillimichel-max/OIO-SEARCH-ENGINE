@@ -10,55 +10,74 @@ Relatório: `data/searxng-instances.json`.
 
 O teste inicial encontrou 83 endereços HTTPS e 0 respostas JSON válidas no ambiente do GitHub Actions. Isso não prova que todas estejam offline: JSON pode estar desativado ou requisições automatizadas podem ser bloqueadas.
 
-Execução: **Actions → Descobridor de Instâncias SearXNG → Run workflow**.
-
 ## Módulo 2 — Google Dorks para mídia no Drive
 
-Gera consultas avançadas para localizar páginas do Google Drive que estejam publicamente indexadas pelo Google, nas categorias:
+Gera consultas avançadas para localizar páginas do Google Drive publicamente indexadas pelo Google: vídeos, filmes, séries, desenhos e documentários.
 
-- Vídeos;
-- Filmes;
-- Séries;
-- Desenhos e animações;
-- Documentários.
+Script: `scripts/build_google_dorks.py`.
+Relatório de consultas: `data/google-dorks-catalog.json`.
 
-O script `scripts/build_google_dorks.py` gera links de pesquisa para abrir no Google e um catálogo JSON em `data/google-dorks-catalog.json`.
+O módulo gera links para abrir no Google; ele não coleta automaticamente os resultados do Google. Um resultado não garante que o arquivo esteja público, reproduzível ou autorizado para retransmissão.
 
-### Como executar pelo celular
+## Módulo 3 — OIO Media Player PWA
 
-1. Abra a aba **Actions**.
-2. Selecione **Google Dorks - Catálogo de mídia pública do Drive**.
-3. Toque em **Run workflow**.
-4. Escolha uma categoria ou **todos**.
-5. Opcionalmente, informe um termo, como `astronomia`, `natureza` ou o título de uma obra.
-6. Confirme **Run workflow**.
-7. Ao terminar, abra `data/google-dorks-catalog.json` na branch `main`.
+Interface web/PWA em `player/` com:
 
-### Execução local
+- Pesquisa por título, descrição e tags.
+- Filtros para filmes, séries, desenhos e documentários.
+- Catálogo com capas/miniaturas quando fornecidas.
+- Player incorporado por pré-visualização oficial do Google Drive.
+- Reprodução HTML5 somente para fontes diretas marcadas como autorizadas e compatíveis.
+- Botão de tela cheia.
+- Botão de próximo episódio para itens com o mesmo `series_id`.
+- Manifest e service worker para instalação/cache básico no Android.
 
-```bash
-python scripts/build_google_dorks.py --category todos
-python scripts/build_google_dorks.py --category filmes --term "astronomia"
+### Abrir o player
+
+Depois de habilitar GitHub Pages para a branch `main`, abra:
+
+`https://detiillimichel-max.github.io/OIO-SEARCH-ENGINE/player/`
+
+O catálogo está em `data/drive-media.json`. Ele começa vazio intencionalmente. Para adicionar um item, use este formato:
+
+```json
+{
+  "schema_version": 1,
+  "updated_at": null,
+  "items": [
+    {
+      "title": "Título autorizado",
+      "url": "https://drive.google.com/file/d/ID_DO_ARQUIVO/view",
+      "category": "series",
+      "series_id": "serie-exemplo",
+      "episode": "S01E01",
+      "poster": "https://exemplo.org/capa.jpg",
+      "tags": ["exemplo"],
+      "description": "Descrição",
+      "authorized": true
+    }
+  ]
+}
 ```
 
-### Limitações importantes do Google Dorks
+Categorias aceitas: `filmes`, `series`, `desenhos`, `documentarios`.
 
-- O módulo gera consultas e links; não consulta nem raspa automaticamente as páginas de resultados do Google.
-- O Google só mostra páginas que decidiu indexar. Muitos arquivos do Drive não aparecem na pesquisa.
-- Um resultado não garante que o arquivo exista, esteja compartilhado publicamente ou permita reprodução.
-- Extensões citadas na pesquisa são pistas textuais, não confirmação do formato real do arquivo.
-- O módulo não acessa arquivos privados, não contorna permissões e não baixa vídeos.
+Para reprodução HTML5 direta, use `"playback_type": "direct"` e `"authorized": true` somente quando a origem fornecer uma URL de mídia compatível e houver autorização. Links do Drive usam `/preview`; o funcionamento depende das permissões e das políticas de incorporação do Google.
+
+### Atualização do catálogo
+
+Workflow: **Actions → Atualizar catálogo OIO Media**.
+
+Executa manualmente ou a cada 12 horas. Valida o JSON, remove URLs duplicadas e atualiza o timestamp. Não pesquisa o Google nem descobre novos arquivos automaticamente; a descoberta automática dependerá de um provedor de busca permitido e de uma fonte de resultados integrada.
+
+## Segurança, direitos e limitações
+
+- Não acesse arquivos privados nem tente contornar permissões, CAPTCHA ou bloqueios.
 - Utilize somente conteúdo que você tenha autorização para acessar, reproduzir e distribuir.
-
-Não existe API oficial gratuita de pesquisa web geral do Google neste módulo. A automação inicial prepara um catálogo de consultas sem chave de API e sem custo de API.
+- Ter um link público ou indexado não significa ter direito de retransmissão.
+- O player não baixa nem hospeda vídeos; usa a pré-visualização da origem ou uma URL direta autorizada.
+- A disponibilidade, o codec, o CORS e as regras do provedor podem impedir a reprodução.
 
 ## Dependências
 
-Python 3.12 ou superior. O módulo Google Dorks usa apenas a biblioteca padrão; o módulo SearXNG usa `requests`, instalado por `requirements.txt`.
-
-## Próximas etapas
-
-1. Executar o workflow Google Dorks e conferir o catálogo JSON.
-2. Abrir algumas consultas no Google e avaliar a qualidade dos resultados.
-3. Só então decidir como integrar um provedor automatizado de pesquisa.
-4. Implementar validação de links públicos, metadados, cache e deduplicação.
+Python 3.12 ou superior. Google Dorks usa a biblioteca padrão; o módulo SearXNG usa `requests`, instalado por `requirements.txt`.
