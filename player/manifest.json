@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "OIO Media Player",
+  "short_name": "OIO Media",
+  "description": "Biblioteca de mídia pública e autorizada.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#080d17",
+  "background_color": "#080d17"
+}
