@@ -91,19 +91,21 @@ def main() -> None:
     deduped = deduped[:10000]
 
     new_ids = [item["id"] for item in batch]
-    write_json(FEED_FILE, {
-        "schema_version": 1,
-        "updated_at": now.isoformat(),
-        "timezone": str(TZ),
-        "items": deduped
-    })
-    write_json(HISTORY_FILE, {
-        "updated_at": now.isoformat(),
-        "published_ids": (history + new_ids)[-50000:]
-    })
-    # Remove os itens que acabaram de ser publicados da fila pendente.
+    # Só altera os arquivos públicos quando houver publicações novas.
+    # Isso evita um commit vazio/ruidoso a cada execução agendada.
     remaining_queue = [x for x in queued if isinstance(x, dict) and x.get("id") not in set(new_ids)]
-    write_json(QUEUE_FILE, {"updated_at": now.isoformat(), "items": remaining_queue})
+    if batch:
+        write_json(FEED_FILE, {
+            "schema_version": 1,
+            "updated_at": now.isoformat(),
+            "timezone": str(TZ),
+            "items": deduped
+        })
+        write_json(HISTORY_FILE, {
+            "updated_at": now.isoformat(),
+            "published_ids": (history + new_ids)[-50000:]
+        })
+        write_json(QUEUE_FILE, {"updated_at": now.isoformat(), "items": remaining_queue})
     report = {
         "ran_at_utc": now.isoformat(),
         "ran_at_local": local_now.isoformat(),
