@@ -1,0 +1,233 @@
+{
+  "project": "OIO-SEARCH-ENGINE",
+  "module": "google-dorks-drive",
+  "generated_at": "2026-11-06T16:34:16.911638+00:00",
+  "category": "todos",
+  "custom_term": null,
+  "total_queries": 36,
+  "queries": [
+    {
+      "category": "videos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"vídeos\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22v%C3%ADdeos%22"
+    },
+    {
+      "category": "videos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"vídeos\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22v%C3%ADdeos%22"
+    },
+    {
+      "category": "videos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"video\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22video%22"
+    },
+    {
+      "category": "videos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"video\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22video%22"
+    },
+    {
+      "category": "videos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"clipes\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22clipes%22"
+    },
+    {
+      "category": "videos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"clipes\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22clipes%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"mp4\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22mp4%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"mkv\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22mkv%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"avi\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22avi%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"mov\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22mov%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"webm\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22webm%22"
+    },
+    {
+      "category": "videos",
+      "kind": "extension_hint",
+      "query": "site:drive.google.com \"m4v\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com+%22m4v%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"filme\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22filme%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"filme\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22filme%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"filmes\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22filmes%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"filmes\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22filmes%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"longa-metragem\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22longa-metragem%22"
+    },
+    {
+      "category": "filmes",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"longa-metragem\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22longa-metragem%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"série\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22s%C3%A9rie%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"série\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22s%C3%A9rie%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"episódio\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22epis%C3%B3dio%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"episódio\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22epis%C3%B3dio%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"temporada\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22temporada%22"
+    },
+    {
+      "category": "series",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"temporada\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22temporada%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"desenho\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22desenho%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"desenho\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22desenho%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"animação\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22anima%C3%A7%C3%A3o%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"animação\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22anima%C3%A7%C3%A3o%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"cartoon\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22cartoon%22"
+    },
+    {
+      "category": "desenhos",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"cartoon\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22cartoon%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"documentário\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22document%C3%A1rio%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"documentário\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22document%C3%A1rio%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"documentários\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22document%C3%A1rios%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"documentários\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22document%C3%A1rios%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_file",
+      "query": "site:drive.google.com/file/d/ \"documental\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Ffile%2Fd%2F+%22documental%22"
+    },
+    {
+      "category": "documentarios",
+      "kind": "drive_folder",
+      "query": "site:drive.google.com/drive/folders \"documental\"",
+      "google_url": "https://www.google.com/search?q=site%3Adrive.google.com%2Fdrive%2Ffolders+%22documental%22"
+    }
+  ],
+  "limitations": [
+    "As consultas mostram somente páginas que o Google decidiu indexar.",
+    "Um resultado não garante que o arquivo exista, esteja público ou possa ser reproduzido.",
+    "O Google pode ignorar operadores ou variar os resultados.",
+    "Este módulo gera links de pesquisa; não coleta nem baixa resultados automaticamente.",
+    "Use apenas arquivos que você tenha autorização para acessar e utilizar."
+  ]
+}
