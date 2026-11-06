@@ -1,72 +1,33 @@
 #!/usr/bin/env python3
-"""Single-query diagnostic for Google results containing public Drive folder URLs."""
+"""Browser-based single-query probe for Google Drive folder result URLs."""
 from __future__ import annotations
 
-import html
 import json
 import re
 import sys
-from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
+from urllib.parse import quote_plus, urlparse
 
-import requests
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+from playwright.sync_api import sync_playwright
 
 QUERY = "site:drive.google.com/drive/folders filmes"
 SEARCH_URL = "https://www.google.com/search?q=" + quote_plus(QUERY) + "&num=20&hl=pt-BR"
 OUTPUT = Path("data/discovered-folders/teste-google.json")
 REPORT = Path("probe-report.json")
 DEBUG = Path("google-response-debug.txt")
-TIMEOUT = 25
-USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-FOLDER_RE = re.compile(r"https?://(?:www\.)?drive\.google\.com/drive/folders/([A-Za-z0-9_-]+)", re.IGNORECASE)
+FOLDER_RE = re.compile(r"^/drive/folders/([A-Za-z0-9_-]+)/?$")
 
 
-class AnchorParser(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__()
-        self.hrefs: list[str] = []
-        self.title_parts: list[str] = []
-        self.in_title = False
-        self.text_parts: list[str] = []
-
-    def handle_starttag(self, tag: str, attrs) -> None:
-        attrs_dict = dict(attrs)
-        if tag.lower() == "a" and attrs_dict.get("href"):
-            self.hrefs.append(attrs_dict["href"])
-        if tag.lower() == "title":
-            self.in_title = True
-
-    def handle_endtag(self, tag: str) -> None:
-        if tag.lower() == "title":
-            self.in_title = False
-
-    def handle_data(self, data: str) -> None:
-        cleaned = " ".join(data.split())
-        if cleaned:
-            self.text_parts.append(cleaned)
-            if self.in_title:
-                self.title_parts.append(cleaned)
-
-
-def unwrap_google_redirect(href: str, base_url: str) -> str:
-    absolute = urljoin(base_url, html.unescape(unquote(href.strip())))
-    parsed = urlparse(absolute)
-    if parsed.hostname and parsed.hostname.endswith("google.com") and parsed.path in {"/url", "/imgres"}:
-        params = parse_qs(parsed.query)
-        target = params.get("q", params.get("url", params.get("imgurl", [absolute])))[0]
-        return html.unescape(unquote(target))
-    return absolute
-
-
-def normalize_folder_url(value: str) -> str | None:
-    value = html.unescape(unquote(value.strip())).rstrip(").,;")
-    parsed = urlparse(value)
+def normalize_folder_url(href: str) -> str | None:
+    if not href:
+        return None
+    parsed = urlparse(href)
     if parsed.scheme not in {"http", "https"}:
         return None
     if parsed.hostname not in {"drive.google.com", "www.drive.google.com"}:
         return None
-    match = re.fullmatch(r"/drive/folders/([A-Za-z0-9_-]+)/?", parsed.path)
+    match = FOLDER_RE.fullmatch(parsed.path)
     if not match:
         return None
     return f"https://drive.google.com/drive/folders/{match.group(1)}"
@@ -75,97 +36,114 @@ def normalize_folder_url(value: str) -> str | None:
 def main() -> int:
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     report = {
-        "query": QUERY, "http_status": None, "final_url": None, "content_type": None,
-        "response_bytes": 0, "anchor_count": 0, "drive_folder_mentions": 0,
-        "result_count": 0, "page_signals": [], "page_title": "", "status": "not_started", "error": None,
+        "query": QUERY,
+        "search_url": SEARCH_URL,
+        "page_title": "",
+        "final_url": "",
+        "http_status": None,
+        "anchor_count": 0,
+        "visible_anchor_count": 0,
+        "drive_folder_links": 0,
+        "result_count": 0,
+        "page_signals": [],
+        "status": "not_started",
+        "error": None,
     }
+    debug: list[str] = []
     try:
-        response = requests.get(
-            SEARCH_URL, timeout=TIMEOUT,
-            headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-            },
-        )
-        report["http_status"] = response.status_code
-        report["final_url"] = response.url
-        report["content_type"] = response.headers.get("Content-Type", "")
-        response.raise_for_status()
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(headless=True)
+            page = browser.new_page(
+                locale="pt-BR",
+                viewport={"width": 1365, "height": 900},
+                user_agent=(
+                    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                ),
+            )
+            response = page.goto(SEARCH_URL, wait_until="domcontentloaded", timeout=45000)
+            report["http_status"] = response.status if response else None
+            try:
+                page.wait_for_load_state("networkidle", timeout=12000)
+            except PlaywrightTimeoutError:
+                debug.append("Aviso: a página não ficou ociosa em 12 segundos; leitura do DOM continuou.")
+            page.wait_for_timeout(2500)
 
-        source = response.text
-        decoded = html.unescape(source)
-        lower = decoded.lower()
-        signals = {
-            "google_consent": "consent.google.com" in lower or "before you continue to google" in lower,
-            "unusual_traffic": "unusual traffic" in lower or "nossos sistemas detectaram tráfego" in lower,
-            "captcha": "recaptcha" in lower or "captcha" in lower,
-            "google_results_container": "result-stats" in lower or "mnr-c" in lower,
-            "drive_folder_text_present": "drive.google.com/drive/folders/" in lower,
-            "google_search_app": "google search" in lower or "www.google.com/search" in lower,
-        }
-        report["page_signals"] = [key for key, value in signals.items() if value]
-        report["response_bytes"] = len(response.content)
+            report["page_title"] = page.title()
+            report["final_url"] = page.url
+            anchors = page.locator("a").evaluate_all(
+                """els => els.map(a => ({
+                    href: a.href || a.getAttribute('href') || '',
+                    text: (a.innerText || a.getAttribute('aria-label') || '').trim(),
+                    visible: !!(a.offsetWidth || a.offsetHeight || a.getClientRects().length)
+                }))"""
+            )
+            report["anchor_count"] = len(anchors)
+            report["visible_anchor_count"] = sum(1 for item in anchors if item["visible"])
 
-        parser = AnchorParser()
-        parser.feed(source)
-        report["anchor_count"] = len(parser.hrefs)
-        report["page_title"] = " ".join(parser.title_parts)[:200]
+            candidates: list[str] = []
+            relevant_links: list[str] = []
+            for item in anchors:
+                href = item["href"]
+                normalized = normalize_folder_url(href)
+                if normalized and normalized not in candidates:
+                    candidates.append(normalized)
+                if "drive.google.com" in href or "consent.google.com" in href:
+                    relevant_links.append(f'{item["text"][:100]} | {href[:300]}')
 
-        candidates: list[str] = []
-        anchor_debug: list[str] = []
-        for href in parser.hrefs:
-            resolved = unwrap_google_redirect(href, response.url)
-            parsed_resolved = urlparse(resolved)
-            anchor_debug.append(f"{parsed_resolved.netloc}{parsed_resolved.path}"[:240])
-            candidate = normalize_folder_url(resolved)
-            if candidate and candidate not in candidates:
-                candidates.append(candidate)
+            body_text = page.locator("body").inner_text(timeout=10000)
+            lower = (body_text + " " + report["page_title"]).lower()
+            signals = {
+                "consent_page": "consent.google.com" in page.url or "before you continue" in lower,
+                "captcha_or_robot_check": any(term in lower for term in ("unusual traffic", "not a robot", "captcha", "tráfego incomum")),
+                "javascript_interstitial": "enablejs" in page.url.lower() or "javascript" in lower and "google search" in lower,
+                "search_results_visible": bool(page.locator("#search").count()) or bool(page.locator("#rso").count()),
+                "drive_folder_text_visible": "drive.google.com/drive/folders/" in body_text,
+            }
+            report["page_signals"] = [key for key, value in signals.items() if value]
+            report["drive_folder_links"] = len(candidates)
+            report["result_count"] = len(candidates)
+            report["status"] = "success" if candidates else "no_folder_urls_extracted"
 
-        report["drive_folder_mentions"] = len(FOLDER_RE.findall(decoded))
-        for match in FOLDER_RE.finditer(decoded):
-            candidate = normalize_folder_url(match.group(0))
-            if candidate and candidate not in candidates:
-                candidates.append(candidate)
-
-        OUTPUT.write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        report["result_count"] = len(candidates)
-        report["status"] = "success" if candidates else "no_folder_urls_extracted"
-
-        text_samples = [item for item in parser.text_parts if any(term in item.lower() for term in ("filme", "drive", "google", "resultado", "result"))]
-        debug_lines = [
-            f"HTTP: {response.status_code}", f"Final URL: {response.url}",
-            f"Content-Type: {report['content_type']}", f"Bytes: {report['response_bytes']}",
-            f"Page title: {report['page_title'] or '(sem title)'}",
-            f"Anchors: {report['anchor_count']}", f"Drive folder mentions: {report['drive_folder_mentions']}",
-            f"Signals: {', '.join(report['page_signals']) or 'none'}",
-            f"Extracted folder URLs: {len(candidates)}",
-            "", "--- Destinos dos links encontrados (sem parâmetros) ---",
-            *(anchor_debug[:20] or ["(nenhum)"]),
-            "", "--- Trechos de texto relevantes ---",
-            *(text_samples[:30] or ["(nenhum)"]),
-        ]
-        DEBUG.write_text("\n".join(debug_lines) + "\n", encoding="utf-8")
+            OUTPUT.write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            debug.extend([
+                f"Consulta: {QUERY}",
+                f"HTTP: {report['http_status']}",
+                f"URL final: {report['final_url']}",
+                f"Título: {report['page_title']}",
+                f"Links DOM: {report['anchor_count']}",
+                f"Links visíveis: {report['visible_anchor_count']}",
+                f"Links de pastas Drive: {report['drive_folder_links']}",
+                f"Sinais: {', '.join(report['page_signals']) or 'nenhum identificado'}",
+                "",
+                "--- Links Drive/consentimento vistos no navegador ---",
+                *(relevant_links[:30] or ["(nenhum)"]),
+                "",
+                "--- Texto visível da página (primeiros 5000 caracteres) ---",
+                body_text[:5000],
+            ])
+            browser.close()
 
         print(f"Consulta: {QUERY}")
-        print(f"HTTP: {response.status_code}")
-        print(f"Âncoras HTML: {report['anchor_count']}")
-        print(f"Menções a pastas Drive no HTML: {report['drive_folder_mentions']}")
-        print(f"URLs de pastas extraídas: {len(candidates)}")
+        print(f"Título da página: {report['page_title']}")
+        print(f"HTTP: {report['http_status']}")
+        print(f"Links no DOM: {report['anchor_count']}")
+        print(f"URLs de pastas extraídas: {report['result_count']}")
         for url in candidates:
             print(url)
         if not candidates:
-            print("Diagnóstico ampliado salvo em google-response-debug.txt")
+            print("Nenhuma URL encontrada. Diagnóstico salvo em google-response-debug.txt")
             return 2
         return 0
     except Exception as exc:
         report["status"] = "error"
         report["error"] = str(exc)[:500]
-        DEBUG.write_text(f"Falha: {report['error']}\n", encoding="utf-8")
+        debug.append(f"Erro: {report['error']}")
         print(f"FALHA NO TESTE: {report['error']}", file=sys.stderr)
         return 1
     finally:
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        DEBUG.write_text("\n".join(debug) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
