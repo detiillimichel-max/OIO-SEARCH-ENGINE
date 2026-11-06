@@ -1,0 +1,56 @@
+name: Descobridor de Instâncias SearXNG
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_instances:
+        description: "Quantidade máxima de instâncias para testar"
+        required: false
+        default: "30"
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: searxng-instance-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Testar instâncias públicas
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Descobrir e testar instâncias
+        env:
+          MAX_INSTANCES: ${{ github.event.inputs.max_instances || '30' }}
+          REQUEST_TIMEOUT: "12"
+          WORKERS: "4"
+        run: python scripts/discover_searxng.py
+
+      - name: Publicar relatório JSON no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/searxng-instances.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração no relatório."
+          else
+            git commit -m "Atualiza diagnóstico de instâncias SearXNG"
+            git push
+          fi
