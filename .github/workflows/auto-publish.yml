@@ -1,0 +1,44 @@
+name: OIO Auto Publisher
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oio-auto-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish-batch:
+    name: Publicar lote programado
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Executar motor de publicação
+        env:
+          PUBLISH_TIMEZONE: America/Sao_Paulo
+        run: python scripts/auto_publish.py
+
+      - name: Salvar feed e histórico
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/social-feed.json data/publication-history.json data/publication-queue.json data/auto-publish-report.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma publicação nova; sem commit."
+          else
+            git commit -m "Publica novo lote no feed OIO"
+            git push
+          fi
