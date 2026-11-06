@@ -81,3 +81,14 @@ Executa manualmente ou a cada 12 horas. Valida o JSON, remove URLs duplicadas e 
 ## Dependências
 
 Python 3.12 ou superior. Google Dorks usa a biblioteca padrão; o módulo SearXNG usa `requests`, instalado por `requirements.txt`.
+
+
+## Módulo 4 — OIO Auto Publisher
+
+Workflow: **Actions → OIO Auto Publisher**. Executa a cada 10 minutos (horário UTC do GitHub; o Python interpreta o fuso `America/Sao_Paulo`) ou manualmente.
+
+O motor seleciona lotes variáveis a partir de `data/publication-queue.json` e `data/content-pool.json`, evita IDs já publicados e atualiza `data/social-feed.json`. O padrão de lotes de demonstração é 100, 50, 70, 120, 80 e 100 itens por janela, limitado ao conteúdo elegível disponível.
+
+O player passa a ler `data/social-feed.json`. Para entrar no feed, cada item precisa ter `id`, `title`, `url`, `category`, `authorized: true` e `status: "ready"`. A URL precisa ser HTTPS. Categorias do publicador: `videos`, `filmes`, `series`, `desenhos`, `documentarios`, `jornalismo` e `educacao`.
+
+**Importante:** o motor agenda publicações de conteúdos reais do acervo. Não cria usuários, curtidas, comentários ou visualizações fictícias. O catálogo inicial está vazio; é necessário inserir conteúdo com direitos de publicação e transmissão. O workflow não faz upload nem hospeda os vídeos. O agendamento do GitHub pode sofrer atrasos e não é um relógio de transmissão em tempo real.
