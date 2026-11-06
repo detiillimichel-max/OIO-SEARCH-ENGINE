@@ -26,12 +26,27 @@ class AnchorParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
         self.hrefs: list[str] = []
+        self.title_parts: list[str] = []
+        self.in_title = False
+        self.text_parts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs) -> None:
-        if tag.lower() == "a":
-            href = dict(attrs).get("href")
-            if href:
-                self.hrefs.append(href)
+        attrs_dict = dict(attrs)
+        if tag.lower() == "a" and attrs_dict.get("href"):
+            self.hrefs.append(attrs_dict["href"])
+        if tag.lower() == "title":
+            self.in_title = True
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "title":
+            self.in_title = False
+
+    def handle_data(self, data: str) -> None:
+        cleaned = " ".join(data.split())
+        if cleaned:
+            self.text_parts.append(cleaned)
+            if self.in_title:
+                self.title_parts.append(cleaned)
 
 
 def unwrap_google_redirect(href: str, base_url: str) -> str:
@@ -62,7 +77,7 @@ def main() -> int:
     report = {
         "query": QUERY, "http_status": None, "final_url": None, "content_type": None,
         "response_bytes": 0, "anchor_count": 0, "drive_folder_mentions": 0,
-        "result_count": 0, "page_signals": [], "status": "not_started", "error": None,
+        "result_count": 0, "page_signals": [], "page_title": "", "status": "not_started", "error": None,
     }
     try:
         response = requests.get(
@@ -87,6 +102,7 @@ def main() -> int:
             "captcha": "recaptcha" in lower or "captcha" in lower,
             "google_results_container": "result-stats" in lower or "mnr-c" in lower,
             "drive_folder_text_present": "drive.google.com/drive/folders/" in lower,
+            "google_search_app": "google search" in lower or "www.google.com/search" in lower,
         }
         report["page_signals"] = [key for key, value in signals.items() if value]
         report["response_bytes"] = len(response.content)
@@ -94,10 +110,15 @@ def main() -> int:
         parser = AnchorParser()
         parser.feed(source)
         report["anchor_count"] = len(parser.hrefs)
+        report["page_title"] = " ".join(parser.title_parts)[:200]
 
         candidates: list[str] = []
+        anchor_debug: list[str] = []
         for href in parser.hrefs:
-            candidate = normalize_folder_url(unwrap_google_redirect(href, response.url))
+            resolved = unwrap_google_redirect(href, response.url)
+            parsed_resolved = urlparse(resolved)
+            anchor_debug.append(f"{parsed_resolved.netloc}{parsed_resolved.path}"[:240])
+            candidate = normalize_folder_url(resolved)
             if candidate and candidate not in candidates:
                 candidates.append(candidate)
 
@@ -111,17 +132,19 @@ def main() -> int:
         report["result_count"] = len(candidates)
         report["status"] = "success" if candidates else "no_folder_urls_extracted"
 
+        text_samples = [item for item in parser.text_parts if any(term in item.lower() for term in ("filme", "drive", "google", "resultado", "result"))]
         debug_lines = [
             f"HTTP: {response.status_code}", f"Final URL: {response.url}",
             f"Content-Type: {report['content_type']}", f"Bytes: {report['response_bytes']}",
+            f"Page title: {report['page_title'] or '(sem title)'}",
             f"Anchors: {report['anchor_count']}", f"Drive folder mentions: {report['drive_folder_mentions']}",
             f"Signals: {', '.join(report['page_signals']) or 'none'}",
             f"Extracted folder URLs: {len(candidates)}",
+            "", "--- Destinos dos links encontrados (sem parâmetros) ---",
+            *(anchor_debug[:20] or ["(nenhum)"]),
+            "", "--- Trechos de texto relevantes ---",
+            *(text_samples[:30] or ["(nenhum)"]),
         ]
-        snippets = [decoded[max(0, match.start()-180):min(len(decoded), match.end()+180)] for match in list(FOLDER_RE.finditer(decoded))[:10]]
-        if snippets:
-            debug_lines.append("\n--- Contextos próximos a URLs Drive ---")
-            debug_lines.extend(snippets)
         DEBUG.write_text("\n".join(debug_lines) + "\n", encoding="utf-8")
 
         print(f"Consulta: {QUERY}")
@@ -132,7 +155,7 @@ def main() -> int:
         for url in candidates:
             print(url)
         if not candidates:
-            print("Diagnóstico salvo em google-response-debug.txt")
+            print("Diagnóstico ampliado salvo em google-response-debug.txt")
             return 2
         return 0
     except Exception as exc:
