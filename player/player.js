@@ -1,4 +1,4 @@
-const CATALOG_URL = "../data/social-feed.json";
+const CATALOG_URL = "../data/catalog.json";
 const grid = document.getElementById("media-grid");
 const searchInput = document.getElementById("search-input");
 const statusEl = document.getElementById("catalog-status");
@@ -31,8 +31,8 @@ function playItem(index) {
   if (!url) { note.textContent = "Este item não possui uma URL HTTP/HTTPS válida."; return; }
   currentIndex = index;
   titleEl.textContent = item.title || "Conteúdo selecionado";
-  kindEl.textContent = (item.category || "MÍDIA").toUpperCase();
-  nextButton.disabled = !catalog.some((x, i) => i !== index && x.category === item.category && x.series_id && x.series_id === item.series_id);
+  kindEl.textContent = (item.category || "FILMES").toUpperCase();
+  nextButton.disabled = index >= catalog.length - 1;
   frame.replaceChildren();
   const id = driveFileId(url);
   if (id) {
@@ -49,22 +49,19 @@ function playItem(index) {
     video.src = url;
     const poster = safeUrl(item.poster); if (poster) video.poster = poster;
     frame.appendChild(video);
-    note.textContent = "Reprodução direta de uma fonte identificada como autorizada. Compatibilidade depende do formato e do servidor.";
+    note.textContent = "Reprodução direta de uma fonte identificada como autorizada.";
   } else {
     const link = document.createElement("a");
     link.href = url; link.target = "_blank"; link.rel = "noopener noreferrer";
     link.className = "empty-player"; link.textContent = "Abrir fonte em nova aba";
     frame.appendChild(link);
-    note.textContent = "Esta fonte não foi configurada para reprodução direta autorizada. Abrimos a origem sem tentar contornar restrições.";
+    note.textContent = "Esta fonte não foi configurada para reprodução direta autorizada.";
   }
   document.querySelector(".player-section").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function playNextEpisode() {
-  if (currentIndex < 0) return;
-  const current = catalog[currentIndex];
-  const next = catalog.findIndex((item, i) => i > currentIndex && item.series_id && item.series_id === current.series_id);
-  if (next >= 0) playItem(next);
-  else { nextButton.disabled = true; note.textContent = "Não há outro episódio cadastrado para esta série."; }
+  if (currentIndex < 0 || currentIndex >= catalog.length - 1) return;
+  playItem(currentIndex + 1);
 }
 function render() {
   const filtered = catalog.map((item,index)=>({item,index})).filter(({item})=>{
@@ -76,17 +73,15 @@ function render() {
   grid.replaceChildren();
   if (!filtered.length) {
     const empty=document.createElement("div"); empty.className="empty-library";
-    empty.textContent=catalog.length?"Nenhum resultado para este filtro.":"Catálogo vazio. Adicione itens autorizados em data/drive-media.json.";
+    empty.textContent=catalog.length?"Nenhum resultado para este filtro.":"O catálogo carregou, mas não contém itens.";
     grid.appendChild(empty); return;
   }
   for (const {item,index} of filtered) {
     const card=document.createElement("article"); card.className="media-card"; card.tabIndex=0;
-    const poster=safeUrl(item.poster);
-    if (poster) { const img=document.createElement("img"); img.loading="lazy"; img.alt=""; img.src=poster; img.onerror=()=>img.remove(); card.appendChild(img); }
-    else { const placeholder=document.createElement("div"); placeholder.className="poster-placeholder"; placeholder.textContent="▶"; card.appendChild(placeholder); }
+    const poster=document.createElement("div"); poster.className="poster-placeholder"; poster.textContent="▶"; card.appendChild(poster);
     const info=document.createElement("div"); info.className="media-info";
     const h=document.createElement("h3"); h.textContent=item.title||"Sem título";
-    const p=document.createElement("p"); p.textContent=[item.category||"Mídia",item.episode||item.year||""].filter(Boolean).join(" • ");
+    const p=document.createElement("p"); p.textContent=(item.category||"Filmes").toUpperCase();
     info.append(h,p); card.appendChild(info);
     card.addEventListener("click",()=>playItem(index));
     card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();playItem(index);}});
@@ -95,16 +90,22 @@ function render() {
 }
 async function loadCatalog() {
   try {
-    const response=await fetch(CATALOG_URL,{cache:"no-store"});
+    const response=await fetch(CATALOG_URL+"?v="+Date.now(),{cache:"no-store"});
     if(!response.ok) throw new Error("HTTP "+response.status);
     const payload=await response.json();
-    catalog=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
-    statusEl.textContent="Catálogo atualizado";
+    const raw=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
+    catalog=raw.map((item,index)=>({
+      ...item,
+      title:item.title||("Vídeo "+(index+1)),
+      category:item.category||"filmes",
+      url:item.url||item.embed_url||""
+    })).filter(item=>safeUrl(item.url));
+    statusEl.textContent="Catálogo atualizado • "+catalog.length+" vídeos";
     render();
   } catch(error) {
-    statusEl.textContent="Catálogo indisponível";
-    grid.innerHTML='<div class="empty-library">Não foi possível carregar data/drive-media.json. Verifique o arquivo e tente novamente.</div>';
-    console.error(error);
+    statusEl.textContent="Falha ao carregar catálogo";
+    grid.innerHTML='<div class="empty-library">Não foi possível carregar ../data/catalog.json. Verifique se o GitHub Pages publicou o arquivo. Erro: '+String(error.message||error)+'</div>';
+    console.error("OIO Media catalog:",error);
   }
 }
 searchInput.addEventListener("input",()=>{searchTerm=searchInput.value.trim().toLocaleLowerCase("pt-BR");render();});
