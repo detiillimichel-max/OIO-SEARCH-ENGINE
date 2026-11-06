@@ -1,0 +1,68 @@
+name: Atualizar catálogo OIO Media
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 */12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oio-drive-media-catalog
+  cancel-in-progress: false
+
+jobs:
+  validate-catalog:
+    name: Validar e atualizar catálogo JSON
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar estrutura e atualizar timestamp
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          path = Path("data/drive-media.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          if not isinstance(data, dict) or not isinstance(data.get("items"), list):
+              raise SystemExit("Formato inválido: esperado objeto JSON com lista 'items'.")
+
+          required = {"title", "url", "category"}
+          seen = set()
+          clean = []
+          for item in data["items"]:
+              if not isinstance(item, dict) or not required.issubset(item):
+                  raise SystemExit("Item inválido: cada mídia precisa de title, url e category.")
+              if item["category"] not in {"filmes", "series", "desenhos", "documentarios"}:
+                  raise SystemExit(f"Categoria inválida: {item['category']}")
+              if not isinstance(item["url"], str) or not item["url"].startswith(("https://", "http://")):
+                  raise SystemExit("URL inválida no catálogo.")
+              key = item["url"].strip()
+              if key not in seen:
+                  seen.add(key)
+                  clean.append(item)
+          data["items"] = clean
+          data["updated_at"] = datetime.now(timezone.utc).isoformat()
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"Catálogo validado: {len(clean)} item(ns).")
+          PY
+      - name: Publicar catálogo atualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/drive-media.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração no catálogo."
+          else
+            git commit -m "Valida e atualiza catálogo de mídia"
+            git push
+          fi
