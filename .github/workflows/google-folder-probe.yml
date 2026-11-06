@@ -48,11 +48,13 @@ jobs:
             git push
           fi
 
-      - name: Guardar relatório técnico do teste
+      - name: Guardar diagnóstico do teste
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: google-folder-probe-report
-          path: probe-report.json
+          name: google-folder-probe-diagnostic
+          path: |
+            probe-report.json
+            google-response-debug.txt
           if-no-files-found: warn
           retention-days: 7
