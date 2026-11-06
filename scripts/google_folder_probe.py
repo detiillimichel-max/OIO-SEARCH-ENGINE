@@ -35,22 +35,26 @@ class AnchorParser(HTMLParser):
 
 
 def unwrap_google_redirect(href: str, base_url: str) -> str:
-    value = html.unescape(unquote(href.strip()))
-    absolute = urljoin(base_url, value)
+    absolute = urljoin(base_url, html.unescape(unquote(href.strip())))
     parsed = urlparse(absolute)
     if parsed.hostname and parsed.hostname.endswith("google.com") and parsed.path in {"/url", "/imgres"}:
         params = parse_qs(parsed.query)
-        return html.unescape(unquote(params.get("q", params.get("url", params.get("imgurl", [absolute])))[0]))
+        target = params.get("q", params.get("url", params.get("imgurl", [absolute])))[0]
+        return html.unescape(unquote(target))
     return absolute
 
 
 def normalize_folder_url(value: str) -> str | None:
-    value = html.unescape(unquote(value.strip().rstrip(").,;\\"'")))
+    value = html.unescape(unquote(value.strip())).rstrip(").,;")
     parsed = urlparse(value)
-    if parsed.scheme not in {"http", "https"} or parsed.hostname not in {"drive.google.com", "www.drive.google.com"}:
+    if parsed.scheme not in {"http", "https"}:
+        return None
+    if parsed.hostname not in {"drive.google.com", "www.drive.google.com"}:
         return None
     match = re.fullmatch(r"/drive/folders/([A-Za-z0-9_-]+)/?", parsed.path)
-    return f"https://drive.google.com/drive/folders/{match.group(1)}" if match else None
+    if not match:
+        return None
+    return f"https://drive.google.com/drive/folders/{match.group(1)}"
 
 
 def main() -> int:
@@ -114,7 +118,7 @@ def main() -> int:
             f"Signals: {', '.join(report['page_signals']) or 'none'}",
             f"Extracted folder URLs: {len(candidates)}",
         ]
-        snippets = [decoded[max(0, m.start()-180):min(len(decoded), m.end()+180)] for m in list(FOLDER_RE.finditer(decoded))[:10]]
+        snippets = [decoded[max(0, match.start()-180):min(len(decoded), match.end()+180)] for match in list(FOLDER_RE.finditer(decoded))[:10]]
         if snippets:
             debug_lines.append("\n--- Contextos próximos a URLs Drive ---")
             debug_lines.extend(snippets)
