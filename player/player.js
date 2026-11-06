@@ -1,4 +1,4 @@
-const CATALOG_URL = "../data/drive-media.json";
+const CATALOG_URL = "../data/social-feed.json";
 const grid = document.getElementById("media-grid");
 const searchInput = document.getElementById("search-input");
 const statusEl = document.getElementById("catalog-status");
