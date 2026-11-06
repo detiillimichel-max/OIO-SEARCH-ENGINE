@@ -1,4 +1,4 @@
-const CACHE_NAME = "oio-media-player-v1";
+const CACHE_NAME = "oio-media-player-v2";
 const APP_FILES = ["./", "./index.html", "./style.css", "./player.js", "./manifest.json"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)));
