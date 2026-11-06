@@ -1,0 +1,67 @@
+name: Google Dorks - Catálogo de mídia pública do Drive
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: "Categoria de pesquisa"
+        type: choice
+        required: true
+        default: "todos"
+        options:
+          - todos
+          - videos
+          - filmes
+          - series
+          - desenhos
+          - documentarios
+      term:
+        description: "Termo opcional (ex.: natureza, astronomia, nome de filme)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-dorks-catalog
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Gerar consultas Google Dorks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar catálogo de consultas
+        env:
+          CATEGORY: ${{ inputs.category }}
+          TERM: ${{ inputs.term }}
+        run: |
+          if [ -n "$TERM" ]; then
+            python scripts/build_google_dorks.py --category "$CATEGORY" --term "$TERM"
+          else
+            python scripts/build_google_dorks.py --category "$CATEGORY"
+          fi
+
+      - name: Salvar catálogo JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/google-dorks-catalog.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração no catálogo."
+          else
+            git commit -m "Gera catálogo de consultas Google Dorks"
+            git push
+          fi
