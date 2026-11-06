@@ -1,0 +1,58 @@
+name: Teste real Google - pastas do Drive
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/google_folder_probe.py"
+      - ".github/workflows/google-folder-probe.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-folder-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    name: Uma consulta real ao Google
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependência
+        run: python -m pip install "requests>=2.32.0,<3.0.0"
+
+      - name: Consultar Google e extrair URLs de pastas
+        run: python scripts/google_folder_probe.py
+
+      - name: Salvar somente a lista de URLs
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovered-folders/teste-google.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma URL nova para salvar."
+          else
+            git commit -m "Teste Google: salva URLs de pastas públicas do Drive"
+            git push
+          fi
+
+      - name: Guardar relatório técnico do teste
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-folder-probe-report
+          path: probe-report.json
+          if-no-files-found: warn
+          retention-days: 7
