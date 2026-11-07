@@ -1,13 +1,37 @@
 {
-  "id": "./",
-  "name": "OIO Media Player",
+  "id": "/OIO-SEARCH-ENGINE/player/",
+  "name": "OIO Media — Biblioteca de Mídia",
   "short_name": "OIO Media",
-  "description": "Biblioteca de mídia pública e autorizada.",
+  "description": "Biblioteca de mídia com conteúdos públicos ou disponibilizados com autorização.",
   "lang": "pt-BR",
-  "start_url": "./",
+  "dir": "ltr",
+  "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
   "theme_color": "#080d17",
-  "background_color": "#080d17"
+  "background_color": "#080d17",
+  "categories": ["entertainment", "video"],
+  "icons": [
+    {
+      "src": "./icons/oio-media.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/oio-media.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Abrir biblioteca",
+      "short_name": "Biblioteca",
+      "url": "./"
+    }
+  ]
 }
