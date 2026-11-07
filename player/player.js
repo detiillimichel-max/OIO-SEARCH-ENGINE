@@ -117,11 +117,25 @@ function render() {
     grid.appendChild(empty); return;
   }
   for (const {item,index} of filtered) {
-    const card=document.createElement("article"); card.className="media-card"; card.tabIndex=0;
-    const poster=document.createElement("div"); poster.className="poster-placeholder"; poster.textContent="▶"; card.appendChild(poster);
+    const card=document.createElement("article"); card.className="media-card"; card.tabIndex=0; card.setAttribute("role","button"); card.setAttribute("aria-label","Reproduzir "+(item.title||"conteúdo"));
+    const poster=document.createElement("div"); poster.className="poster-placeholder";
+    const fileId=driveFileId(item.url);
+    if(fileId){
+      const image=document.createElement("img");
+      image.className="poster-image";
+      image.alt="";
+      image.loading="lazy";
+      image.src="https://drive.google.com/thumbnail?id="+encodeURIComponent(fileId)+"&sz=w640";
+      image.addEventListener("error",()=>{image.remove();poster.classList.add("poster-fallback");},{once:true});
+      poster.appendChild(image);
+    } else poster.classList.add("poster-fallback");
+    const shade=document.createElement("span"); shade.className="poster-shade";
+    const playMark=document.createElement("span"); playMark.className="poster-play"; playMark.textContent="▶";
+    const tag=document.createElement("span"); tag.className="poster-tag"; tag.textContent=(item.category||"FILMES").toUpperCase();
+    poster.append(shade,playMark,tag); card.appendChild(poster);
     const info=document.createElement("div"); info.className="media-info";
     const h=document.createElement("h3"); h.textContent=item.title||"Sem título";
-    const p=document.createElement("p"); p.textContent=(item.category||"Filmes").toUpperCase();
+    const p=document.createElement("p"); p.textContent="▶  Assistir agora";
     info.append(h,p); card.appendChild(info);
     card.addEventListener("click",()=>playItem(index));
     card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();playItem(index);}});
