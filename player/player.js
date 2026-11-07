@@ -39,10 +39,17 @@ function startDrivePlayback(id, title) {
   const iframe = frame.querySelector("iframe");
   if (!iframe || !id) return;
   driveStarted = true;
+  // Aciona tela cheia diretamente no gesto do usuário, antes de navegar o iframe.
+  const fullscreenTarget = frame;
+  let fullscreenRequest = null;
+  if (fullscreenTarget.requestFullscreen) {
+    try { fullscreenRequest = fullscreenTarget.requestFullscreen(); } catch (_) {}
+  }
   iframe.src = "https://drive.google.com/file/d/" + encodeURIComponent(id) + "/preview?autoplay=1";
   const action = frame.querySelector(".preview-action");
   if (action) action.remove();
-  note.textContent = "Solicitação de reprodução enviada ao Google Drive. Se não iniciar, use Abrir no Google Drive.";
+  if (fullscreenRequest && typeof fullscreenRequest.catch === "function") fullscreenRequest.catch(() => {});
+  note.textContent = "Reprodução solicitada. Se o navegador não permitir tela cheia automática, use o botão Tela cheia. Para qualquer falha, abra no Google Drive.";
 }
 function playItem(index) {
   const item = catalog[index];
