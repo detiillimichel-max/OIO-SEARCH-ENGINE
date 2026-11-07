@@ -3,8 +3,8 @@ const CACHE_NAME = CACHE_PREFIX + "v4";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./style.css",
-  "./player.js",
+  "./style.css?v=1.2.0",
+  "./player.js?v=1.2.0",
   "./manifest.json",
   "./icons/oio-media.svg"
 ];
