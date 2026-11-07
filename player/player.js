@@ -12,6 +12,8 @@ let catalog = [];
 let activeCategory = "todos";
 let searchTerm = "";
 let currentIndex = -1;
+let currentDriveUrl = "";
+let driveStarted = false;
 
 function safeUrl(value) {
   try { const u = new URL(value); return ["https:", "http:"].includes(u.protocol) ? u.href : null; }
@@ -24,12 +26,32 @@ function driveFileId(value) {
     return u.pathname.match(/\/file\/d\/([a-zA-Z0-9_-]+)/)?.[1] || u.searchParams.get("id");
   } catch { return null; }
 }
+function showDriveFallback(url, label = "Abrir no Google Drive") {
+  const link = document.createElement("a");
+  link.className = "drive-fallback";
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = label;
+  return link;
+}
+function startDrivePlayback(id, title) {
+  const iframe = frame.querySelector("iframe");
+  if (!iframe || !id) return;
+  driveStarted = true;
+  iframe.src = "https://drive.google.com/file/d/" + encodeURIComponent(id) + "/preview?autoplay=1";
+  const action = frame.querySelector(".preview-action");
+  if (action) action.remove();
+  note.textContent = "Solicitação de reprodução enviada ao Google Drive. Se não iniciar, use Abrir no Google Drive.";
+}
 function playItem(index) {
   const item = catalog[index];
   if (!item) return;
   const url = safeUrl(item.url);
   if (!url) { note.textContent = "Este item não possui uma URL HTTP/HTTPS válida."; return; }
   currentIndex = index;
+  currentDriveUrl = url;
+  driveStarted = false;
   titleEl.textContent = item.title || "Conteúdo selecionado";
   kindEl.textContent = (item.category || "FILMES").toUpperCase();
   nextButton.disabled = index >= catalog.length - 1;
@@ -41,19 +63,30 @@ function playItem(index) {
     iframe.title = item.title || "Pré-visualização Google Drive";
     iframe.allow = "autoplay; fullscreen; picture-in-picture";
     iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "no-referrer";
     frame.appendChild(iframe);
-    note.textContent = "Pré-visualização oficial do Drive. O acesso depende das permissões e da configuração de compartilhamento do arquivo.";
+
+    const overlay = document.createElement("div");
+    overlay.className = "preview-action";
+    const play = document.createElement("button");
+    play.type = "button";
+    play.className = "preview-play";
+    play.innerHTML = '<span aria-hidden="true">▶</span><b>Reproduzir</b>';
+    play.addEventListener("click", () => startDrivePlayback(id, item.title));
+    overlay.appendChild(play);
+    frame.appendChild(overlay);
+    frame.appendChild(showDriveFallback(url));
+    note.textContent = "Prévia oficial do Drive. Toque em Reproduzir para solicitar o início; a autorização e a compatibilidade são controladas pelo Drive.";
   } else if (item.playback_type === "direct" && item.authorized === true) {
     const video = document.createElement("video");
     video.controls = true; video.playsInline = true; video.preload = "metadata";
     video.src = url;
     const poster = safeUrl(item.poster); if (poster) video.poster = poster;
     frame.appendChild(video);
+    frame.appendChild(showDriveFallback(url, "Abrir fonte"));
     note.textContent = "Reprodução direta de uma fonte identificada como autorizada.";
   } else {
-    const link = document.createElement("a");
-    link.href = url; link.target = "_blank"; link.rel = "noopener noreferrer";
-    link.className = "empty-player"; link.textContent = "Abrir fonte em nova aba";
+    const link = showDriveFallback(url, "Abrir fonte em nova aba");
     frame.appendChild(link);
     note.textContent = "Esta fonte não foi configurada para reprodução direta autorizada.";
   }
@@ -94,17 +127,12 @@ async function loadCatalog() {
     if(!response.ok) throw new Error("HTTP "+response.status);
     const payload=await response.json();
     const raw=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
-    catalog=raw.map((item,index)=>({
-      ...item,
-      title:item.title||("Vídeo "+(index+1)),
-      category:item.category||"filmes",
-      url:item.url||item.embed_url||""
-    })).filter(item=>safeUrl(item.url));
+    catalog=raw.map((item,index)=>({...item,title:item.title||("Vídeo "+(index+1)),category:item.category||"filmes",url:item.url||item.embed_url||""})).filter(item=>safeUrl(item.url));
     statusEl.textContent="Catálogo atualizado • "+catalog.length+" vídeos";
     render();
   } catch(error) {
     statusEl.textContent="Falha ao carregar catálogo";
-    grid.innerHTML='<div class="empty-library">Não foi possível carregar ../data/catalog.json. Verifique se o GitHub Pages publicou o arquivo. Erro: '+String(error.message||error)+'</div>';
+    grid.innerHTML='<div class="empty-library">Não foi possível carregar ../data/catalog.json. Erro: '+String(error.message||error)+'</div>';
     console.error("OIO Media catalog:",error);
   }
 }
