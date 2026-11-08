@@ -1,7 +1,7 @@
 {
-  "ran_at_utc": "2026-11-08T16:15:23.652004+00:00",
-  "ran_at_local": "2026-11-08T13:15:23.652004-03:00",
-  "requested_batch_size": 50,
+  "ran_at_utc": "2026-11-08T20:37:31.413107+00:00",
+  "ran_at_local": "2026-11-08T17:37:31.413107-03:00",
+  "requested_batch_size": 120,
   "published_count": 0,
   "remaining_queue_count": 0,
   "feed_count": 0,
