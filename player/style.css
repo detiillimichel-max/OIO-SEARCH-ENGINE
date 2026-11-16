@@ -87,3 +87,7 @@
   .media-info h3{font-size:14px}
   .media-info p{font-size:11px}
 }
+
+
+/* Navegação entre funcionalidades existentes e arquitetura definida */
+.workspace-tabs{display:flex;gap:8px;margin:26px 0 22px;padding:6px;border:1px solid var(--line);border-radius:14px;background:#0b1321;position:sticky;top:68px;z-index:4}.workspace-tab{flex:1;border:0;border-radius:9px;padding:12px;background:transparent;color:var(--muted);font:inherit;font-weight:750;cursor:pointer}.workspace-tab.active{background:linear-gradient(135deg,#48c7f4,#8b7cff);color:#07111e}.workspace-panel[hidden]{display:none}.defined-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:20px 0}.defined-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:linear-gradient(150deg,#142238,#0e1727)}.defined-index{color:var(--accent);font-size:11px;font-weight:900;letter-spacing:.14em}.defined-card h3{margin:10px 0;font-size:17px}.defined-card code{display:block;overflow-wrap:anywhere;color:#9eddf5;font-size:12px}.defined-card p{color:var(--muted);font-size:13px;line-height:1.6}.defined-state{display:inline-block;border:1px solid #65738a55;border-radius:20px;padding:6px 9px;color:#aab8ca;font-size:10px;font-weight:700}@media(max-width:600px){.workspace-tabs{top:58px}.defined-grid{grid-template-columns:1fr}.workspace-tab{font-size:13px}}
