@@ -7,7 +7,7 @@
   <meta name="description" content="Biblioteca de vídeos públicos e autorizados do OIO.">
   <title>OIO Media Player</title>
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./style.css?v=1.1.3.2">
+  <link rel="stylesheet" href="./style.css?v=1.1.3.3">
 </head>
 <body>
 <header class="topbar">
@@ -25,6 +25,8 @@
     <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="play-symbol">▶</div></div>
   </section>
 
+  <nav class="workspace-tabs" aria-label="Áreas do OIO"><button class="workspace-tab active" type="button" data-workspace="existing">Já temos</button><button class="workspace-tab" type="button" data-workspace="defined">Definido</button></nav>
+  <section id="workspace-existing" class="workspace-panel active">
   <section class="player-section" aria-label="Player de vídeo">
     <div class="section-heading">
       <div><p class="eyebrow">AGORA NO PLAYER</p><h2 id="now-title">Selecione um conteúdo</h2></div>
@@ -46,9 +48,22 @@
     </nav>
     <div class="media-grid" id="media-grid"><div class="empty-library">Carregando biblioteca…</div></div>
   </section>
+</section>
+  <section id="workspace-defined" class="workspace-panel" hidden>
+    <div class="section-heading"><div><p class="eyebrow">PRÓXIMA ETAPA</p><h2>O que está definido</h2></div><span class="pill">PLANEJADO</span></div>
+    <p class="muted">Esta área documenta a arquitetura aprovada. Ela ainda não carrega canais nem altera a biblioteca que já funciona.</p>
+    <div class="defined-grid">
+      <article class="defined-card"><span class="defined-index">01</span><h3>Fontes originais</h3><code>data/iptv-br/sources/</code><p>Guardar as quatro listas M3U/M3U8 e CSV, identificadas pela origem.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">02</span><h3>Catálogo unificado</h3><code>data/iptv-br/catalog.json</code><p>Reunir emissora, cidade, estado, categoria, logo, EPG e arquivo de origem.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">03</span><h3>Motor de catálogo</h3><code>scripts/build_iptv_catalog.py</code><p>Ler M3U e CSV, normalizar metadados, identificar duplicados e excluir URLs com credenciais aparentes.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">04</span><h3>Cards e player de TV</h3><code>player/</code><p>Nova área para canais com pesquisa, filtros, cards e player HLS, mantendo a biblioteca atual em separado.</p><span class="defined-state">Definido · ainda não integrado</span></article>
+      <article class="defined-card"><span class="defined-index">05</span><h3>Automação</h3><code>.github/workflows/</code><p>GitHub Actions para reconstruir o catálogo quando as fontes ou o motor forem atualizados.</p><span class="defined-state">Definido · ainda não criado</span></article>
+    </div>
+    <p class="player-note">Os links serão tratados como fontes não verificadas até que passem por auditoria de disponibilidade, compatibilidade e autorização de uso. A grade EPG será integrada separadamente.</p>
+  </section>
 </main>
 <footer>OIO MEDIA PLAYER <span>•</span> Use somente conteúdo que você tenha autorização para acessar e transmitir.</footer>
-<script src="./player.js?v=1.1.3.2" defer></script>
+<script src="./player.js?v=1.1.3.3" defer></script>
 <script>
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
 </script>
