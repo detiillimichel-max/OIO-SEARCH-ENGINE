@@ -169,3 +169,17 @@ document.getElementById("fullscreen-btn").addEventListener("click",()=>{
   else if(frame.requestFullscreen) frame.requestFullscreen().catch(()=>{});
 });
 loadCatalog();
+
+
+// Abas de status: o conteúdo existente permanece isolado e inalterado.
+document.querySelectorAll("[data-workspace]").forEach(button => {
+  button.addEventListener("click", () => {
+    const target = button.dataset.workspace;
+    document.querySelectorAll("[data-workspace]").forEach(tab => tab.classList.toggle("active", tab === button));
+    document.querySelectorAll(".workspace-panel").forEach(panel => {
+      const active = panel.id === (target === "existing" ? "workspace-existing" : "workspace-defined");
+      panel.hidden = !active;
+      panel.classList.toggle("active", active);
+    });
+  });
+});
