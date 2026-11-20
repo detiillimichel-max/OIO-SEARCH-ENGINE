@@ -48,6 +48,22 @@
     </nav>
     <div class="media-grid" id="media-grid"><div class="empty-library">Carregando biblioteca…</div></div>
   </section>
+  <section class="discoveries-section" aria-label="Novas descobertas">
+    <div class="section-heading">
+      <div><p class="eyebrow">MOTOR DE DESCOBERTA</p><h2>Descobertas</h2></div>
+      <span class="count" id="discovery-count">Carregando candidatos…</span>
+    </div>
+    <p class="player-note">Resultados encontrados pelo motor. A classificação indica apenas o resultado da verificação da página; não confirma propriedade, autorização ou reprodução.</p>
+    <label class="search discovery-search"><span aria-hidden="true">⌕</span><input id="discovery-search" type="search" placeholder="Pesquisar descobertas…" autocomplete="off"></label>
+    <nav class="filters discovery-filters" aria-label="Filtrar situação">
+      <button class="discovery-filter active" type="button" data-discovery-status="all">Todos</button>
+      <button class="discovery-filter" type="button" data-discovery-status="page_reachable_unverified">Página respondeu</button>
+      <button class="discovery-filter" type="button" data-discovery-status="login_required">Exige login</button>
+      <button class="discovery-filter" type="button" data-discovery-status="restricted">Restrito</button>
+      <button class="discovery-filter" type="button" data-discovery-status="unknown">Sem verificação</button>
+    </nav>
+    <div class="discovery-grid" id="discovery-grid"><div class="empty-library">Carregando descobertas…</div></div>
+  </section>
 </section>
   <section id="workspace-defined" class="workspace-panel" hidden>
     <div class="section-heading"><div><p class="eyebrow">PRÓXIMA ETAPA</p><h2>O que está definido</h2></div><span class="pill">PLANEJADO</span></div>
