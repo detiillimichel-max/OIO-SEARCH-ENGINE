@@ -1,0 +1,63 @@
+name: OIO Public Drive Discovery
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions usa UTC. A cada 12 horas; pode haver atraso na fila.
+    - cron: "23 */12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oio-public-drive-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Descobrir URLs públicas indexadas
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependências existentes
+        run: pip install -r requirements.txt
+
+      - name: Executar motor de descoberta
+        env:
+          REQUEST_TIMEOUT: "20"
+          MAX_COMMONCRAWL_INDEXES: "2"
+          MAX_RESULTS_PER_PATTERN: "100"
+          MAX_SEARCH_QUERIES: "6"
+          SEARCH_DELAY_SECONDS: "2"
+        run: python scripts/public_drive_discovery.py
+
+      - name: Validar JSON produzido
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ("discovery-candidates.json", "discovery-state.json"):
+              json.loads((Path("data") / name).read_text(encoding="utf-8"))
+              print(f"JSON válido: data/{name}")
+          PY
+
+      - name: Commit dos resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovery-candidates.json data/discovery-state.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração nova."
+          else
+            git commit -m "Adiciona descoberta contínua de Drives públicos"
+            git push
+          fi
