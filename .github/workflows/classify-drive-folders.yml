@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Testar parser sem acessar a internet
+        run: python -m unittest scripts/test_classify_drive_folders.py -v
       - name: Examinar listagens públicas e classificar mídia
         env:
           MAX_FOLDERS_TO_INSPECT: "195"
