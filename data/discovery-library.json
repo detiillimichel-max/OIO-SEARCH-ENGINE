@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-20T17:24:31.934850+00:00",
+  "folders_considered": 95,
+  "folders_with_media": 0,
+  "media_files": 0,
+  "status_counts": {
+    "skipped_not_reachable": 52,
+    "listing_empty_or_markup_changed": 43
+  },
+  "categories": {
+    "videos": "Pastas com vídeos",
+    "filmes_series": "Filmes e séries",
+    "desenhos_animacoes": "Desenhos e animações",
+    "musicas": "Músicas"
+  },
+  "excluded": "Pastas contendo somente documentos, imagens ou outros tipos não multimídia não entram no catálogo.",
+  "items": []
+}
