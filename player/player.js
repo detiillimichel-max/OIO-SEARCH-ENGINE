@@ -187,7 +187,7 @@ document.querySelectorAll("[data-workspace]").forEach(button => {
 
 // Camada separada de descobertas: não altera nem substitui data/catalog.json.
 const DISCOVERY_URL = "../data/discovery-candidates.json";
-const VERIFICATION_URL = "../data/drive-verification-report.json";
+const DISCOVERY_LIBRARY_URL = "../data/discovery-library.json";
 const discoveryGrid = document.getElementById("discovery-grid");
 const discoveryCount = document.getElementById("discovery-count");
 const discoverySearch = document.getElementById("discovery-search");
@@ -204,8 +204,8 @@ const discoveryLabels = {
 function renderDiscoveries() {
   if (!discoveryGrid) return;
   const filtered = discoveries.filter(item => {
-    const statusOk = discoveryStatus === "all" || item.verification_status === discoveryStatus;
-    const text = [item.title, item.name, item.url, item.kind, ...(item.discovery_methods || [])].join(" ").toLocaleLowerCase("pt-BR");
+    const statusOk = discoveryStatus === "all" || item.category === discoveryStatus;
+    const text = [item.title, item.name, item.url, item.kind, item.category, item.folder_title].join(" ").toLocaleLowerCase("pt-BR");
     return statusOk && text.includes(discoveryTerm);
   });
   discoveryCount.textContent = discoveries.length + " candidatos encontrados · " + filtered.length + " exibidos";
@@ -246,26 +246,31 @@ function renderDiscoveries() {
 async function loadDiscoveries() {
   if (!discoveryGrid) return;
   try {
-    const [candidateResponse, reportResponse] = await Promise.all([
-      fetch(DISCOVERY_URL + "?v=" + Date.now(), {cache:"no-store"}),
-      fetch(VERIFICATION_URL + "?v=" + Date.now(), {cache:"no-store"})
-    ]);
-    if (!candidateResponse.ok) throw new Error("Candidatos: HTTP " + candidateResponse.status);
-    if (!reportResponse.ok) throw new Error("Relatório: HTTP " + reportResponse.status);
-    const candidatePayload = await candidateResponse.json();
-    const reportPayload = await reportResponse.json();
-    const statusById = new Map((reportPayload.items || []).map(row => [row.id, row]));
-    discoveries = (candidatePayload.items || []).filter(item => safeUrl(item.url)).map(item => {
-      const report = statusById.get(item.id);
-      return {...item, verification_status: report?.verification_status || "unknown", evidence: report?.evidence || ""};
-    });
+    const response = await fetch(DISCOVERY_LIBRARY_URL + "?v=" + Date.now(), {cache:"no-store"});
+    if (!response.ok) throw new Error("Catálogo multimídia: HTTP " + response.status);
+    const payload = await response.json();
+    discoveries = (payload.items || []).flatMap(folder =>
+      (folder.files || []).map(file => ({
+        ...file,
+        title: file.name || "Arquivo de mídia",
+        folder_title: folder.title || "Pasta do Google Drive",
+        url: file.url,
+        category: file.category,
+        kind: "file",
+        verification_status: "listed",
+        evidence: "Arquivo identificado na listagem pública da pasta."
+      }))
+    ).filter(item => safeUrl(item.url) && ["videos","filmes_series","desenhos_animacoes","musicas"].includes(item.category));
     renderDiscoveries();
+    if (!discoveries.length) {
+      discoveryCount.textContent = "Nenhum arquivo de mídia listado ainda";
+    }
   } catch (error) {
-    discoveryCount.textContent = "Falha ao carregar descobertas";
+    discoveryCount.textContent = "Catálogo multimídia ainda não gerado";
     discoveryGrid.replaceChildren();
     const message = document.createElement("div");
     message.className = "empty-library";
-    message.textContent = "Não foi possível carregar os arquivos de descoberta e verificação: " + (error.message || error);
+    message.textContent = "Execute o workflow OIO Media Folder Classification no GitHub Actions. " + (error.message || error);
     discoveryGrid.appendChild(message);
     console.error("OIO discoveries:", error);
   }
