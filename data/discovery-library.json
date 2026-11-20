@@ -1,12 +1,13 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-11-20T17:24:31.934850+00:00",
+  "schema_version": 2,
+  "generated_at": "2026-11-20T17:44:59.047827+00:00",
   "folders_considered": 95,
-  "folders_with_media": 0,
-  "media_files": 0,
+  "folders_with_media": 5,
+  "media_files": 8,
   "status_counts": {
     "skipped_not_reachable": 52,
-    "listing_empty_or_markup_changed": 43
+    "listed": 30,
+    "listing_unparsed": 13
   },
   "categories": {
     "videos": "Pastas com vídeos",
@@ -15,5 +16,132 @@
     "musicas": "Músicas"
   },
   "excluded": "Pastas contendo somente documentos, imagens ou outros tipos não multimídia não entram no catálogo.",
-  "items": []
+  "items": [
+    {
+      "id": "0B0F7sjwiBOq9T0NVcXpNclBaZHc",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9T0NVcXpNclBaZHc",
+      "title": "Pasta do Google Drive",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "0B0F7sjwiBOq9aTY1U0R5M2ppWmM",
+          "name": "Monastir HF Collaudo.mp4",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9aTY1U0R5M2ppWmM/view",
+          "category": "videos"
+        },
+        {
+          "id": "0B0F7sjwiBOq9RmNPUURaNHlpbGc",
+          "name": "Video _Test AM 10 watt_ik2nbu.mp4",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9RmNPUURaNHlpbGc/view",
+          "category": "videos"
+        }
+      ],
+      "counts": {
+        "documentos_outros": 16,
+        "videos": 2
+      },
+      "category": "videos",
+      "included": true,
+      "inspection_status": "listed",
+      "evidence": "Nomes e IDs extraídos da listagem HTML pública; itens não multimídia foram excluídos."
+    },
+    {
+      "id": "0B0F7sjwiBOq9T09BZjY1ajVYNWc",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9T09BZjY1ajVYNWc",
+      "title": "Pasta do Google Drive",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "0B0F7sjwiBOq9czdpRm1LT1FrOTA",
+          "name": "Tutorial RX onde Lunghe.mp4",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9czdpRm1LT1FrOTA/view",
+          "category": "videos"
+        }
+      ],
+      "counts": {
+        "videos": 1
+      },
+      "category": "videos",
+      "included": true,
+      "inspection_status": "listed",
+      "evidence": "Nomes e IDs extraídos da listagem HTML pública; itens não multimídia foram excluídos."
+    },
+    {
+      "id": "0B0F7sjwiBOq9NlY3dnNYbTNqRUk",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9NlY3dnNYbTNqRUk",
+      "title": "Pasta do Google Drive",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "0B0F7sjwiBOq9NHdPLThSa3p3V0U",
+          "name": "Fenice_AudioMosfet.mp4",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9NHdPLThSa3p3V0U/view",
+          "category": "videos"
+        },
+        {
+          "id": "0B0F7sjwiBOq9NUQ4TEJIX1pOREE",
+          "name": "TDA2003_Test.wmv",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9NUQ4TEJIX1pOREE/view",
+          "category": "videos"
+        }
+      ],
+      "counts": {
+        "videos": 2,
+        "documentos_outros": 2
+      },
+      "category": "videos",
+      "included": true,
+      "inspection_status": "listed",
+      "evidence": "Nomes e IDs extraídos da listagem HTML pública; itens não multimídia foram excluídos."
+    },
+    {
+      "id": "0B0F7sjwiBOq9N1lpcTBOUGJIT2s",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9N1lpcTBOUGJIT2s",
+      "title": "Pasta do Google Drive",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "0B0F7sjwiBOq9YVlkMkw0OGNScGM",
+          "name": "IF Upgrade_Video Ik2nbu.mp4",
+          "url": "https://drive.google.com/file/d/0B0F7sjwiBOq9YVlkMkw0OGNScGM/view",
+          "category": "videos"
+        }
+      ],
+      "counts": {
+        "documentos_outros": 6,
+        "videos": 1
+      },
+      "category": "videos",
+      "included": true,
+      "inspection_status": "listed",
+      "evidence": "Nomes e IDs extraídos da listagem HTML pública; itens não multimídia foram excluídos."
+    },
+    {
+      "id": "0B-O6dCngEIb-b21XU2lNMG5mZDg",
+      "url": "https://drive.google.com/drive/folders/0B-O6dCngEIb-b21XU2lNMG5mZDg",
+      "title": "Pasta do Google Drive",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "0B-O6dCngEIb-R1cxRlFFYjl0R28",
+          "name": "Arash_High-quality.mp3",
+          "url": "https://drive.google.com/file/d/0B-O6dCngEIb-R1cxRlFFYjl0R28/view",
+          "category": "musicas"
+        },
+        {
+          "id": "0B-O6dCngEIb-amVlQ00wUG9IbFk",
+          "name": "Arash_Low-quality.mp3",
+          "url": "https://drive.google.com/file/d/0B-O6dCngEIb-amVlQ00wUG9IbFk/view",
+          "category": "musicas"
+        }
+      ],
+      "counts": {
+        "musicas": 2
+      },
+      "category": "musicas",
+      "included": true,
+      "inspection_status": "listed",
+      "evidence": "Nomes e IDs extraídos da listagem HTML pública; itens não multimídia foram excluídos."
+    }
+  ]
 }
