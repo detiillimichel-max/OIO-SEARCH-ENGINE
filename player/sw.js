@@ -1,10 +1,10 @@
 const CACHE_PREFIX = "oio-media-player-";
-const CACHE_NAME = CACHE_PREFIX + "v6";
+const CACHE_NAME = CACHE_PREFIX + "v7";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./style.css?v=1.1.3.4",
-  "./player.js?v=1.1.3.4",
+  "./style.css?v=1.1.3.5",
+  "./player.js?v=1.1.3.5",
   "./manifest.json",
   "./icons/oio-media.svg"
 ];
