@@ -183,3 +183,100 @@ document.querySelectorAll("[data-workspace]").forEach(button => {
     });
   });
 });
+
+
+// Camada separada de descobertas: não altera nem substitui data/catalog.json.
+const DISCOVERY_URL = "../data/discovery-candidates.json";
+const VERIFICATION_URL = "../data/drive-verification-report.json";
+const discoveryGrid = document.getElementById("discovery-grid");
+const discoveryCount = document.getElementById("discovery-count");
+const discoverySearch = document.getElementById("discovery-search");
+let discoveries = [];
+let discoveryStatus = "all";
+let discoveryTerm = "";
+
+const discoveryLabels = {
+  page_reachable_unverified: "Página respondeu · não confirmada",
+  login_required: "Exige login",
+  restricted: "Restrito",
+  unknown: "Sem verificação"
+};
+function renderDiscoveries() {
+  if (!discoveryGrid) return;
+  const filtered = discoveries.filter(item => {
+    const statusOk = discoveryStatus === "all" || item.verification_status === discoveryStatus;
+    const text = [item.title, item.name, item.url, item.kind, ...(item.discovery_methods || [])].join(" ").toLocaleLowerCase("pt-BR");
+    return statusOk && text.includes(discoveryTerm);
+  });
+  discoveryCount.textContent = discoveries.length + " candidatos encontrados · " + filtered.length + " exibidos";
+  discoveryGrid.replaceChildren();
+  if (!filtered.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty-library";
+    empty.textContent = discoveries.length ? "Nenhuma descoberta corresponde ao filtro." : "Nenhum candidato disponível.";
+    discoveryGrid.appendChild(empty);
+    return;
+  }
+  for (const item of filtered) {
+    const card = document.createElement("article");
+    card.className = "discovery-card";
+    const heading = document.createElement("div");
+    heading.className = "discovery-card-heading";
+    const title = document.createElement("h3");
+    title.textContent = item.title || item.name || (item.kind === "folder" ? "Pasta pública candidata" : "Arquivo candidato");
+    const status = document.createElement("span");
+    status.className = "discovery-status status-" + item.verification_status;
+    status.textContent = discoveryLabels[item.verification_status] || discoveryLabels.unknown;
+    heading.append(title, status);
+    const details = document.createElement("p");
+    details.textContent = (item.kind || "item") + " · " + (item.source || "origem não informada");
+    const evidence = document.createElement("p");
+    evidence.className = "discovery-evidence";
+    evidence.textContent = item.evidence || "Ainda não há evidência de acesso anônimo.";
+    const link = document.createElement("a");
+    link.className = "discovery-open";
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = item.kind === "folder" ? "Abrir pasta no Drive ↗" : "Abrir item no Drive ↗";
+    card.append(heading, details, evidence, link);
+    discoveryGrid.appendChild(card);
+  }
+}
+async function loadDiscoveries() {
+  if (!discoveryGrid) return;
+  try {
+    const [candidateResponse, reportResponse] = await Promise.all([
+      fetch(DISCOVERY_URL + "?v=" + Date.now(), {cache:"no-store"}),
+      fetch(VERIFICATION_URL + "?v=" + Date.now(), {cache:"no-store"})
+    ]);
+    if (!candidateResponse.ok) throw new Error("Candidatos: HTTP " + candidateResponse.status);
+    if (!reportResponse.ok) throw new Error("Relatório: HTTP " + reportResponse.status);
+    const candidatePayload = await candidateResponse.json();
+    const reportPayload = await reportResponse.json();
+    const statusById = new Map((reportPayload.items || []).map(row => [row.id, row]));
+    discoveries = (candidatePayload.items || []).filter(item => safeUrl(item.url)).map(item => {
+      const report = statusById.get(item.id);
+      return {...item, verification_status: report?.verification_status || "unknown", evidence: report?.evidence || ""};
+    });
+    renderDiscoveries();
+  } catch (error) {
+    discoveryCount.textContent = "Falha ao carregar descobertas";
+    discoveryGrid.replaceChildren();
+    const message = document.createElement("div");
+    message.className = "empty-library";
+    message.textContent = "Não foi possível carregar os arquivos de descoberta e verificação: " + (error.message || error);
+    discoveryGrid.appendChild(message);
+    console.error("OIO discoveries:", error);
+  }
+}
+if (discoverySearch) discoverySearch.addEventListener("input", () => {
+  discoveryTerm = discoverySearch.value.trim().toLocaleLowerCase("pt-BR");
+  renderDiscoveries();
+});
+document.querySelectorAll("[data-discovery-status]").forEach(button => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-discovery-status]").forEach(tab => tab.classList.toggle("active", tab === button));
+  discoveryStatus = button.dataset.discoveryStatus;
+  renderDiscoveries();
+}));
+loadDiscoveries();
