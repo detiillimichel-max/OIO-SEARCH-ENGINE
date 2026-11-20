@@ -33,6 +33,7 @@ SESSION.headers.update({"User-Agent": USER_AGENT, "Accept": "application/json"})
 PATTERNS = (
     ("folders", "drive.google.com/drive/folders/*"),
     ("legacy_folders", "drive.google.com/drive/u/*/folders/*"),
+    ("mobile_folders", "drive.google.com/drive/u/*/mobile/folders/*"),
     ("files", "drive.google.com/file/d/*"),
     ("open_links", "drive.google.com/open?id=*"),
 )
@@ -45,7 +46,7 @@ DORKS = (
     'site:drive.google.com/drive/folders "coleção" OR "acervo"',
 )
 DRIVE_HOSTS = {"drive.google.com", "www.drive.google.com"}
-FOLDER_RE = re.compile(r"^/drive/(?:u/\d+/)?folders/([A-Za-z0-9_-]+)$")
+FOLDER_RE = re.compile(r"^/drive/(?:u/\d+/)?(?:mobile/)?folders/([A-Za-z0-9_-]+)$")
 FILE_RE = re.compile(r"^/file/d/([A-Za-z0-9_-]+)(?:/.*)?$")
 LEGACY_RE = re.compile(r"^/open$")
 
