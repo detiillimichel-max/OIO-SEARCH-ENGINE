@@ -1,25 +1,45 @@
 {
   "project": "OIO-SEARCH-ENGINE",
-  "generated_at": "2026-11-20T15:32:51.696284+00:00",
+  "generated_at": "2026-11-21T14:44:23.478204+00:00",
   "source": "https://searx.space/data/instances.json",
   "tested": 30,
-  "online_json": 0,
+  "online_json": 1,
   "instances": [
     {
-      "url": "https://sear.lurx.net",
-      "checked_at": "2026-11-20T15:32:37.068173+00:00",
+      "url": "https://search.lumy.live",
+      "checked_at": "2026-11-21T14:44:22.668537+00:00",
+      "http_status": 200,
+      "response_ms": 808,
+      "json_search": true,
+      "results_count": 52,
+      "status": "online_json",
+      "error": null
+    },
+    {
+      "url": "https://anonsearch.win",
+      "checked_at": "2026-11-21T14:44:20.105283+00:00",
       "http_status": 429,
-      "response_ms": 90,
+      "response_ms": 83,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
       "error": "HTTP 429"
     },
     {
-      "url": "https://anonsearch.win",
-      "checked_at": "2026-11-20T15:32:35.649419+00:00",
+      "url": "https://libresearch.space",
+      "checked_at": "2026-11-21T14:44:20.559834+00:00",
+      "http_status": 200,
+      "response_ms": 86,
+      "json_search": false,
+      "results_count": 0,
+      "status": "json_disabled_or_blocked",
+      "error": null
+    },
+    {
+      "url": "https://etsi.me",
+      "checked_at": "2026-11-21T14:44:20.107219+00:00",
       "http_status": 429,
-      "response_ms": 241,
+      "response_ms": 112,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
@@ -27,19 +47,9 @@
     },
     {
       "url": "https://search.chocolatemoo53.com",
-      "checked_at": "2026-11-20T15:32:37.729290+00:00",
+      "checked_at": "2026-11-21T14:44:21.728782+00:00",
       "http_status": 200,
-      "response_ms": 256,
-      "json_search": false,
-      "results_count": 0,
-      "status": "json_disabled_or_blocked",
-      "error": null
-    },
-    {
-      "url": "https://libresearch.space",
-      "checked_at": "2026-11-20T15:32:36.511391+00:00",
-      "http_status": 200,
-      "response_ms": 283,
+      "response_ms": 117,
       "json_search": false,
       "results_count": 0,
       "status": "json_disabled_or_blocked",
@@ -47,19 +57,9 @@
     },
     {
       "url": "https://baresearch.org",
-      "checked_at": "2026-11-20T15:32:35.651335+00:00",
+      "checked_at": "2026-11-21T14:44:20.106384+00:00",
       "http_status": 200,
-      "response_ms": 322,
-      "json_search": false,
-      "results_count": 0,
-      "status": "json_disabled_or_blocked",
-      "error": null
-    },
-    {
-      "url": "https://search.jeremyh.xyz",
-      "checked_at": "2026-11-20T15:32:39.139785+00:00",
-      "http_status": 200,
-      "response_ms": 343,
+      "response_ms": 157,
       "json_search": false,
       "results_count": 0,
       "status": "json_disabled_or_blocked",
@@ -67,7 +67,87 @@
     },
     {
       "url": "https://search.femboy.ad",
-      "checked_at": "2026-11-20T15:32:38.273352+00:00",
+      "checked_at": "2026-11-21T14:44:22.183725+00:00",
+      "http_status": 429,
+      "response_ms": 170,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://search.jeremyh.xyz",
+      "checked_at": "2026-11-21T14:44:22.650327+00:00",
+      "http_status": 200,
+      "response_ms": 183,
+      "json_search": false,
+      "results_count": 0,
+      "status": "json_disabled_or_blocked",
+      "error": null
+    },
+    {
+      "url": "https://priv.au",
+      "checked_at": "2026-11-21T14:44:21.043865+00:00",
+      "http_status": 429,
+      "response_ms": 205,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://sear.lurx.net",
+      "checked_at": "2026-11-21T14:44:21.140744+00:00",
+      "http_status": 429,
+      "response_ms": 299,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://grep.vim.wtf",
+      "checked_at": "2026-11-21T14:44:20.263586+00:00",
+      "http_status": 429,
+      "response_ms": 335,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://find.xenorio.xyz",
+      "checked_at": "2026-11-21T14:44:20.220245+00:00",
+      "http_status": 429,
+      "response_ms": 339,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://search.im-in.space",
+      "checked_at": "2026-11-21T14:44:22.328538+00:00",
+      "http_status": 429,
+      "response_ms": 339,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://search.einfachzocken.eu",
+      "checked_at": "2026-11-21T14:44:21.888824+00:00",
+      "http_status": 502,
+      "response_ms": 356,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 502"
+    },
+    {
+      "url": "https://search.banke.cloud",
+      "checked_at": "2026-11-21T14:44:21.365814+00:00",
       "http_status": 429,
       "response_ms": 362,
       "json_search": false,
@@ -76,28 +156,98 @@
       "error": "HTTP 429"
     },
     {
-      "url": "https://etsi.me",
-      "checked_at": "2026-11-20T15:32:35.652343+00:00",
+      "url": "https://failsearx.culturanerd.it",
+      "checked_at": "2026-11-21T14:44:20.188479+00:00",
       "http_status": 429,
-      "response_ms": 365,
+      "response_ms": 392,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
       "error": "HTTP 429"
     },
     {
-      "url": "https://search.anoni.net",
-      "checked_at": "2026-11-20T15:32:37.158878+00:00",
-      "http_status": 403,
-      "response_ms": 451,
+      "url": "https://search.inetol.net",
+      "checked_at": "2026-11-21T14:44:22.354582+00:00",
+      "http_status": 200,
+      "response_ms": 415,
+      "json_search": false,
+      "results_count": 0,
+      "status": "json_disabled_or_blocked",
+      "error": null
+    },
+    {
+      "url": "https://search.liuzj.net",
+      "checked_at": "2026-11-21T14:44:22.666977+00:00",
+      "http_status": 429,
+      "response_ms": 419,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
-      "error": "HTTP 403"
+      "error": "HTTP 429"
     },
     {
-      "url": "https://search.banke.cloud",
-      "checked_at": "2026-11-20T15:32:37.427716+00:00",
+      "url": "https://search.hbubli.cc",
+      "checked_at": "2026-11-21T14:44:22.245324+00:00",
+      "http_status": 429,
+      "response_ms": 421,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://search.mdosch.de",
+      "checked_at": "2026-11-21T14:44:22.770347+00:00",
+      "http_status": 502,
+      "response_ms": 426,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 502"
+    },
+    {
+      "url": "https://auth.seddens.net/?rd=https://search.seddens.net",
+      "checked_at": "2026-11-21T14:44:20.106148+00:00",
+      "http_status": 200,
+      "response_ms": 445,
+      "json_search": false,
+      "results_count": 0,
+      "status": "json_disabled_or_blocked",
+      "error": null
+    },
+    {
+      "url": "https://search.ctq.ro",
+      "checked_at": "2026-11-21T14:44:21.845823+00:00",
+      "http_status": 418,
+      "response_ms": 482,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 418"
+    },
+    {
+      "url": "https://kantan.cat",
+      "checked_at": "2026-11-21T14:44:20.551566+00:00",
+      "http_status": 429,
+      "response_ms": 492,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://search.catboy.house",
+      "checked_at": "2026-11-21T14:44:21.440308+00:00",
+      "http_status": 429,
+      "response_ms": 492,
+      "json_search": false,
+      "results_count": 0,
+      "status": "http_error",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://paulgo.io",
+      "checked_at": "2026-11-21T14:44:20.646082+00:00",
       "http_status": 429,
       "response_ms": 494,
       "json_search": false,
@@ -106,80 +256,20 @@
       "error": "HTTP 429"
     },
     {
-      "url": "https://search.einfachzocken.eu",
-      "checked_at": "2026-11-20T15:32:37.986220+00:00",
-      "http_status": 429,
-      "response_ms": 518,
+      "url": "https://search.anoni.net",
+      "checked_at": "2026-11-21T14:44:21.249380+00:00",
+      "http_status": 403,
+      "response_ms": 639,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
-      "error": "HTTP 429"
+      "error": "HTTP 403"
     },
     {
-      "url": "https://search.im-in.space",
-      "checked_at": "2026-11-20T15:32:38.611735+00:00",
+      "url": "https://search.ethibox.fr",
+      "checked_at": "2026-11-21T14:44:21.933123+00:00",
       "http_status": 429,
-      "response_ms": 527,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://find.xenorio.xyz",
-      "checked_at": "2026-11-20T15:32:35.974403+00:00",
-      "http_status": 429,
-      "response_ms": 546,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://opnxng.com",
-      "checked_at": "2026-11-20T15:32:36.521189+00:00",
-      "http_status": 429,
-      "response_ms": 546,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://kantan.cat",
-      "checked_at": "2026-11-20T15:32:36.385466+00:00",
-      "http_status": 429,
-      "response_ms": 556,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.inetol.net",
-      "checked_at": "2026-11-20T15:32:38.636038+00:00",
-      "http_status": 200,
-      "response_ms": 579,
-      "json_search": false,
-      "results_count": 0,
-      "status": "json_disabled_or_blocked",
-      "error": null
-    },
-    {
-      "url": "https://failsearx.culturanerd.it",
-      "checked_at": "2026-11-20T15:32:35.890923+00:00",
-      "http_status": 429,
-      "response_ms": 620,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://oziway.net",
-      "checked_at": "2026-11-20T15:32:36.795327+00:00",
-      "http_status": 429,
-      "response_ms": 632,
+      "response_ms": 717,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
@@ -187,123 +277,33 @@
     },
     {
       "url": "https://search.bladerunn.in",
-      "checked_at": "2026-11-20T15:32:37.550787+00:00",
+      "checked_at": "2026-11-21T14:44:21.417122+00:00",
       "http_status": 429,
-      "response_ms": 637,
+      "response_ms": 766,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
       "error": "HTTP 429"
     },
     {
-      "url": "https://paulgo.io",
-      "checked_at": "2026-11-20T15:32:36.899092+00:00",
+      "url": "https://oziway.net",
+      "checked_at": "2026-11-21T14:44:20.599297+00:00",
       "http_status": 429,
-      "response_ms": 651,
+      "response_ms": 817,
       "json_search": false,
       "results_count": 0,
       "status": "http_error",
       "error": "HTTP 429"
     },
     {
-      "url": "https://search.catboy.house",
-      "checked_at": "2026-11-20T15:32:37.610324+00:00",
-      "http_status": 429,
-      "response_ms": 662,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.ctq.ro",
-      "checked_at": "2026-11-20T15:32:37.922856+00:00",
-      "http_status": 418,
-      "response_ms": 688,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 418"
-    },
-    {
-      "url": "https://auth.seddens.net/?rd=https://search.seddens.net",
-      "checked_at": "2026-11-20T15:32:35.650502+00:00",
-      "http_status": 200,
-      "response_ms": 734,
-      "json_search": false,
-      "results_count": 0,
-      "status": "json_disabled_or_blocked",
-      "error": null
-    },
-    {
-      "url": "https://priv.au",
-      "checked_at": "2026-11-20T15:32:36.942691+00:00",
-      "http_status": 429,
-      "response_ms": 786,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.liuzj.net",
-      "checked_at": "2026-11-20T15:32:39.215532+00:00",
-      "http_status": 429,
-      "response_ms": 793,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.mdosch.de",
-      "checked_at": "2026-11-20T15:32:39.483378+00:00",
-      "http_status": 502,
-      "response_ms": 799,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 502"
-    },
-    {
-      "url": "https://grep.vim.wtf",
-      "checked_at": "2026-11-20T15:32:36.018319+00:00",
-      "http_status": 429,
-      "response_ms": 880,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.hbubli.cc",
-      "checked_at": "2026-11-20T15:32:38.504810+00:00",
-      "http_status": 429,
-      "response_ms": 1062,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.ethibox.fr",
-      "checked_at": "2026-11-20T15:32:38.188626+00:00",
-      "http_status": 429,
-      "response_ms": 1127,
-      "json_search": false,
-      "results_count": 0,
-      "status": "http_error",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://search.lumy.live",
-      "checked_at": "2026-11-20T15:32:39.316085+00:00",
+      "url": "https://opnxng.com",
+      "checked_at": "2026-11-21T14:44:20.581522+00:00",
       "http_status": null,
       "response_ms": null,
       "json_search": false,
       "results_count": 0,
-      "status": "timeout",
-      "error": "Timeout após 12s"
+      "status": "connection_error",
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     }
   ],
   "notes": [
