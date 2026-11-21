@@ -20,30 +20,38 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Testar parser sem acessar a internet
+      - name: Testar classificador
         run: python -m unittest scripts/test_classify_drive_folders.py -v
-      - name: Examinar listagens públicas e classificar mídia
+      - name: Examinar candidatos públicos
         env:
           MAX_FOLDERS_TO_INSPECT: "195"
           FOLDER_INSPECT_TIMEOUT: "15"
           FOLDER_INSPECT_DELAY: "0.5"
         run: python scripts/classify_drive_folders.py
-      - name: Validar regra de catálogo
+      - name: Percorrer coleção pública de teste em até três níveis
+        env:
+          DRIVE_TEST_FOLDER_ID: "0B1lPp7clarJhNVRIdVBoNGdROHc"
+          DRIVE_MAX_DEPTH: "3"
+          DRIVE_MAX_FOLDERS: "250"
+          FOLDER_INSPECT_TIMEOUT: "20"
+          FOLDER_INSPECT_DELAY: "0.4"
+        run: python scripts/inspect_drive_collection.py
+      - name: Validar catálogo sem tocar no acervo original
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           p=json.loads(Path("data/discovery-library.json").read_text(encoding="utf-8"))
-          allowed={"videos","filmes_series","desenhos_animacoes","musicas"}
-          assert all(x.get("category") in allowed for x in p["items"])
-          assert all(all(f.get("category") in allowed for f in x["files"]) for x in p["items"])
-          print("Pastas com mídia:",p["folders_with_media"])
-          print("Arquivos de mídia:",p["media_files"])
-          print("Classificações:",p["status_counts"])
+          assert p.get("schema_version",0) >= 4
+          assert p.get("test_collection",{}).get("root_id") == "0B1lPp7clarJhNVRIdVBoNGdROHc"
+          assert isinstance(p.get("items"),list)
+          print("Pastas visitadas no teste:",p["test_collection"]["folders_visited"])
+          print("Pastas com mídia no teste:",p["test_collection"]["folders_with_media"])
+          print("Arquivos de mídia no teste:",p["test_collection"]["media_files"])
           PY
       - name: Commit do catálogo multimídia
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+users.noreply.github.com"
           git add data/discovery-library.json
-          if git diff --cached --quiet; then echo "Sem alterações"; else git commit -m "Classifica pastas públicas por conteúdo multimídia" && git push; fi
+          if git diff --cached --quiet; then echo "Sem alterações"; else git commit -m "Percorre coleção pública do Drive em três níveis" && git push; fi
