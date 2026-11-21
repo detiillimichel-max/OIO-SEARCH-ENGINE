@@ -1,38 +1,30 @@
 #!/usr/bin/env python3
-"""Offline regression tests for the public Drive HTML parser."""
-import importlib.util
-import unittest
+"""Offline tests for OIO Drive collection classification."""
+import importlib.util, unittest
 from pathlib import Path
+SCRIPT=Path(__file__).with_name("classify_drive_folders.py")
+SPEC=importlib.util.spec_from_file_location("classify_drive_folders",SCRIPT)
+MODULE=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(MODULE)
 
-SCRIPT = Path(__file__).with_name("classify_drive_folders.py")
-SPEC = importlib.util.spec_from_file_location("classify_drive_folders", SCRIPT)
-MODULE = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(MODULE)
+class ClassificationTests(unittest.TestCase):
+    def test_folder_and_file_names_together_identify_series(self):
+        files=[{"name":"S01E02.mkv","media_type":"video"}]
+        category,group,reason=MODULE.classify_collection("Séries completas",files)
+        self.assertEqual((category,group),("filmes_series","entertainment"))
+    def test_cartoon_context_identifies_animation(self):
+        files=[{"name":"episodio-01.mp4","media_type":"video"}]
+        category,group,_=MODULE.classify_collection("Desenhos clássicos",files)
+        self.assertEqual((category,group),("desenhos_animacoes","entertainment"))
+    def test_music_audio_is_separated(self):
+        files=[{"name":"faixa-01.mp3","media_type":"audio"}]
+        category,group,_=MODULE.classify_collection("Discografia completa",files)
+        self.assertEqual((category,group),("musicas","entertainment"))
+    def test_unrelated_video_goes_to_misc_not_entertainment(self):
+        files=[{"name":"TDA2003_Test.wmv","media_type":"video"}]
+        category,group,_=MODULE.classify_collection("Pasta do Google Drive",files)
+        self.assertEqual((category,group),("videos_diversos","misc"))
+    def test_documents_are_not_media(self):
+        self.assertEqual(MODULE.file_id_from_url("/file/d/ABC_123/view"),"ABC_123")
+        self.assertNotIn(".pdf",MODULE.VIDEO)
 
-
-class ListingParserTests(unittest.TestCase):
-    def test_nested_div_does_not_close_parent_entry_early(self):
-        html = """
-        <div class="flip-entry" data-id="FILE123" title="Video.mp4">
-          <div class="inner"><span>Video.mp4</span></div>
-          <div><a href="/file/d/FILE123/view">Video.mp4</a></div>
-        </div>
-        """
-        files = MODULE.extract_files(html)
-        self.assertEqual(len(files), 1)
-        self.assertEqual(files[0]["id"], "FILE123")
-        self.assertEqual(files[0]["category"], "videos")
-
-    def test_standard_drive_file_link_is_extracted(self):
-        html = '<a href="https://drive.google.com/file/d/ABC_123/view">Aula.mp3</a>'
-        files = MODULE.extract_files(html)
-        self.assertEqual(files[0]["id"], "ABC_123")
-        self.assertEqual(files[0]["category"], "musicas")
-
-    def test_document_is_recognized_but_not_as_media(self):
-        self.assertEqual(MODULE.classify_name("catalogo.pdf"), "documentos_outros")
-        self.assertEqual(MODULE.classify_name("filme.mkv"), "videos")
-
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__=="__main__":unittest.main()
