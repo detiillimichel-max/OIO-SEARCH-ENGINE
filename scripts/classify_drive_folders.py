@@ -96,6 +96,12 @@ def extract_files(html):
 
 def classify_collection(folder_name, files):
     context=" ".join([folder_name]+[f["name"] for f in files])
+    # Explicit folder context has priority over generic filenames such as
+    # "episodio-01", which can occur in both cartoons and live-action series.
+    folder_scores={k:term_score(folder_name,v) for k,v in TERMS.items()}
+    folder_best=max(folder_scores,key=folder_scores.get) if folder_scores else None
+    if folder_best and folder_scores[folder_best]>0:
+        return folder_best,"entertainment","folder_name_context"
     # Audio files are music by media type; video collections need explicit context.
     if any(f["media_type"]=="audio" for f in files) and term_score(context,TERMS["musicas"]):
         return "musicas","entertainment", "music_context"
