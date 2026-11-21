@@ -228,8 +228,17 @@ function renderDiscoveries() {
     status.className = "discovery-status status-" + item.verification_status;
     status.textContent = discoveryLabels[item.verification_status] || discoveryLabels.unknown;
     heading.append(title, status);
+    if (item.thumbnail) {
+      const poster = document.createElement("img");
+      poster.className = "discovery-thumbnail";
+      poster.loading = "lazy";
+      poster.alt = "";
+      poster.src = item.thumbnail;
+      poster.addEventListener("error", () => poster.remove(), { once: true });
+      card.appendChild(poster);
+    }
     const details = document.createElement("p");
-    details.textContent = (item.kind || "item") + " · " + (item.source || "origem não informada");
+    details.textContent = [item.folder_path || item.folder_title, item.kind || "item", item.source || "coleção pública"].filter(Boolean).join(" · ");
     const evidence = document.createElement("p");
     evidence.className = "discovery-evidence";
     evidence.textContent = item.evidence || "Ainda não há evidência de acesso anônimo.";
