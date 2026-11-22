@@ -1,4 +1,5 @@
 const CATALOG_URL = "../data/catalog.json";
+const DRIVE_GATEWAY_URL = "https://oio-drive-gateway.vercel.app/api/catalog";
 const grid = document.getElementById("media-grid");
 const searchInput = document.getElementById("search-input");
 const statusEl = document.getElementById("catalog-status");
@@ -144,17 +145,54 @@ function render() {
 }
 async function loadCatalog() {
   try {
-    const response=await fetch(CATALOG_URL+"?v="+Date.now(),{cache:"no-store"});
-    if(!response.ok) throw new Error("HTTP "+response.status);
-    const payload=await response.json();
-    const raw=Array.isArray(payload)?payload:(Array.isArray(payload.items)?payload.items:[]);
-    catalog=raw.map((item,index)=>({...item,title:item.title||("Vídeo "+(index+1)),category:item.category||"filmes",url:item.url||item.embed_url||""})).filter(item=>safeUrl(item.url));
-    statusEl.textContent="Catálogo atualizado • "+catalog.length+" vídeos";
+    // Primeiro tenta o catálogo privado do proprietário, publicado pelo gateway.
+    let raw = [];
+    let sourceLabel = "catálogo local";
+    try {
+      const gatewayResponse = await fetch(DRIVE_GATEWAY_URL + "?v=" + Date.now(), { cache: "no-store" });
+      if (gatewayResponse.ok) {
+        const gatewayPayload = await gatewayResponse.json();
+        if (gatewayPayload.ok === true && Array.isArray(gatewayPayload.videos)) {
+          raw = gatewayPayload.videos.map(video => ({
+            title: video.name,
+            url: video.previewUrl,
+            poster: video.thumbnailUrl,
+            category: "filmes",
+            description: "Vídeo público do Google Drive",
+            authorized: true
+          }));
+          sourceLabel = "Google Drive";
+        }
+      }
+    } catch (gatewayError) {
+      console.warn("OIO Drive Gateway indisponível; usando catálogo local.", gatewayError);
+    }
+
+    // Mantém o catálogo que já existia como fallback, sem sobrescrevê-lo.
+    if (!raw.length) {
+      const response = await fetch(CATALOG_URL + "?v=" + Date.now(), { cache: "no-store" });
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      const payload = await response.json();
+      raw = Array.isArray(payload) ? payload : (Array.isArray(payload.items) ? payload.items : []);
+      sourceLabel = "catálogo local";
+    }
+
+    catalog = raw.map((item, index) => ({
+      ...item,
+      title: item.title || ("Vídeo " + (index + 1)),
+      category: item.category || "filmes",
+      url: item.url || item.previewUrl || item.embed_url || ""
+    })).filter(item => safeUrl(item.url));
+    statusEl.textContent = sourceLabel + " • " + catalog.length + " vídeos";
     render();
-  } catch(error) {
-    statusEl.textContent="Falha ao carregar catálogo";
-    grid.innerHTML='<div class="empty-library">Não foi possível carregar ../data/catalog.json. Erro: '+String(error.message||error)+'</div>';
-    console.error("OIO Media catalog:",error);
+  } catch (error) {
+    statusEl.textContent = "Falha ao carregar catálogo";
+    grid.replaceChildren();
+    const message = document.createElement("div");
+    message.className = "empty-library";
+    message.textContent = "Não foi possível carregar o catálogo. " + String(error.message || error);
+    grid.appendChild(message);
+    console.error("OIO Media catalog:", error);
   }
 }
 searchInput.addEventListener("input",()=>{searchTerm=searchInput.value.trim().toLocaleLowerCase("pt-BR");render();});
