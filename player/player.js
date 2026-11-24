@@ -21,6 +21,41 @@ function safeUrl(value) {
   try { const u = new URL(value); return ["https:", "http:"].includes(u.protocol) ? u.href : null; }
   catch { return null; }
 }
+async function fetchGatewayCatalog({ forceRefresh = false } = {}) {
+  const primaryUrl = forceRefresh ? DRIVE_GATEWAY_URL + "?refresh=1" : DRIVE_GATEWAY_URL;
+
+  async function request(url, cacheMode) {
+    const response = await fetch(url, { cache: cacheMode });
+    let payload = null;
+    try { payload = await response.json(); } catch (_) {}
+
+    if (!response.ok) {
+      const detail = payload && payload.error ? " — " + payload.error : "";
+      const error = new Error("Gateway: HTTP " + response.status + detail);
+      error.httpStatus = response.status;
+      throw error;
+    }
+    if (!payload || payload.ok !== true || !Array.isArray(payload.videos)) {
+      const error = new Error((payload && payload.error) || "Resposta do Gateway sem catálogo válido.");
+      error.httpStatus = 502;
+      throw error;
+    }
+    return { payload, cache: response.headers.get("X-Catalog-Cache") || "" };
+  }
+
+  try {
+    return await request(primaryUrl, forceRefresh ? "no-store" : "default");
+  } catch (error) {
+    // Atualização manual e falha de configuração/autorização não devem disparar outra varredura.
+    if (forceRefresh || error.httpStatus === 503 ||
+        (error.httpStatus && error.httpStatus < 500)) throw error;
+
+    // Uma única tentativa sem cache contorna falhas transitórias ou respostas 5xx em cache.
+    // Não usa refresh=1: não solicita uma segunda varredura forçada do Drive.
+    return request(DRIVE_GATEWAY_URL + "?retry=" + Date.now(), "no-store");
+  }
+}
+
 function driveFileId(value) {
   try {
     const u = new URL(value);
@@ -154,12 +189,7 @@ async function loadCatalog({ forceGateway = false } = {}) {
         if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
         return response.json();
       }),
-      fetch(forceGateway ? DRIVE_GATEWAY_URL + "?refresh=1" : DRIVE_GATEWAY_URL, {
-        cache: forceGateway ? "no-store" : "default"
-      }).then(async response => {
-        if (!response.ok) throw new Error("Gateway: HTTP " + response.status);
-        return { payload: await response.json(), cache: response.headers.get("X-Catalog-Cache") || "" };
-      })
+      fetchGatewayCatalog({ forceRefresh: forceGateway })
     ]);
 
     let localItems = [];
