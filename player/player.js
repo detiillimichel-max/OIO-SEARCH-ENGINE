@@ -152,7 +152,7 @@ async function loadCatalog() {
         if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
         return response.json();
       }),
-      fetch(DRIVE_GATEWAY_URL + "?v=" + Date.now(), { cache: "no-store" }).then(async response => {
+      fetch(DRIVE_GATEWAY_URL, { cache: "default" }).then(async response => {
         if (!response.ok) throw new Error("Gateway: HTTP " + response.status);
         return response.json();
       })
