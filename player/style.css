@@ -109,3 +109,11 @@
 .discovery-open{display:inline-block;margin-top:5px;color:var(--accent);font-size:12px;font-weight:700;text-decoration:none}
 .discovery-open:hover{text-decoration:underline}
 @media(max-width:640px){.discovery-grid{grid-template-columns:1fr}.discovery-card-heading{flex-wrap:wrap}.discovery-status{white-space:normal}}
+
+
+/* Botão de atualização manual do catálogo do Google Drive */
+.catalog-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.refresh-drive-btn{border:1px solid #3c7898;border-radius:10px;padding:10px 14px;background:linear-gradient(135deg,#12344a,#1b2850);color:#dff7ff;font:inherit;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px #0003}
+.refresh-drive-btn:hover:not(:disabled){border-color:var(--accent);filter:brightness(1.12)}
+.refresh-drive-btn:disabled{opacity:.6;cursor:wait}
+@media(max-width:600px){.catalog-actions{justify-content:flex-end;gap:8px}.refresh-drive-btn{padding:9px 11px;font-size:11px}}
