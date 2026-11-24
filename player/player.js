@@ -144,46 +144,86 @@ function render() {
   }
 }
 async function loadCatalog() {
+  statusEl.textContent = "Carregando catálogo local e Gateway…";
   try {
-    // Primeiro tenta o catálogo privado do proprietário, publicado pelo gateway.
-    let raw = [];
-    let sourceLabel = "catálogo local";
-    try {
-      const gatewayResponse = await fetch(DRIVE_GATEWAY_URL + "?v=" + Date.now(), { cache: "no-store" });
-      if (gatewayResponse.ok) {
-        const gatewayPayload = await gatewayResponse.json();
-        if (gatewayPayload.ok === true && Array.isArray(gatewayPayload.videos)) {
-          raw = gatewayPayload.videos.map(video => ({
-            title: video.name,
-            url: video.previewUrl,
-            poster: video.thumbnailUrl,
-            category: "filmes",
-            description: "Vídeo público do Google Drive",
-            authorized: true
-          }));
-          sourceLabel = "Google Drive";
-        }
+    // As duas fontes são lidas separadamente. O catálogo local nunca é substituído.
+    const [localResult, gatewayResult] = await Promise.allSettled([
+      fetch(CATALOG_URL + "?v=" + Date.now(), { cache: "no-store" }).then(async response => {
+        if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
+        return response.json();
+      }),
+      fetch(DRIVE_GATEWAY_URL + "?v=" + Date.now(), { cache: "no-store" }).then(async response => {
+        if (!response.ok) throw new Error("Gateway: HTTP " + response.status);
+        return response.json();
+      })
+    ]);
+
+    let localItems = [];
+    let gatewayItems = [];
+    let localError = null;
+    let gatewayError = null;
+
+    if (localResult.status === "fulfilled") {
+      const payload = localResult.value;
+      localItems = Array.isArray(payload) ? payload : (Array.isArray(payload.items) ? payload.items : []);
+    } else {
+      localError = localResult.reason;
+      console.warn("OIO Media: catálogo local indisponível.", localError);
+    }
+
+    if (gatewayResult.status === "fulfilled") {
+      const payload = gatewayResult.value;
+      if (payload && payload.ok === true && Array.isArray(payload.videos)) {
+        // O Gateway só inclui itens cujo acesso anônimo foi confirmado.
+        gatewayItems = payload.videos.map(video => ({
+          id: video.id,
+          title: video.name || "Vídeo sem título",
+          url: video.previewUrl || video.webViewLink || "",
+          poster: video.thumbnailUrl || "",
+          category: "videos",
+          description: "Acesso público confirmado pelo OIO-DRIVE-GATEWAY.",
+          source: "OIO-DRIVE-GATEWAY",
+          access: video.access || "PUBLIC_ACCESS_CONFIRMED",
+          playback_type: "drive_preview"
+        }));
+      } else {
+        gatewayError = new Error("Resposta do Gateway sem catálogo válido.");
       }
-    } catch (gatewayError) {
-      console.warn("OIO Drive Gateway indisponível; usando catálogo local.", gatewayError);
+    } else {
+      gatewayError = gatewayResult.reason;
+      console.warn("OIO Media: Gateway indisponível; mantendo catálogo local.", gatewayError);
     }
 
-    // Mantém o catálogo que já existia como fallback, sem sobrescrevê-lo.
-    if (!raw.length) {
-      const response = await fetch(CATALOG_URL + "?v=" + Date.now(), { cache: "no-store" });
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      const payload = await response.json();
-      raw = Array.isArray(payload) ? payload : (Array.isArray(payload.items) ? payload.items : []);
-      sourceLabel = "catálogo local";
+    if (localError && gatewayError) {
+      throw new Error("Não foi possível carregar nenhuma fonte. " +
+        String(localError.message || localError) + " / " +
+        String(gatewayError.message || gatewayError));
     }
 
-    catalog = raw.map((item, index) => ({
-      ...item,
-      title: item.title || ("Vídeo " + (index + 1)),
-      category: item.category || "filmes",
-      url: item.url || item.previewUrl || item.embed_url || ""
-    })).filter(item => safeUrl(item.url));
-    statusEl.textContent = sourceLabel + " • " + catalog.length + " vídeos";
+    // Mantém primeiro os itens antigos e acrescenta os novos sem duplicar IDs do Drive.
+    const merged = [];
+    const seen = new Set();
+    for (const item of [...localItems, ...gatewayItems]) {
+      const url = item.url || item.previewUrl || item.embed_url || "";
+      const key = String(item.id || driveFileId(url) || url).trim();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      merged.push({
+        ...item,
+        title: item.title || item.name || ("Vídeo " + (merged.length + 1)),
+        category: item.category || "filmes",
+        url
+      });
+    }
+
+    catalog = merged.filter(item => safeUrl(item.url));
+    const gatewayCount = gatewayItems.filter(item => safeUrl(item.url)).length;
+    const localCount = localItems.filter(item => safeUrl(item.url)).length;
+    const sourceLabel = gatewayError
+      ? "Catálogo local • Gateway indisponível"
+      : "Biblioteca integrada";
+    statusEl.textContent = sourceLabel + " • " + catalog.length +
+      " vídeos (" + localCount + " antigos + " + gatewayCount + " do Gateway antes de deduplicar)";
     render();
   } catch (error) {
     statusEl.textContent = "Falha ao carregar catálogo";

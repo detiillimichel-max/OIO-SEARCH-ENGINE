@@ -7,7 +7,7 @@
   <meta name="description" content="Biblioteca de vídeos públicos e autorizados do OIO.">
   <title>OIO Media Player</title>
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./style.css?v=1.1.3.5">
+  <link rel="stylesheet" href="./style.css?v=1.1.3.7">
 </head>
 <body>
 <header class="topbar">
@@ -41,6 +41,7 @@
     <div class="section-heading"><div><p class="eyebrow">CATÁLOGO</p><h2>Biblioteca</h2></div><span class="count" id="result-count">0 títulos</span></div>
     <nav class="filters" aria-label="Filtrar categoria">
       <button class="filter active" data-category="todos">Todos</button>
+      <button class="filter" data-category="videos">Vídeos do Gateway</button>
       <button class="filter" data-category="filmes">Filmes</button>
       <button class="filter" data-category="series">Séries</button>
       <button class="filter" data-category="desenhos">Desenhos</button>
@@ -79,7 +80,7 @@
   </section>
 </main>
 <footer>OIO MEDIA PLAYER <span>•</span> Use somente conteúdo que você tenha autorização para acessar e transmitir.</footer>
-<script src="./player.js?v=1.1.3.5" defer></script>
+<script src="./player.js?v=1.1.3.7" defer></script>
 <script>
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
 </script>
