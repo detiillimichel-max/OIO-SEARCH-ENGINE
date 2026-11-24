@@ -3,6 +3,7 @@ const DRIVE_GATEWAY_URL = "https://oio-drive-gateway.vercel.app/api/catalog";
 const grid = document.getElementById("media-grid");
 const searchInput = document.getElementById("search-input");
 const statusEl = document.getElementById("catalog-status");
+const refreshDriveButton = document.getElementById("refresh-drive-btn");
 const countEl = document.getElementById("result-count");
 const titleEl = document.getElementById("now-title");
 const kindEl = document.getElementById("player-kind");
@@ -143,8 +144,9 @@ function render() {
     grid.appendChild(card);
   }
 }
-async function loadCatalog() {
-  statusEl.textContent = "Carregando catálogo local e Gateway…";
+async function loadCatalog({ forceGateway = false } = {}) {
+  statusEl.textContent = forceGateway ? "Atualizando Google Drive…" : "Carregando catálogo local e Gateway…";
+  if (refreshDriveButton) refreshDriveButton.disabled = true;
   try {
     // As duas fontes são lidas separadamente. O catálogo local nunca é substituído.
     const [localResult, gatewayResult] = await Promise.allSettled([
@@ -152,9 +154,11 @@ async function loadCatalog() {
         if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
         return response.json();
       }),
-      fetch(DRIVE_GATEWAY_URL, { cache: "default" }).then(async response => {
+      fetch(forceGateway ? DRIVE_GATEWAY_URL + "?refresh=1" : DRIVE_GATEWAY_URL, {
+        cache: forceGateway ? "no-store" : "default"
+      }).then(async response => {
         if (!response.ok) throw new Error("Gateway: HTTP " + response.status);
-        return response.json();
+        return { payload: await response.json(), cache: response.headers.get("X-Catalog-Cache") || "" };
       })
     ]);
 
@@ -162,6 +166,7 @@ async function loadCatalog() {
     let gatewayItems = [];
     let localError = null;
     let gatewayError = null;
+    let gatewayCache = "";
 
     if (localResult.status === "fulfilled") {
       const payload = localResult.value;
@@ -172,7 +177,8 @@ async function loadCatalog() {
     }
 
     if (gatewayResult.status === "fulfilled") {
-      const payload = gatewayResult.value;
+      const payload = gatewayResult.value.payload;
+      gatewayCache = gatewayResult.value.cache;
       if (payload && payload.ok === true && Array.isArray(payload.videos)) {
         // O Gateway só inclui itens cujo acesso anônimo foi confirmado.
         gatewayItems = payload.videos.map(video => ({
@@ -222,8 +228,12 @@ async function loadCatalog() {
     const sourceLabel = gatewayError
       ? "Catálogo local • Gateway indisponível"
       : "Biblioteca integrada";
+    const refreshLabel = gatewayCache === "REFRESHED" ? " • Drive atualizado agora"
+      : gatewayCache === "COOLDOWN" ? " • atualização recente; cache preservado"
+      : gatewayCache === "STALE" ? " • última cópia válida preservada"
+      : gatewayCache === "HIT" ? " • cache do Gateway" : "";
     statusEl.textContent = sourceLabel + " • " + catalog.length +
-      " vídeos (" + localCount + " antigos + " + gatewayCount + " do Gateway antes de deduplicar)";
+      " vídeos (" + localCount + " antigos + " + gatewayCount + " do Gateway antes de deduplicar)" + refreshLabel;
     render();
   } catch (error) {
     statusEl.textContent = "Falha ao carregar catálogo";
@@ -233,6 +243,11 @@ async function loadCatalog() {
     message.textContent = "Não foi possível carregar o catálogo. " + String(error.message || error);
     grid.appendChild(message);
     console.error("OIO Media catalog:", error);
+  } finally {
+    if (refreshDriveButton) {
+      refreshDriveButton.disabled = false;
+      refreshDriveButton.textContent = "↻ Atualizar Drive";
+    }
   }
 }
 searchInput.addEventListener("input",()=>{searchTerm=searchInput.value.trim().toLocaleLowerCase("pt-BR");render();});
@@ -245,6 +260,11 @@ document.getElementById("fullscreen-btn").addEventListener("click",()=>{
   const target=frame.querySelector("iframe,video")||frame;
   if(target.requestFullscreen) target.requestFullscreen().catch(()=>{});
   else if(frame.requestFullscreen) frame.requestFullscreen().catch(()=>{});
+});
+if (refreshDriveButton) refreshDriveButton.addEventListener("click", () => {
+  refreshDriveButton.disabled = true;
+  refreshDriveButton.textContent = "Atualizando…";
+  loadCatalog({ forceGateway: true });
 });
 loadCatalog();
 
