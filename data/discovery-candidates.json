@@ -1,10 +1,3359 @@
 {
   "schema_version": 1,
   "project": "OIO-SEARCH-ENGINE",
-  "updated_at": "2026-11-23T07:56:47.179180+00:00",
-  "total_candidates": 378,
-  "new_candidates_this_run": 0,
+  "updated_at": "2026-11-24T10:11:38.350405+00:00",
+  "total_candidates": 575,
+  "new_candidates_this_run": 197,
   "items": [
+    {
+      "id": "0B-PUlafL-A4PWUZWSnEwZzVDZFU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PWUZWSnEwZzVDZFU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542746+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-01-03.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PVUZrSmk1WC1jWms",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PVUZrSmk1WC1jWms/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542733+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "F-01-MP-04-05-03.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PejNpcDF2ZDJQd0k",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PejNpcDF2ZDJQd0k/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542718+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-03-01.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PSk1iTEpHVWJVd00",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PSk1iTEpHVWJVd00/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542701+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-03-04.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PVFJJLTFDTEdzY00",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PVFJJLTFDTEdzY00/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542660+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-03-03.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B9FgjTtNzSy0dTZwZ3p1eGVnTG8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B9FgjTtNzSy0dTZwZ3p1eGVnTG8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:31.542593+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP4-2c.7z - Google Диск",
+      "description": "Войти.",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-7anZTMiSo5UUxBd1VjSmU3QVk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-7anZTMiSo5UUxBd1VjSmU3QVk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910105+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Anexo III. Mercado Distrital do Cruzeiro – Google Диск",
+      "description": "Путь к папке. Plantas e Desenhos Técnicos. Anexo III. Mercado Distrital do Cruzeiro.",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0Zh3rWCBd2DUWszREZQcDVhbEE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0Zh3rWCBd2DUWszREZQcDVhbEE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910094+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Documentação sobre Tradição e Praxe Académicas – Google Диск",
+      "description": "A arte da contestação na Academia de Coimbra nos anos 60( Desenhos, caricaturas e Praxe) Aníbal Frias - in Actas dos ateliers do V Congresso Português de Sociologia.",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0_shVzJ1lzjbXJ2VXR3VjVRRTQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0_shVzJ1lzjbXJ2VXR3VjVRRTQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910083+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Artigos ensino de Geografia – Google Диск",
+      "description": "Contrastes da cidade a partir dos desenhos de crianças de uma escola particular na.pdf. В общем доступе. 24 июл. 2008 г.",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-7anZTMiSo5d3I1YU5FYkJnQlU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-7anZTMiSo5d3I1YU5FYkJnQlU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910071+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Anexo VI. FECOPE - Feira Coberta do Padre Eustáquio – Google Диск",
+      "description": "Путь к папке. Plantas e Desenhos Técnicos. Anexo VI.",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B1-YduoK2TMHT3dtRjJ2TUx6RTg",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1-YduoK2TMHT3dtRjJ2TUx6RTg",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910055+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Ministério Infantil – Google Диск",
+      "description": "Desenhos evangelicos para colorir - Missão Maf.pdf. В общем доступе. 3 февр.",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B1lPp7clarJhNVRIdVBoNGdROHc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1lPp7clarJhNVRIdVBoNGdROHc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:21.910025+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Desenhos – Google Диск",
+      "description": "Desenhos Incríveis - O Show (Cartoon Network) Uploader: Bei Shaolin - Tela de Cinema, compartilhar é legal!",
+      "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0BxGxW32EhVPJcE1aVkZWVzBfS1E",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0BxGxW32EhVPJcE1aVkZWVzBfS1E",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:17.913771+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Tom&Jerry.DVDRip.1940-2005.CF.PradO – Google Диск",
+      "description": "WWW.COMANDO-FILMES.COM.txt. В общем доступе. 8 нояб. 2014 г.",
+      "search_query": "site:drive.google.com/drive/folders \"filmes\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B7FWlRY0OeVNOGFHWE5YNHBrcGs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B7FWlRY0OeVNOGFHWE5YNHBrcGs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:17.913759+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Dragon Ball Z Filmes – Google Диск",
+      "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
+      "search_query": "site:drive.google.com/drive/folders \"filmes\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B3xMR6DFdt6aRnlMZnVBaFdKTFU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B3xMR6DFdt6aRnlMZnVBaFdKTFU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:17.913747+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Modelos de relatórios e resenhas - visitas técnicas...",
+      "description": "Sugestões de filmes para resenha.pdf. В общем доступе. 31 авг. 2017 г.",
+      "search_query": "site:drive.google.com/drive/folders \"filmes\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0BxYfydc53aj7LVdGemlTN2MxZmc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0BxYfydc53aj7LVdGemlTN2MxZmc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:17.913718+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Filmes – Google Диск",
+      "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
+      "search_query": "site:drive.google.com/drive/folders \"filmes\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B96h1qEB1rNyUDVGRk9zLWFncnM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B96h1qEB1rNyUDVGRk9zLWFncnM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:17.913688+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Dragon Ball Z - Filmes – Google Диск",
+      "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
+      "search_query": "site:drive.google.com/drive/folders \"filmes\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-6-QhUVuCTZZGQ0RnEwaEVNeGs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-6-QhUVuCTZZGQ0RnEwaEVNeGs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608737+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "VIDEO YOUTUBE BRIAN BACH DUONG – Google Диск",
+      "description": "[04]_MP3 video 04[đoản khúc lam giang].",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B4L8Uvfmr2uWUS1lZFYzcnpXQ3c",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B4L8Uvfmr2uWUS1lZFYzcnpXQ3c",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608725+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Video Stuff – Google Диск",
+      "description": "affordable video production glasgow. В общем доступе. 13 апр. 2017 г.Video Production Leicester - httpyoutu.beDPN2X1qyPa4.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-3LkZzk7RP-UlVhQ2VHNml4aEE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-3LkZzk7RP-UlVhQ2VHNml4aEE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608713+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Corporate Video Production & Video Marketing – Google Диск",
+      "description": "Video Marketing Videos. 10 авг. 2017 г. — Download. Corporate Video Production Atlanta. В общем доступе.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-3LkZzk7RP-akdBQU1fVGQwRmc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-3LkZzk7RP-akdBQU1fVGQwRmc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608699+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Video Marketing Photos – Google Диск",
+      "description": "local business video marketing.jpg. В общем доступе.Video Production Atlanta Georgia.jpg. В общем доступе.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B6gUL5NQ6U-WSXRMbmlyMTFFSWM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B6gUL5NQ6U-WSXRMbmlyMTFFSWM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608680+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Seriously Sensual – Google Диск",
+      "description": "SeriouslySensual - Control Body Shapewear Brand Video.SeriouslySensual - Provocative Lingerie Brand Video. В общем доступе. 12 июл. 2017 г.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0PZBRAmHTpGZjM0MTliMjEtNDFlYi00ZTkwLTgxMTItZGRkNTBlZWEzNzRl",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0PZBRAmHTpGZjM0MTliMjEtNDFlYi00ZTkwLTgxMTItZGRkNTBlZWEzNzRl",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:11:13.608614+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Videos - Google Drive",
+      "description": "Videos from Kiwanis International available for download as Quicktime format (.mov)...",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-mYRcNSHzqwRkhTdWtBQ1VWVW8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-mYRcNSHzqwRkhTdWtBQ1VWVW8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232552+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107001020",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-mUa9q1hNyXLWVjZkVmaUFDSFk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-mUa9q1hNyXLWVjZkVmaUFDSFk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232540+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115105651",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-mSEQQwvQvEdGJIaTljWmtkV2s",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-mSEQQwvQvEdGJIaTljWmtkV2s/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232528+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118124309",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-MLnLnHxC_KdUdKdTgyTVd6S00",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-MLnLnHxC_KdUdKdTgyTVd6S00/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232515+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118064710",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-Lwm2urAY6YUVJubjlDYVNDNFhSeGg1c3JiYjRkZjhzbzhF",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-Lwm2urAY6YUVJubjlDYVNDNFhSeGg1c3JiYjRkZjhzbzhF/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232489+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115050405",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-Lv-k2hxgPkRzhKa3VsRl95NzA",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-Lv-k2hxgPkRzhKa3VsRl95NzA/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232463+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107084735",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-LPH_LV4mc9OVNEa2VVN1dGajQ",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-LPH_LV4mc9OVNEa2VVN1dGajQ/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232431+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110103214",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-kEpv2gVy2peTNmXzNraTBhRHc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-kEpv2gVy2peTNmXzNraTBhRHc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232403+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116140916",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-K5DhxXxJZbOUFWejJVSTFyN3c",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-K5DhxXxJZbOUFWejJVSTFyN3c/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232378+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108002332",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-K5DhxXxJZbM0tZMEVmNjg1SHM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-K5DhxXxJZbM0tZMEVmNjg1SHM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232366+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113084601",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-K5DhxXxJZbLWkyTENTTmZ4ZEU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-K5DhxXxJZbLWkyTENTTmZ4ZEU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232353+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261119011043",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-jRlDbepy8vYTRiODQ1ZWYtMjdhNC00NTFkLThjMTctNzA1ZmQ0MGFiMmM5",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-jRlDbepy8vYTRiODQ1ZWYtMjdhNC00NTFkLThjMTctNzA1ZmQ0MGFiMmM5/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232340+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112060102",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-iOqOKLc35PcnV1UzlncEl6V3M",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-iOqOKLc35PcnV1UzlncEl6V3M/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232327+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109162231",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-iOqOKLc35Pb1VOVmZZNG9pY3M",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-iOqOKLc35Pb1VOVmZZNG9pY3M/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232310+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113213137",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-I1EmXgEE-zcDNCN0o2M3VMUk0",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-I1EmXgEE-zcDNCN0o2M3VMUk0/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232297+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110042034",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-hTIM3aG_oJWnpxdGtXV2Z2YlE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-hTIM3aG_oJWnpxdGtXV2Z2YlE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232272+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115002805",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-H_IMs8REVgR2VxR2Nnc2hReFU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-H_IMs8REVgR2VxR2Nnc2hReFU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232246+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116014733",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-h0fRZSZjY9RklFLVJnMWpzT00",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-h0fRZSZjY9RklFLVJnMWpzT00/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232230+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109003939",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-gXf2p6Nd74NjZCbzh1ODNFemM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-gXf2p6Nd74NjZCbzh1ODNFemM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232204+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115004655",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-gXf2p6Nd74bWM0ZWVOOXVOLVE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-gXf2p6Nd74bWM0ZWVOOXVOLVE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232190+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115202946",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-FypYBMA-CNTGg1MDVCMjF3SnM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-FypYBMA-CNTGg1MDVCMjF3SnM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232135+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117135056",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-FTjUJQ0Tl7YlZ5bU4wc3UtMlU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-FTjUJQ0Tl7YlZ5bU4wc3UtMlU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232122+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113190651",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-EwSafm0XzVUk9rUDlPQURhSXM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-EwSafm0XzVUk9rUDlPQURhSXM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232097+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113190612",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-eVWCRzzdzNbDJrM2hzX2FIbVE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-eVWCRzzdzNbDJrM2hzX2FIbVE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232085+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116110829",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-ePgl6HF260MmJieS1iaWZVdlE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-ePgl6HF260MmJieS1iaWZVdlE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232070+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110035734",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-EmmnySqPiBZC1fQzFQRDRRRG8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-EmmnySqPiBZC1fQzFQRDRRRG8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232057+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118213922",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-EFMcdqTXX5X3Q0NWVFVFV2ZGNEb1RBQTRBZ1A4Q2J2WTJr",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-EFMcdqTXX5X3Q0NWVFVFV2ZGNEb1RBQTRBZ1A4Q2J2WTJr/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232041+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109041349",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-dx-F9vFRL7MnFGSFlqT1Z6SEk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-dx-F9vFRL7MnFGSFlqT1Z6SEk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232027+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117230738",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-Dd6Nh5I1eYdzhKcHhuTGdtTlE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-Dd6Nh5I1eYdzhKcHhuTGdtTlE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232015+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261119012913",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-dcuxj5uC6leUQ2T2E5cjZGMnlaSXpOYy05ZDg5SHFENWow",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-dcuxj5uC6leUQ2T2E5cjZGMnlaSXpOYy05ZDg5SHFENWow/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.232002+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114223152",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-d7s1-SStuFYTdoNVRoR2JWa28",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-d7s1-SStuFYTdoNVRoR2JWa28/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231989+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112204400",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-cFBMmRjmn1dFp3ZGlLcUpSaUE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-cFBMmRjmn1dFp3ZGlLcUpSaUE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231964+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109011354",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-byhVbRcuWnSS1XeXRaRXBzNWs",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-byhVbRcuWnSS1XeXRaRXBzNWs/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231951+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113154733",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-BakBtoHwF8NXVIaW9hWDYxZ3c",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-BakBtoHwF8NXVIaW9hWDYxZ3c/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231936+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114053240",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aGHs-YJiTgZWJ2V3dLSGhtb28",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aGHs-YJiTgZWJ2V3dLSGhtb28/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231923+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113215446",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DZzY4OVg1emNnLWc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DZzY4OVg1emNnLWc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231908+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115232915",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DYlJyYTNOa09vbVk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DYlJyYTNOa09vbVk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231894+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115231247",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DWTF1cGc0SFNkeWc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DWTF1cGc0SFNkeWc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231882+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115225641",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DWGdST25SN01IcXc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DWGdST25SN01IcXc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231870+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115233711",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DUDVEN2s1VjRoakE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DUDVEN2s1VjRoakE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231858+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115225102",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DS0g4TUpLNHpKZmc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DS0g4TUpLNHpKZmc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231846+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115224111",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DOWJVTTZ1ZnpUY0E",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DOWJVTTZ1ZnpUY0E/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231833+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115230842",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DOGxPWnNxV0s4ZFk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DOGxPWnNxV0s4ZFk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231821+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115230043",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DOFVuckx0MjJ6UUE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DOFVuckx0MjJ6UUE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231809+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115232448",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DNXdDZGh1SkhOTGc",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DNXdDZGh1SkhOTGc/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231797+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115225343",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DNVdmbGtBX2NXcUU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DNVdmbGtBX2NXcUU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231782+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115140052",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DN1d6RjltS1N3Skk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DN1d6RjltS1N3Skk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231770+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115225426",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DeVB6TFZpZ1JLdm8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DeVB6TFZpZ1JLdm8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231757+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115213340",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DdWFrTmdELTV1QUE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DdWFrTmdELTV1QUE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231740+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115223050",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DdkFLQjZoaEk2d0E",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DdkFLQjZoaEk2d0E/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231728+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115225149",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DdjRaWXE3UUt3Z3c",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DdjRaWXE3UUt3Z3c/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231715+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115212921",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DcVFJVnJMcC1DTkE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DcVFJVnJMcC1DTkE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231701+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115222239",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-aeOrr-eC1DcUpqZVdUUU9aWEk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-aeOrr-eC1DcUpqZVdUUU9aWEk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231686+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115213247",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-_xmtDtgC71aVltWl9zeUdHX0pIZ3dHZ2VjRTdON3ExZ0pr",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-_xmtDtgC71aVltWl9zeUdHX0pIZ3dHZ2VjRTdON3ExZ0pr/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231661+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116021918",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-_M5WBl-maMaDIybUdPanNBLTA",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-_M5WBl-maMaDIybUdPanNBLTA/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231611+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107144607",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-77TmKmw7MyYUVoMzU5Q09mc1E",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-77TmKmw7MyYUVoMzU5Q09mc1E/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231576+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107090358",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-6NJRcyYbyTYWhEZXhCbGhTQ28",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-6NJRcyYbyTYWhEZXhCbGhTQ28/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231541+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109052838",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-6NJRcyYbyTSjljVG41bVM3aE0",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-6NJRcyYbyTSjljVG41bVM3aE0/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231484+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118052511",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-579B5eCQ29Vlo1ZEJKTkRMLW8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-579B5eCQ29Vlo1ZEJKTkRMLW8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231373+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108181147",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-579B5eCQ29QTMtTXNPdWptSTA",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-579B5eCQ29QTMtTXNPdWptSTA/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231357+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107181854",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-579B5eCQ29LTBlZDlUTUxhRjA",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-579B5eCQ29LTBlZDlUTUxhRjA/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231342+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115164141",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-579B5eCQ29dzRfNzVUdkVFRFU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-579B5eCQ29dzRfNzVUdkVFRFU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231326+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106210635",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-3vInVhHerbUXJXZzNacDV3cDA",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-3vInVhHerbUXJXZzNacDV3cDA/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231310+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116102223",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-3vInVhHerbdmM3ZlMtQ2NPMGM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-3vInVhHerbdmM3ZlMtQ2NPMGM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231294+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108215937",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-2X16i6MlhyMWtNdTRtaDdYaTQ",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-2X16i6MlhyMWtNdTRtaDdYaTQ/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231275+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107001232",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-27Q6jc7HWRMEZveXBHQTVYY2M",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-27Q6jc7HWRMEZveXBHQTVYY2M/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231258+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114095703",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-27Q6jc7HWReUduQjVLV0RtZ00",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-27Q6jc7HWReUduQjVLV0RtZ00/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231237+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111020030",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjSHZmZFFWWmw1SUU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjSHZmZFFWWmw1SUU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231218+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111020441",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjRlJIVk0tdW5kZG8",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjRlJIVk0tdW5kZG8/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231197+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108185204",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-Xjd0dGR2UzV3p5TUE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-Xjd0dGR2UzV3p5TUE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231165+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108210515",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjbzZWRzF0T3dIZ0k",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjbzZWRzF0T3dIZ0k/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231132+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112054311",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjbXFOYXdQZUp1WHM",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjbXFOYXdQZUp1WHM/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231115+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117174957",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjbVJZUi1PWmhlcDg",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjbVJZUi1PWmhlcDg/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231099+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108062059",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B-1dtPovo-XjaGJyYTZ1NldLWjg",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-1dtPovo-XjaGJyYTZ1NldLWjg/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231080+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110223948",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B---mrJ273BoY1MtYVRNU0JLNUE",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B---mrJ273BoY1MtYVRNU0JLNUE/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:26.231012+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115122303",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:files"
+      ]
+    },
+    {
+      "id": "0B36DyzgVMTr7dGZOSXJfWVBVdW8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B36DyzgVMTr7dGZOSXJfWVBVdW8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551946+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261119064559",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B33DAPNL2lmDSGJZUGZrdXcxOVU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B33DAPNL2lmDSGJZUGZrdXcxOVU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551933+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117030158",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B32no4FvkR__amFYS0RlSUU5b00",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B32no4FvkR__amFYS0RlSUU5b00",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551921+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110194446",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2ydeHg5_DmBWGd3MEZ4UlEtQm8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2ydeHg5_DmBWGd3MEZ4UlEtQm8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551909+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111015136",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2Y9jElkMzQgczZDckFXNEdiMEk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2Y9jElkMzQgczZDckFXNEdiMEk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551897+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115202320",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2xguGYB5Sz_RTU1VWVibmdsNWc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2xguGYB5Sz_RTU1VWVibmdsNWc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551883+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117152510",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2sl2CoKwNfLejBJZWRmQUZPQm8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2sl2CoKwNfLejBJZWRmQUZPQm8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551871+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108215446",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2QKOnc09LYbTHRLVTdIMkV5SHM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2QKOnc09LYbTHRLVTdIMkV5SHM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551859+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113123946",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2QFgLBvwDCBVTNNWi1wcU43eGM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2QFgLBvwDCBVTNNWi1wcU43eGM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551845+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118214421",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2QFgLBvwDCBUjF5TW4zRDgtQlk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2QFgLBvwDCBUjF5TW4zRDgtQlk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551830+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111142508",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2nAsxi6C4KvSEhZU2UtZWc0V00",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2nAsxi6C4KvSEhZU2UtZWc0V00",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551815+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112030423",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2JX8yK6_gciUVJ6bjI5SmRQaVk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2JX8yK6_gciUVJ6bjI5SmRQaVk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551803+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111143042",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2jG93S20B_5U3gxVUhRQVE1VGs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2jG93S20B_5U3gxVUhRQVE1VGs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551789+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109184307",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2HX_yqdFopfQ0NSYlktSW5jLVU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2HX_yqdFopfQ0NSYlktSW5jLVU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551777+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108121149",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2h1wH2dGVytQkItazExUG1pOUk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2h1wH2dGVytQkItazExUG1pOUk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551765+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118195316",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2gzNUv_HeTbNXYyUlNSQl9hNVE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2gzNUv_HeTbNXYyUlNSQl9hNVE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551753+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118184827",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2F6qoBKlJMmRUJuSjVfY3dLRVU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2F6qoBKlJMmRUJuSjVfY3dLRVU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551741+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118155836",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2EfPi0Un7R2LW1zWFlKQk1sUjA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2EfPi0Un7R2LW1zWFlKQk1sUjA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551728+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111111008",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2EfIpcpvdxwWEVqRnJMbGJxWkk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2EfIpcpvdxwWEVqRnJMbGJxWkk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551712+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115050130",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2EfIpcpvdxwUktuajNOQUlYRXc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2EfIpcpvdxwUktuajNOQUlYRXc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551701+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115041156",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2Ecd698peQ7bDkzaTZIQV94dk0",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2Ecd698peQ7bDkzaTZIQV94dk0",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551688+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117091915",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2E-ge66igPcaE0yYm8zWXZROEE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2E-ge66igPcaE0yYm8zWXZROEE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551676+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111200734",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2dxGokQ_XOYakpFcUJQUmVUQm8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2dxGokQ_XOYakpFcUJQUmVUQm8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551663+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108214039",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B2Do13v3GW0tNXh1ai12cXV3eWc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B2Do13v3GW0tNXh1ai12cXV3eWc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551648+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106232620",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B22c07veOhKQdjFnVzRWSDdlaEU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B22c07veOhKQdjFnVzRWSDdlaEU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551616+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107174726",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B20KhCqnVVKlYzY1STNJTzRnN0E",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B20KhCqnVVKlYzY1STNJTzRnN0E",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551603+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109075254",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B20KhCqnVVKlfkwxbFVINDE5VHY3Zjg3LWRsOUJFTENDUExGY3VsOFQ2TXZXMEZVSzFjdW8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B20KhCqnVVKlfkwxbFVINDE5VHY3Zjg3LWRsOUJFTENDUExGY3VsOFQ2TXZXMEZVSzFjdW8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551591+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109091840",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1XXGsB4J5lENTBCTFVJYy04RGs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1XXGsB4J5lENTBCTFVJYy04RGs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551577+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116082247",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1WxnPJLFTVXSEUxeHZxRjBscWs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1WxnPJLFTVXSEUxeHZxRjBscWs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551562+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115103705",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1wQ6T5I3eBVaHp5a2xYYUxWXzA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1wQ6T5I3eBVaHp5a2xYYUxWXzA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551550+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108090856",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1sRxasE_Ka5UmRVMk5iX0E1S0E",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1sRxasE_Ka5UmRVMk5iX0E1S0E",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551537+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113062634",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTNko3TDVKQUxyU2s",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTNko3TDVKQUxyU2s",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551525+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110171029",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTNkhReHdSR0djYkk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTNkhReHdSR0djYkk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551514+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112180609",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTem55UVBkV3pIQm8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTem55UVBkV3pIQm8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551502+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114042512",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTdDIwcW1zek1NZk0",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTdDIwcW1zek1NZk0",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551491+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110200117",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTd0NoNVdYRC1LdHc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTd0NoNVdYRC1LdHc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551478+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110134419",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1q92VjW23dTck1jWHJJcWlEbjQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1q92VjW23dTck1jWHJJcWlEbjQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551466+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116114231",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1ph_AD9Bf8wSGNYM2FwNTJpU1k",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1ph_AD9Bf8wSGNYM2FwNTJpU1k",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551454+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110162119",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1OvVNdD7C1cUkZ0Q3hldTYzd0U",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1OvVNdD7C1cUkZ0Q3hldTYzd0U",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551435+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108151613",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1dmBAGdbX6vV184aVBGNFY3Zlk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1dmBAGdbX6vV184aVBGNFY3Zlk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551423+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108031040",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1ctg1sR6-Soc0xsWDdTZEQ3ZWM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1ctg1sR6-Soc0xsWDdTZEQ3ZWM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551411+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106222159",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1B4DwrgRK9mQVJHeV9BcTZvVzQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1B4DwrgRK9mQVJHeV9BcTZvVzQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551398+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118100728",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B1_5V2qGf9AMXzFWQTdOMjNaQzA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B1_5V2qGf9AMXzFWQTdOMjNaQzA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551385+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107053148",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B16TlJhWRHrSfjlFRVJqbmVkRDA5T2Z3TmFCN0JyeV9PWTk0UGVkN2QxYUlEYkNrWVBPcHc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B16TlJhWRHrSfjlFRVJqbmVkRDA5T2Z3TmFCN0JyeV9PWTk0UGVkN2QxYUlEYkNrWVBPcHc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551369+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115134054",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B15DypnGqB_2cUFnLWcxWWNXY1k",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B15DypnGqB_2cUFnLWcxWWNXY1k",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551356+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108074920",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0ZqgAcYvOAAUTloSGhHTmFMbkk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0ZqgAcYvOAAUTloSGhHTmFMbkk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551344+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106231843",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0ZqgAcYvOAAdzBXWC1QNkNlblE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0ZqgAcYvOAAdzBXWC1QNkNlblE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551332+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108183643",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0yCzPHsn7kud1dCOWZFQWY4ZDA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0yCzPHsn7kud1dCOWZFQWY4ZDA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551320+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107151945",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0y-F28heKVPSlZDVlF2SjZNOFk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0y-F28heKVPSlZDVlF2SjZNOFk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551305+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113205552",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0V94lYcdtOBMmRrcjNFWUROMkk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0V94lYcdtOBMmRrcjNFWUROMkk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551292+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115223156",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0rysyvEp_i5ZXlydWZWWl9CTkU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0rysyvEp_i5ZXlydWZWWl9CTkU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551279+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107080612",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0QUj3nBNh7gQlFPbW14QlVTMzA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0QUj3nBNh7gQlFPbW14QlVTMzA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551267+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112173506",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0qcAXuFNVs_OFZNRGdOX05LTHc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0qcAXuFNVs_OFZNRGdOX05LTHc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551252+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112201356",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0pkPwK6z700TnYycVltOEtEbUk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0pkPwK6z700TnYycVltOEtEbUk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551239+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114051610",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0PhoHrxGyP-ZW00YmF2N0FibXc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0PhoHrxGyP-ZW00YmF2N0FibXc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551225+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111141528",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0PhoHrxGyP-M1JsSXRXY3VDYmc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0PhoHrxGyP-M1JsSXRXY3VDYmc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551213+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107151741",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0PhoHrxGyP-b083Um5uaG9rdlU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0PhoHrxGyP-b083Um5uaG9rdlU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551200+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106174905",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0NUgr1F0wWJekZaNkVFZW5QNFU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0NUgr1F0wWJekZaNkVFZW5QNFU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551187+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111202302",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0lvjUfpsN6FfnZPNkhuZDAtQjJIR1JCT1M0RmI4SmdnZ3oxS2lmcXRWMzRrYm9jWUFadzg",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0lvjUfpsN6FfnZPNkhuZDAtQjJIR1JCT1M0RmI4SmdnZ3oxS2lmcXRWMzRrYm9jWUFadzg",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551171+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107120735",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0LLs9D-cuhzflhQSUdHS3BuSThQUzktMHpITHp3STYtZ2xBeExBWXBNMGNWZmkyWDdXYmc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0LLs9D-cuhzflhQSUdHS3BuSThQUzktMHpITHp3STYtZ2xBeExBWXBNMGNWZmkyWDdXYmc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551158+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109032232",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0l_EyMiyknBTnVyU3BMVXZwdXM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0l_EyMiyknBTnVyU3BMVXZwdXM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551145+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114161630",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0kP501glAoJZi16RmJYSHBZcms",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0kP501glAoJZi16RmJYSHBZcms",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551133+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118191157",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0JpuRNmKu72WnRKUEhNZ2swdEE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0JpuRNmKu72WnRKUEhNZ2swdEE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551121+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109222345",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0F7sjwiBOq9UVl5Vk1JVmFiek0",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9UVl5Vk1JVmFiek0",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551107+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108094658",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0F7sjwiBOq9NkJvQWRpOXRwaGc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9NkJvQWRpOXRwaGc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551095+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109010849",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0F7sjwiBOq9M1hhdm9GOVpuNEE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9M1hhdm9GOVpuNEE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551081+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108061352",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0F7sjwiBOq9eWc2SERkUlJFSjQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9eWc2SERkUlJFSjQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551069+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116052836",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0F7sjwiBOq9aFEtamZhU0dEMDg",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0F7sjwiBOq9aFEtamZhU0dEMDg",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551056+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113060942",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0erYQEtPPx4ZUlSSEpxTjEtVnc",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0erYQEtPPx4ZUlSSEpxTjEtVnc",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551037+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110095202",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0dMf40rFdPDLWc1QXFRM1pkLUE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0dMf40rFdPDLWc1QXFRM1pkLUE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551025+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109193507",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0CJ7YbXfVStd1ZtcGlLQnlhbW8",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0CJ7YbXfVStd1ZtcGlLQnlhbW8",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.551012+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106232209",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0Ch9zfiDiW5MkJnNkwzY1FISFk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0Ch9zfiDiW5MkJnNkwzY1FISFk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550999+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111093519",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0B-E3nJe3a6ckhuV2F5U1M1ekE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0B-E3nJe3a6ckhuV2F5U1M1ekE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550986+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108173858",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B0AE5thxEd7CbEgyRk9sYU8zams",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0AE5thxEd7CbEgyRk9sYU8zams",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550971+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115103506",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B09gfzYoE74YeUpVdlVscy03VzA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B09gfzYoE74YeUpVdlVscy03VzA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550959+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261115151709",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B062SEIc2ES3Y1V4RmdyMXVUYTQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B062SEIc2ES3Y1V4RmdyMXVUYTQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550946+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113090906",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-ZOYD4SsDUFRWtRTnVsNVFRR0E",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-ZOYD4SsDUFRWtRTnVsNVFRR0E",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550934+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113003159",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-Wsg8_-7UqWVnpOTlJLdTBFbWM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-Wsg8_-7UqWVnpOTlJLdTBFbWM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550921+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110230355",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-ugq7ag9irLQ2VqR3VIa0JSdjA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-ugq7ag9irLQ2VqR3VIa0JSdjA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550909+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261119065814",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-TXWy9uLFrVa2RfMlU4cGE4ZnM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-TXWy9uLFrVa2RfMlU4cGE4ZnM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550897+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113173638",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-QvInnGQ48UUldXVVhRQWgzc1U",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-QvInnGQ48UUldXVVhRQWgzc1U",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550885+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261117061957",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-Qcj1wYkYXSbUhuQlZQUV84Z00",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-Qcj1wYkYXSbUhuQlZQUV84Z00",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550873+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261112113118",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-PzjnXAvvq3NW9yazJoeWVzNms",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-PzjnXAvvq3NW9yazJoeWVzNms",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550861+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261118100320",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-pCx7FthA25ODlhc0lwdzc0a00",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-pCx7FthA25ODlhc0lwdzc0a00",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550848+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261111232131",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-MLnLnHxC_KWG9PQU5JMFBjbzg",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-MLnLnHxC_KWG9PQU5JMFBjbzg",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550835+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109033305",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-MLnLnHxC_KR2h6TVFsUTRxQkk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-MLnLnHxC_KR2h6TVFsUTRxQkk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550822+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114081915",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-KMSjCXfDwsWUhCWE1zdFBybFk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-KMSjCXfDwsWUhCWE1zdFBybFk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550801+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109192918",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-KMSjCXfDwsaUZUWF93R3pOZGs",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-KMSjCXfDwsaUZUWF93R3pOZGs",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550783+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261116094821",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-JqccYoAGK9fmt0VUwwaXpuMmdCMDJfR3FCdjZuTnUzWFR1RWVqMndlV3MyUWxXbVA3LTg",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-JqccYoAGK9fmt0VUwwaXpuMmdCMDJfR3FCdjZuTnUzWFR1RWVqMndlV3MyUWxXbVA3LTg",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550769+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261114004328",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-G6CS71CCXoWWNfSUo3LWt4bEk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-G6CS71CCXoWWNfSUo3LWt4bEk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550756+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107024551",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-eIp__V7TFDZUNVNk1BUl9EU28",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-eIp__V7TFDZUNVNk1BUl9EU28",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550743+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261110225406",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-cr8Gnhvjf0RTVUdGUtRUhFRXM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-cr8Gnhvjf0RTVUdGUtRUhFRXM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550729+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109034950",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-bx7Nn81AQ3TEhTdjJlZ1dVOEk",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-bx7Nn81AQ3TEhTdjJlZ1dVOEk",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550715+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261106232629",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-BsLZUMHrDQWG5SUXNTd3RTUjA",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-BsLZUMHrDQWG5SUXNTd3RTUjA",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550700+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261109220116",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-aGHs-YJiTgfmtTYWI1MTJyQjcwYTVYellyX1RlTUJyRGEycDg2UGJYLTR4TFhzQ2lUWUE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-aGHs-YJiTgfmtTYWI1MTJyQjcwYTVYellyX1RlTUJyRGEycDg2UGJYLTR4TFhzQ2lUWUE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550682+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261113214526",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-9S1Y1t4sLoalBBdjR2am9xSE0",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-9S1Y1t4sLoalBBdjR2am9xSE0",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550656+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261108074106",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-614PucubcBaHpoQVBIWUVNR0k",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-614PucubcBaHpoQVBIWUVNR0k",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550610+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107140710",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B-0PJvskGtCFc19QWVNQb19HVjQ",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B-0PJvskGtCFc19QWVNQb19HVjQ",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550589+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261107061809",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
+    {
+      "id": "0B--V0x8WWuCaXzd3a3B4SFVBT2M",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B--V0x8WWuCaXzd3a3B4SFVBT2M",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-24T10:10:09.550543+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "index": "CC-MAIN-2026-47",
+      "capture_timestamp": "20261119031319",
+      "mime": "text/html",
+      "discovery_methods": [
+        "commoncrawl:folders"
+      ]
+    },
     {
       "id": "0B-QipzL5tNsydVZ0RWNxaEt4dk0",
       "kind": "file",
@@ -529,6 +3878,7 @@
       "capture_timestamp": "20260907065925",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -801,6 +4151,7 @@
       "capture_timestamp": "20260911115537",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -1464,6 +4815,7 @@
       "capture_timestamp": "20261006013704",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1481,6 +4833,7 @@
       "capture_timestamp": "20261016095247",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1498,6 +4851,7 @@
       "capture_timestamp": "20261005161116",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1515,6 +4869,7 @@
       "capture_timestamp": "20261008094554",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1532,6 +4887,7 @@
       "capture_timestamp": "20261017160752",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1549,6 +4905,7 @@
       "capture_timestamp": "20261013064306",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1566,6 +4923,7 @@
       "capture_timestamp": "20261006025941",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1583,6 +4941,7 @@
       "capture_timestamp": "20261017010849",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1600,6 +4959,7 @@
       "capture_timestamp": "20261012165404",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1617,6 +4977,7 @@
       "capture_timestamp": "20261016174654",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1634,6 +4995,7 @@
       "capture_timestamp": "20261008082748",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1651,6 +5013,7 @@
       "capture_timestamp": "20261010151716",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1668,6 +5031,7 @@
       "capture_timestamp": "20261012120728",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1685,6 +5049,7 @@
       "capture_timestamp": "20261017044418",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1702,6 +5067,7 @@
       "capture_timestamp": "20261007080600",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1719,6 +5085,7 @@
       "capture_timestamp": "20261012194826",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1736,6 +5103,7 @@
       "capture_timestamp": "20261015102228",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1753,6 +5121,7 @@
       "capture_timestamp": "20261007081631",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1770,6 +5139,7 @@
       "capture_timestamp": "20261015133812",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1787,6 +5157,7 @@
       "capture_timestamp": "20261006011232",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1804,6 +5175,7 @@
       "capture_timestamp": "20261009211054",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1821,6 +5193,7 @@
       "capture_timestamp": "20261013201324",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1838,6 +5211,7 @@
       "capture_timestamp": "20261018051343",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1855,6 +5229,7 @@
       "capture_timestamp": "20261011041157",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1872,6 +5247,7 @@
       "capture_timestamp": "20261006131818",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1889,6 +5265,7 @@
       "capture_timestamp": "20261014182142",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1906,6 +5283,7 @@
       "capture_timestamp": "20261013190047",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1923,6 +5301,7 @@
       "capture_timestamp": "20261009025948",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1940,6 +5319,7 @@
       "capture_timestamp": "20261015114501",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1957,6 +5337,7 @@
       "capture_timestamp": "20261008233808",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1974,6 +5355,7 @@
       "capture_timestamp": "20261017164508",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1991,6 +5373,7 @@
       "capture_timestamp": "20261010090922",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2008,6 +5391,7 @@
       "capture_timestamp": "20261013111351",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2025,6 +5409,7 @@
       "capture_timestamp": "20261013112009",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2042,6 +5427,7 @@
       "capture_timestamp": "20261013110446",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2059,6 +5445,7 @@
       "capture_timestamp": "20261013105512",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2076,6 +5463,7 @@
       "capture_timestamp": "20261011053002",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2093,6 +5481,7 @@
       "capture_timestamp": "20261012043123",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2110,6 +5499,7 @@
       "capture_timestamp": "20261006210750",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2127,6 +5517,7 @@
       "capture_timestamp": "20261008005517",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2144,6 +5535,7 @@
       "capture_timestamp": "20261010033423",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2161,6 +5553,7 @@
       "capture_timestamp": "20261005163028",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2178,6 +5571,7 @@
       "capture_timestamp": "20261012225233",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2195,6 +5589,7 @@
       "capture_timestamp": "20261007022000",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2212,6 +5607,7 @@
       "capture_timestamp": "20261016035708",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2229,6 +5625,7 @@
       "capture_timestamp": "20261006195550",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2246,6 +5643,7 @@
       "capture_timestamp": "20261018012252",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2263,6 +5661,7 @@
       "capture_timestamp": "20261013035559",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2280,6 +5679,7 @@
       "capture_timestamp": "20261013051302",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2297,6 +5697,7 @@
       "capture_timestamp": "20261010001121",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2314,6 +5715,7 @@
       "capture_timestamp": "20261013130500",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2331,6 +5733,7 @@
       "capture_timestamp": "20261014143135",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2348,6 +5751,7 @@
       "capture_timestamp": "20261014232950",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2365,6 +5769,7 @@
       "capture_timestamp": "20261008142938",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2382,6 +5787,7 @@
       "capture_timestamp": "20261007122036",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2399,6 +5805,7 @@
       "capture_timestamp": "20261016065543",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2416,6 +5823,7 @@
       "capture_timestamp": "20261012110756",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2433,6 +5841,7 @@
       "capture_timestamp": "20261009080438",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2450,6 +5859,7 @@
       "capture_timestamp": "20261006230035",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2467,6 +5877,7 @@
       "capture_timestamp": "20261006220201",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2484,6 +5895,7 @@
       "capture_timestamp": "20261012011952",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2501,6 +5913,7 @@
       "capture_timestamp": "20261010185734",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2518,6 +5931,7 @@
       "capture_timestamp": "20261009164630",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2535,6 +5949,7 @@
       "capture_timestamp": "20261007021606",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2552,6 +5967,7 @@
       "capture_timestamp": "20261009025124",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2569,6 +5985,7 @@
       "capture_timestamp": "20261017160646",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2586,6 +6003,7 @@
       "capture_timestamp": "20261012165737",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2603,6 +6021,7 @@
       "capture_timestamp": "20261015001758",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2620,6 +6039,7 @@
       "capture_timestamp": "20261016131405",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2637,6 +6057,7 @@
       "capture_timestamp": "20261008110433",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2654,6 +6075,7 @@
       "capture_timestamp": "20261008045403",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2671,6 +6093,7 @@
       "capture_timestamp": "20261017003837",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2688,6 +6111,7 @@
       "capture_timestamp": "20261013202901",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2705,6 +6129,7 @@
       "capture_timestamp": "20261016111615",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2722,6 +6147,7 @@
       "capture_timestamp": "20261013141804",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2739,6 +6165,7 @@
       "capture_timestamp": "20261016101342",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2756,6 +6183,7 @@
       "capture_timestamp": "20261008234858",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2773,6 +6201,7 @@
       "capture_timestamp": "20261015030153",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2790,6 +6219,7 @@
       "capture_timestamp": "20261014195445",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2807,6 +6237,7 @@
       "capture_timestamp": "20261012115736",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2824,6 +6255,7 @@
       "capture_timestamp": "20261018034045",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2841,6 +6273,7 @@
       "capture_timestamp": "20261012161233",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2858,6 +6291,7 @@
       "capture_timestamp": "20261008115346",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2875,6 +6309,7 @@
       "capture_timestamp": "20261010183955",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2892,6 +6327,7 @@
       "capture_timestamp": "20261010184535",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2909,6 +6345,7 @@
       "capture_timestamp": "20261008235302",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2926,6 +6363,7 @@
       "capture_timestamp": "20261013072154",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2943,6 +6381,7 @@
       "capture_timestamp": "20261005224304",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2960,6 +6399,7 @@
       "capture_timestamp": "20261010154326",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2977,6 +6417,7 @@
       "capture_timestamp": "20261008235718",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2994,6 +6435,7 @@
       "capture_timestamp": "20261005130518",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3011,6 +6453,7 @@
       "capture_timestamp": "20261012100535",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3028,6 +6471,7 @@
       "capture_timestamp": "20261006175524",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3045,6 +6489,7 @@
       "capture_timestamp": "20261007143242",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3062,6 +6507,7 @@
       "capture_timestamp": "20261017103224",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3079,6 +6525,7 @@
       "capture_timestamp": "20261013052318",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3096,6 +6543,7 @@
       "capture_timestamp": "20261009070404",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3113,6 +6561,7 @@
       "capture_timestamp": "20261009222055",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -4048,6 +7497,7 @@
       "capture_timestamp": "20260910112151",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -4745,6 +8195,7 @@
       "capture_timestamp": "20261005131204",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4762,6 +8213,7 @@
       "capture_timestamp": "20261014053551",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4779,6 +8231,7 @@
       "capture_timestamp": "20261012141435",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4796,6 +8249,7 @@
       "capture_timestamp": "20261011125044",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4813,6 +8267,7 @@
       "capture_timestamp": "20261013152408",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4830,6 +8285,7 @@
       "capture_timestamp": "20261014010220",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4847,6 +8303,7 @@
       "capture_timestamp": "20261013083131",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4864,6 +8321,7 @@
       "capture_timestamp": "20261013080911",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4881,6 +8339,7 @@
       "capture_timestamp": "20261014053647",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4898,6 +8357,7 @@
       "capture_timestamp": "20261007142155",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4915,6 +8375,7 @@
       "capture_timestamp": "20261006042436",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4932,6 +8393,7 @@
       "capture_timestamp": "20261017071023",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4949,6 +8411,7 @@
       "capture_timestamp": "20261008233434",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4966,6 +8429,7 @@
       "capture_timestamp": "20261017195931",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -4983,6 +8447,7 @@
       "capture_timestamp": "20261018014240",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5000,6 +8465,7 @@
       "capture_timestamp": "20261008235939",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5017,6 +8483,7 @@
       "capture_timestamp": "20261014192004",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5034,6 +8501,7 @@
       "capture_timestamp": "20261010093653",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5051,6 +8519,7 @@
       "capture_timestamp": "20261016175854",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5068,6 +8537,7 @@
       "capture_timestamp": "20261016040920",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5085,6 +8555,7 @@
       "capture_timestamp": "20261007020129",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5102,6 +8573,7 @@
       "capture_timestamp": "20261011061729",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5119,6 +8591,7 @@
       "capture_timestamp": "20261010152340",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5136,6 +8609,7 @@
       "capture_timestamp": "20261010155703",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5153,6 +8627,7 @@
       "capture_timestamp": "20261010155503",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5170,6 +8645,7 @@
       "capture_timestamp": "20261011130238",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5187,6 +8663,7 @@
       "capture_timestamp": "20261007194709",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5204,6 +8681,7 @@
       "capture_timestamp": "20261016005804",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5221,6 +8699,7 @@
       "capture_timestamp": "20261009000136",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5238,6 +8717,7 @@
       "capture_timestamp": "20261009213317",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5255,6 +8735,7 @@
       "capture_timestamp": "20261007101234",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5272,6 +8753,7 @@
       "capture_timestamp": "20261007140637",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5289,6 +8771,7 @@
       "capture_timestamp": "20261012093201",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5306,6 +8789,7 @@
       "capture_timestamp": "20261011160250",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5323,6 +8807,7 @@
       "capture_timestamp": "20261016124157",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5340,6 +8825,7 @@
       "capture_timestamp": "20261006074340",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5357,6 +8843,7 @@
       "capture_timestamp": "20261006231505",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5374,6 +8861,7 @@
       "capture_timestamp": "20261017102710",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5391,6 +8879,7 @@
       "capture_timestamp": "20261011224430",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5408,6 +8897,7 @@
       "capture_timestamp": "20261014044414",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5425,6 +8915,7 @@
       "capture_timestamp": "20261007014808",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5442,6 +8933,7 @@
       "capture_timestamp": "20261008204811",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5459,6 +8951,7 @@
       "capture_timestamp": "20261017095634",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5476,6 +8969,7 @@
       "capture_timestamp": "20261015091846",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5493,6 +8987,7 @@
       "capture_timestamp": "20261011011314",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5510,6 +9005,7 @@
       "capture_timestamp": "20261013081625",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5527,6 +9023,7 @@
       "capture_timestamp": "20261014195759",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5544,6 +9041,7 @@
       "capture_timestamp": "20261015001718",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5561,6 +9059,7 @@
       "capture_timestamp": "20261016004841",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5578,6 +9077,7 @@
       "capture_timestamp": "20261008143547",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5595,6 +9095,7 @@
       "capture_timestamp": "20261007201038",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5612,6 +9113,7 @@
       "capture_timestamp": "20261012154813",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5629,6 +9131,7 @@
       "capture_timestamp": "20261010151105",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5646,6 +9149,7 @@
       "capture_timestamp": "20261018010144",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5663,6 +9167,7 @@
       "capture_timestamp": "20261013235307",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5680,6 +9185,7 @@
       "capture_timestamp": "20261011005326",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5697,6 +9203,7 @@
       "capture_timestamp": "20261016222944",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5714,6 +9221,7 @@
       "capture_timestamp": "20261013225030",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5731,6 +9239,7 @@
       "capture_timestamp": "20261010151913",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5748,6 +9257,7 @@
       "capture_timestamp": "20261010200502",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5765,6 +9275,7 @@
       "capture_timestamp": "20261016101445",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5782,6 +9293,7 @@
       "capture_timestamp": "20261011190204",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5799,6 +9311,7 @@
       "capture_timestamp": "20261013080234",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5816,6 +9329,7 @@
       "capture_timestamp": "20261018012221",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5833,6 +9347,7 @@
       "capture_timestamp": "20261017113818",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5850,6 +9365,7 @@
       "capture_timestamp": "20261014091517",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5867,6 +9383,7 @@
       "capture_timestamp": "20261012035316",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5884,6 +9401,7 @@
       "capture_timestamp": "20261016050137",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5901,6 +9419,7 @@
       "capture_timestamp": "20261011050652",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5918,6 +9437,7 @@
       "capture_timestamp": "20261011222145",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5935,6 +9455,7 @@
       "capture_timestamp": "20261011223232",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5952,6 +9473,7 @@
       "capture_timestamp": "20261012074044",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5969,6 +9491,7 @@
       "capture_timestamp": "20261006222951",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -5986,6 +9509,7 @@
       "capture_timestamp": "20261013075132",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6003,6 +9527,7 @@
       "capture_timestamp": "20261007193927",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6020,6 +9545,7 @@
       "capture_timestamp": "20261005221309",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6037,6 +9563,7 @@
       "capture_timestamp": "20261007104912",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6054,6 +9581,7 @@
       "capture_timestamp": "20261012032829",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6071,6 +9599,7 @@
       "capture_timestamp": "20261006120404",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6088,6 +9617,7 @@
       "capture_timestamp": "20261010025804",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6105,6 +9635,7 @@
       "capture_timestamp": "20261008015004",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6122,6 +9653,7 @@
       "capture_timestamp": "20261011181900",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6139,6 +9671,7 @@
       "capture_timestamp": "20261006131332",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6156,6 +9689,7 @@
       "capture_timestamp": "20261015152740",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6173,6 +9707,7 @@
       "capture_timestamp": "20261010214810",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6190,6 +9725,7 @@
       "capture_timestamp": "20261012162846",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6207,6 +9743,7 @@
       "capture_timestamp": "20261013081156",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6224,6 +9761,7 @@
       "capture_timestamp": "20261006230601",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6241,6 +9779,7 @@
       "capture_timestamp": "20261010121920",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6258,6 +9797,7 @@
       "capture_timestamp": "20261007014220",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6275,6 +9815,7 @@
       "capture_timestamp": "20261012192838",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6292,6 +9833,7 @@
       "capture_timestamp": "20261016215801",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6309,6 +9851,7 @@
       "capture_timestamp": "20261010123643",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6326,6 +9869,7 @@
       "capture_timestamp": "20261017221502",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6343,6 +9887,7 @@
       "capture_timestamp": "20261011130923",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6360,6 +9905,7 @@
       "capture_timestamp": "20261018014250",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6377,6 +9923,7 @@
       "capture_timestamp": "20261015204333",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6394,6 +9941,7 @@
       "capture_timestamp": "20261016123958",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6411,6 +9959,7 @@
       "capture_timestamp": "20261014115800",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -6428,6 +9977,7 @@
       "capture_timestamp": "20261010034546",
       "mime": "text/html",
       "discovery_methods": [
+        "commoncrawl:files",
         "unknown"
       ]
     }
@@ -6435,78 +9985,110 @@
   "provider_diagnostics": [
     {
       "provider": "commoncrawl",
+      "crawl": "CC-MAIN-2026-47",
+      "pattern": "folders",
+      "status": "ok",
+      "candidates": 100
+    },
+    {
+      "provider": "commoncrawl",
+      "crawl": "CC-MAIN-2026-47",
+      "pattern": "legacy_folders",
+      "status": "no_matches"
+    },
+    {
+      "provider": "commoncrawl",
+      "crawl": "CC-MAIN-2026-47",
+      "pattern": "mobile_folders",
+      "status": "no_matches"
+    },
+    {
+      "provider": "commoncrawl",
+      "crawl": "CC-MAIN-2026-47",
+      "pattern": "files",
+      "status": "ok",
+      "candidates": 100
+    },
+    {
+      "provider": "commoncrawl",
+      "crawl": "CC-MAIN-2026-47",
+      "pattern": "open_links",
+      "status": "error",
+      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com%2Fopen%3Fid%3D%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus%2Cmim"
+    },
+    {
+      "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "folders",
-      "status": "error",
-      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fdrive%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus"
+      "status": "ok",
+      "candidates": 100
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "legacy_folders",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Ffolders%2F%2A&output=json&filter=status%3A200&fl"
+      "status": "no_matches"
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "mobile_folders",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Fmobile%2Ffolders%2F%2A&output=json&filter=status"
+      "status": "no_matches"
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "files",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Ffile%2Fd%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%"
+      "status": "ok",
+      "candidates": 100
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "open_links",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fopen%3Fid%3D%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp"
-    },
-    {
-      "provider": "commoncrawl",
-      "crawl": "CC-MAIN-2026-39",
-      "pattern": "folders",
-      "status": "error",
-      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=drive.google.com%2Fdrive%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus"
-    },
-    {
-      "provider": "commoncrawl",
-      "crawl": "CC-MAIN-2026-39",
-      "pattern": "legacy_folders",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Ffolders%2F%2A&output=json&filter=status%3A200&fl"
-    },
-    {
-      "provider": "commoncrawl",
-      "crawl": "CC-MAIN-2026-39",
-      "pattern": "mobile_folders",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Fmobile%2Ffolders%2F%2A&output=json&filter=status"
-    },
-    {
-      "provider": "commoncrawl",
-      "crawl": "CC-MAIN-2026-39",
-      "pattern": "files",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=drive.google.com%2Ffile%2Fd%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%"
-    },
-    {
-      "provider": "commoncrawl",
-      "crawl": "CC-MAIN-2026-39",
-      "pattern": "open_links",
-      "status": "error",
-      "error": "503 Server Error: Service Temporarily Unavailable for url: https://index.commoncrawl.org/CC-MAIN-2026-39-index?url=drive.google.com%2Fopen%3Fid%3D%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp"
+      "status": "no_matches"
     },
     {
       "provider": "searxng",
-      "status": "skipped",
-      "reason": "Nenhuma instância HTTPS com JSON validado no relatório atual."
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"video\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"filmes\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"documentários\"",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/file/d/ \"mp4\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"coleção\" OR \"acervo\"",
+      "status": "ok",
+      "candidates": 0
     }
   ],
   "notice": "Candidatos descobertos por índices públicos. Acesso, direitos e reprodução ainda precisam de validação; nenhum conteúdo foi baixado."
