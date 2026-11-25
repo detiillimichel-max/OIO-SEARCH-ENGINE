@@ -188,8 +188,8 @@ async function loadCatalog() {
         // O Gateway só inclui itens cujo acesso anônimo foi confirmado.
         gatewayItems = payload.videos.map(video => ({
           id: video.id,
-          title: video.name || "Vídeo sem título",
-          url: video.previewUrl || video.webViewLink || "",
+          title: video.title || video.name || "Vídeo sem título",
+          url: video.url || video.webViewLink || video.previewUrl || "",
           poster: video.thumbnailUrl || "",
           category: "videos",
           description: "Acesso público confirmado pelo OIO-DRIVE-GATEWAY.",
