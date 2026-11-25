@@ -3,7 +3,6 @@ const DRIVE_GATEWAY_URL = "https://oio-drive-gateway.vercel.app/api/catalog";
 const grid = document.getElementById("media-grid");
 const searchInput = document.getElementById("search-input");
 const statusEl = document.getElementById("catalog-status");
-const refreshDriveButton = document.getElementById("refresh-drive-btn");
 const countEl = document.getElementById("result-count");
 const titleEl = document.getElementById("now-title");
 const kindEl = document.getElementById("player-kind");
@@ -21,39 +20,16 @@ function safeUrl(value) {
   try { const u = new URL(value); return ["https:", "http:"].includes(u.protocol) ? u.href : null; }
   catch { return null; }
 }
-async function fetchGatewayCatalog({ forceRefresh = false } = {}) {
-  const primaryUrl = forceRefresh ? DRIVE_GATEWAY_URL + "?refresh=1" : DRIVE_GATEWAY_URL;
-
-  async function request(url, cacheMode) {
-    const response = await fetch(url, { cache: cacheMode });
-    let payload = null;
-    try { payload = await response.json(); } catch (_) {}
-
-    if (!response.ok) {
-      const detail = payload && payload.error ? " — " + payload.error : "";
-      const error = new Error("Gateway: HTTP " + response.status + detail);
-      error.httpStatus = response.status;
-      throw error;
-    }
-    if (!payload || payload.ok !== true || !Array.isArray(payload.videos)) {
-      const error = new Error((payload && payload.error) || "Resposta do Gateway sem catálogo válido.");
-      error.httpStatus = 502;
-      throw error;
-    }
-    return { payload, cache: response.headers.get("X-Catalog-Cache") || "" };
+async function fetchGatewayCatalog() {
+  const response = await fetch(DRIVE_GATEWAY_URL, { cache: "no-store" });
+  let payload = null;
+  try { payload = await response.json(); } catch (_) {}
+  if (!response.ok) {
+    const detail = payload && payload.error ? " — " + payload.error : "";
+    throw new Error("Gateway: HTTP " + response.status + detail);
   }
-
-  try {
-    return await request(primaryUrl, forceRefresh ? "no-store" : "default");
-  } catch (error) {
-    // Atualização manual e falha de configuração/autorização não devem disparar outra varredura.
-    if (forceRefresh || error.httpStatus === 503 ||
-        (error.httpStatus && error.httpStatus < 500)) throw error;
-
-    // Uma única tentativa sem cache contorna falhas transitórias ou respostas 5xx em cache.
-    // Não usa refresh=1: não solicita uma segunda varredura forçada do Drive.
-    return request(DRIVE_GATEWAY_URL + "?retry=" + Date.now(), "no-store");
-  }
+  if (!payload || payload.ok !== true || !Array.isArray(payload.videos)) throw new Error((payload && payload.error) || "Resposta do Gateway sem catálogo válido.");
+  return { payload, cache: response.headers.get("X-Catalog-Cache") || "" };
 }
 
 function driveFileId(value) {
@@ -179,9 +155,8 @@ function render() {
     grid.appendChild(card);
   }
 }
-async function loadCatalog({ forceGateway = false } = {}) {
-  statusEl.textContent = forceGateway ? "Atualizando Google Drive…" : "Carregando catálogo local e Gateway…";
-  if (refreshDriveButton) refreshDriveButton.disabled = true;
+async function loadCatalog() {
+  statusEl.textContent = "Carregando catálogo local e Gateway…";
   try {
     // As duas fontes são lidas separadamente. O catálogo local nunca é substituído.
     const [localResult, gatewayResult] = await Promise.allSettled([
@@ -189,7 +164,7 @@ async function loadCatalog({ forceGateway = false } = {}) {
         if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
         return response.json();
       }),
-      fetchGatewayCatalog({ forceRefresh: forceGateway })
+      fetchGatewayCatalog()
     ]);
 
     let localItems = [];
@@ -274,10 +249,6 @@ async function loadCatalog({ forceGateway = false } = {}) {
     grid.appendChild(message);
     console.error("OIO Media catalog:", error);
   } finally {
-    if (refreshDriveButton) {
-      refreshDriveButton.disabled = false;
-      refreshDriveButton.textContent = "↻ Atualizar Drive";
-    }
   }
 }
 searchInput.addEventListener("input",()=>{searchTerm=searchInput.value.trim().toLocaleLowerCase("pt-BR");render();});
@@ -290,11 +261,6 @@ document.getElementById("fullscreen-btn").addEventListener("click",()=>{
   const target=frame.querySelector("iframe,video")||frame;
   if(target.requestFullscreen) target.requestFullscreen().catch(()=>{});
   else if(frame.requestFullscreen) frame.requestFullscreen().catch(()=>{});
-});
-if (refreshDriveButton) refreshDriveButton.addEventListener("click", () => {
-  refreshDriveButton.disabled = true;
-  refreshDriveButton.textContent = "Atualizando…";
-  loadCatalog({ forceGateway: true });
 });
 loadCatalog();
 
