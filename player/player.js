@@ -192,9 +192,9 @@ async function loadCatalog() {
           url: video.url || video.webViewLink || video.previewUrl || "",
           poster: video.thumbnailUrl || "",
           category: "videos",
-          description: "Acesso público confirmado pelo OIO-DRIVE-GATEWAY.",
+          description: "Arquivo listado no Google Drive pelo OIO-DRIVE-GATEWAY. Acesso público e reprodução ainda não verificados.",
           source: "OIO-DRIVE-GATEWAY",
-          access: video.access || "PUBLIC_ACCESS_CONFIRMED",
+          access: video.access || "ACCESS_UNKNOWN",
           playback_type: "drive_preview"
         }));
       } else {
