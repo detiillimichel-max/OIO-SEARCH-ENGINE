@@ -22,6 +22,13 @@
     if (heroPlay) heroPlay.querySelector("span").textContent = "Assistir agora";
   }
 
+  const topSearch = document.querySelector(".top-search");
+  if (topSearch) topSearch.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("biblioteca")?.scrollIntoView({behavior:"smooth"});
+    window.setTimeout(function () { document.getElementById("search-input")?.focus({preventScroll:true}); }, 220);
+  });
+
   if (heroPlay) heroPlay.addEventListener("click", function () {
     if (featuredCard) featuredCard.click();
     else document.getElementById("biblioteca")?.scrollIntoView({behavior:"smooth"});
