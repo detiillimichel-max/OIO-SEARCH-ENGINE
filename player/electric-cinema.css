@@ -1,0 +1,177 @@
+/* OIO MEDIA · Electric Cinema
+   Paleta aprovada: gelo #DCEBFA · branco #FFFFFF · azul profundo #10213A
+   Camada visual isolada: não altera catálogo, pesquisa, Gateway ou reprodução. */
+:root{
+  color-scheme:dark;
+  --bg:#10213A;
+  --surface:#193452;
+  --surface-2:#234365;
+  --line:#49698B;
+  --text:#FFFFFF;
+  --muted:#DCEBFA;
+  --cyan:#35D5FF;
+  --violet:#728DFF;
+  --pink:#B28CFF;
+  --radius:22px;
+}
+html{background:#10213A}
+body{
+  background:
+    radial-gradient(ellipse at 82% 4%,#315E8B88,transparent 34%),
+    radial-gradient(ellipse at 5% 36%,#1B789766,transparent 32%),
+    linear-gradient(145deg,#10213A 0%,#142D4B 48%,#0D1D34 100%);
+  color:#FFFFFF;
+}
+.topbar{
+  background:#10213AEE;
+  border-bottom:1px solid #DCEBFA24;
+  box-shadow:0 8px 30px #06142655;
+}
+.brand-mark{
+  background:linear-gradient(135deg,#35D5FF,#728DFF);
+  box-shadow:0 7px 28px #35D5FF44;
+}
+.brand-name b,.top-search{color:#35D5FF}
+.status{color:#DCEBFA}
+.hero{
+  border-color:#8BBBEA55;
+  background:linear-gradient(125deg,#234365,#10213A 68%,#1B4267);
+  box-shadow:0 26px 76px #06142688,0 0 0 1px #DCEBFA0C;
+}
+.hero-backdrop{opacity:.9}
+.hero-shade{
+  background:
+    linear-gradient(90deg,#10213AEE 0%,#10213ACC 30%,#10213A70 63%,#10213A20 100%),
+    linear-gradient(0deg,#10213A 0%,transparent 62%);
+}
+.hero-kicker{color:#DCEBFA}
+.hero-description{color:#DCEBFA}
+.hero-index{color:#FFFFFFCC}
+.hero-index b{color:#35D5FF}
+.primary-action{
+  background:linear-gradient(110deg,#35D5FF 0%,#728DFF 72%,#B28CFF 100%);
+  color:#07182B;
+  box-shadow:0 10px 32px #35D5FF3D;
+}
+.secondary-action{
+  border-color:#DCEBFA66;
+  background:#193452D9;
+  color:#FFFFFF;
+}
+.search{
+  border-color:#6689AE;
+  background:linear-gradient(120deg,#193452F2,#142A45F5);
+  box-shadow:0 10px 28px #06142655;
+}
+.search span{color:#35D5FF}
+.search input{color:#FFFFFF}
+.search input::placeholder{color:#DCEBFA99}
+.search:focus-within{
+  border-color:#35D5FF;
+  box-shadow:0 0 0 3px #35D5FF2A,0 12px 30px #06142666;
+}
+.workspace-tabs{
+  border-color:#58799D;
+  background:#142B47;
+  box-shadow:0 8px 24px #06142644;
+}
+.workspace-tab{color:#DCEBFA}
+.workspace-tab.active{
+  background:linear-gradient(110deg,#35D5FF,#728DFF);
+  color:#07182B;
+}
+.eyebrow{color:#35D5FF}
+.pill,.count{color:#DCEBFA}
+.pill{border-color:#58799D;background:#19345288}
+.player-frame{
+  border-color:#55799E;
+  background:#071629;
+  box-shadow:0 16px 42px #06142666;
+}
+.empty-player{color:#DCEBFA}
+.large-play{background:linear-gradient(135deg,#35D5FF,#728DFF);color:#07182B}
+.empty-player p{color:#FFFFFF}
+.empty-player small,.player-note{color:#DCEBFA}
+.player-controls button{
+  border-color:#58799D;
+  background:#193452;
+  color:#FFFFFF;
+}
+.filter,.discovery-filter{
+  border-color:#58799D;
+  background:#193452;
+  color:#DCEBFA;
+}
+.filter.active,.filter:hover,.discovery-filter.active{
+  background:linear-gradient(110deg,#35D5FF,#728DFF);
+  color:#07182B;
+}
+.media-card{
+  border-color:#49698B;
+  background:#142B47;
+  box-shadow:0 15px 36px #06142677;
+}
+.media-card .poster-placeholder{
+  background:linear-gradient(145deg,#234365,#10213A);
+}
+.media-card .poster-shade{
+  background:linear-gradient(180deg,transparent 12%,#07162944 48%,#071629F5 100%);
+}
+.media-card .media-info{
+  background:linear-gradient(180deg,transparent,#071629E8 38%,#071629F8 100%);
+}
+.media-card .media-info h3{color:#FFFFFF}
+.media-card .media-info p{color:#DCEBFA}
+.media-card:hover,.media-card:focus-visible{
+  border-color:#35D5FF;
+  box-shadow:0 20px 44px #06142699,0 0 0 1px #35D5FF55;
+}
+.poster-tag{
+  border-color:#DCEBFA66;
+  background:#10213AE8;
+  color:#FFFFFF;
+}
+.poster-play{
+  border-color:#DCEBFA99;
+  background:#10213ACC;
+  color:#FFFFFF;
+}
+.discovery-card,.defined-card{
+  border-color:#49698B;
+  background:linear-gradient(145deg,#1D3A5B,#142B47);
+  box-shadow:0 12px 30px #06142655;
+}
+.discovery-card p,.defined-card p,.muted{color:#DCEBFA}
+.discovery-open,.defined-card code,.defined-index{color:#35D5FF}
+.discovery-status,.defined-state{color:#DCEBFA}
+.empty-library{border-color:#6689AE;color:#DCEBFA}
+.bottom-nav{
+  border-top:1px solid #DCEBFA33;
+  background:#10213AF2;
+  box-shadow:0 -10px 32px #06142655;
+}
+.bottom-link{color:#B7CBE1}
+.bottom-link.active,.bottom-link:focus{color:#35D5FF}
+footer{border-top-color:#DCEBFA22;color:#DCEBFAAA}
+footer span{color:#35D5FF}
+.preview-play{
+  border-color:#DCEBFA77;
+  background:#10213AEF;
+  color:#FFFFFF;
+}
+.preview-play span{background:linear-gradient(135deg,#35D5FF,#728DFF);color:#07182B}
+.drive-fallback{
+  border-color:#DCEBFA66;
+  background:#10213AF2;
+  color:#FFFFFF;
+}
+@media(max-width:620px){
+  .hero-shade{
+    background:
+      linear-gradient(0deg,#10213A 0%,#10213AE8 22%,#10213A77 62%,#10213A18 100%);
+  }
+  .bottom-nav{background:#10213AF5}
+}
+@media(prefers-reduced-motion:reduce){
+  .media-card,.poster-image,.hero-backdrop{transition:none!important}
+}

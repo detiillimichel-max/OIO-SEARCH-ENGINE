@@ -10,8 +10,8 @@
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
-  "theme_color": "#070914",
-  "background_color": "#070914",
+  "theme_color": "#10213A",
+  "background_color": "#10213A",
   "categories": ["entertainment", "video"],
   "icons": [
     {
