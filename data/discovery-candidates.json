@@ -1,10 +1,129 @@
 {
   "schema_version": 1,
   "project": "OIO-SEARCH-ENGINE",
-  "updated_at": "2026-11-25T08:55:36.156332+00:00",
-  "total_candidates": 575,
-  "new_candidates_this_run": 0,
+  "updated_at": "2026-11-26T08:42:13.493006+00:00",
+  "total_candidates": 582,
+  "new_candidates_this_run": 7,
   "items": [
+    {
+      "id": "0B-PUlafL-A4PLXFsTlp0ODRDV2c",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PLXFsTlp0ODRDV2c/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:42:08.780711+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "F-04-MP-04-06-01.doc - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PSTRFdzlrTGNZbUU",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PSTRFdzlrTGNZbUU/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:42:08.780665+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-05-03.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B-PUlafL-A4PS1BhelZ1YmEyZEk",
+      "kind": "file",
+      "url": "https://drive.google.com/file/d/0B-PUlafL-A4PS1BhelZ1YmEyZEk/view",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:42:08.780648+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "MP-04-02-05.pdf - Google Диск",
+      "description": "Загрузка…",
+      "search_query": "site:drive.google.com/file/d/ \"mp4\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0i3-GCgfBhlTkUxb1duWU9LTnM",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0i3-GCgfBhlTkUxb1duWU9LTnM",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:41:57.776737+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Pilates Workout Video – Google Диск",
+      "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера. FREE Pilates Fusion Abdominals Core Workout – Abs At The Wall...",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "1HxrMIjxOK8oF5-mR2sOg5OxpYDt4_OD7",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/1HxrMIjxOK8oF5-mR2sOg5OxpYDt4_OD7",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:41:57.776722+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "LG HDR – Google Диск",
+      "description": "Video.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0yNvkJwwzK9Rld2SHFZbUpuWUU",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0yNvkJwwzK9Rld2SHFZbUpuWUU",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:41:57.776705+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Video compilation of press conference...",
+      "description": "Make Friends Video compilation Press event.mov. В общем доступе.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
+    {
+      "id": "0B0WbPxfRh0D7fjdyNlJVaHpSaUVKWmEwMlEyc2N4OGpvb2NsNktCNFVvYUpSTTNLajlaMkE",
+      "kind": "folder",
+      "url": "https://drive.google.com/drive/folders/0B0WbPxfRh0D7fjdyNlJVaHpSaUVKWmEwMlEyc2N4OGpvb2NsNktCNFVvYUpSTTNLajlaMkE",
+      "source": "public_index",
+      "access_status": "unverified",
+      "publication_status": "candidate_only",
+      "discovered_at": "2026-11-26T08:41:57.776658+00:00",
+      "authorized": false,
+      "playback_ready": false,
+      "title": "Stuff I Like – Google Диск",
+      "description": "[VIDEO] The Landing Page Sessions Episode 4, Game of Phones. В общем доступе.",
+      "search_query": "site:drive.google.com/drive/folders \"video\"",
+      "discovery_methods": [
+        "searxng:dork"
+      ]
+    },
     {
       "id": "0B-PUlafL-A4PWUZWSnEwZzVDZFU",
       "kind": "file",
@@ -53,6 +172,7 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -87,6 +207,7 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -104,6 +225,7 @@
       "description": "Войти.",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -138,6 +260,7 @@
       "description": "A arte da contestação na Academia de Coimbra nos anos 60( Desenhos, caricaturas e Praxe) Aníbal Frias - in Actas dos ateliers do V Congresso Português de Sociologia.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -172,6 +295,7 @@
       "description": "Путь к папке. Plantas e Desenhos Técnicos. Anexo VI.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -223,6 +347,7 @@
       "description": "WWW.COMANDO-FILMES.COM.txt. В общем доступе. 8 нояб. 2014 г.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -257,6 +382,7 @@
       "description": "Sugestões de filmes para resenha.pdf. В общем доступе. 31 авг. 2017 г.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -274,6 +400,7 @@
       "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -291,6 +418,7 @@
       "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -342,6 +470,7 @@
       "description": "Video Marketing Videos. 10 авг. 2017 г. — Download. Corporate Video Production Atlanta. В общем доступе.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -359,6 +488,7 @@
       "description": "local business video marketing.jpg. В общем доступе.Video Production Atlanta Georgia.jpg. В общем доступе.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
+        "searxng:dork",
         "unknown"
       ]
     },
@@ -1760,7 +1890,6 @@
       "capture_timestamp": "20261119064559",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1778,7 +1907,6 @@
       "capture_timestamp": "20261117030158",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1796,7 +1924,6 @@
       "capture_timestamp": "20261110194446",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1814,7 +1941,6 @@
       "capture_timestamp": "20261111015136",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1832,7 +1958,6 @@
       "capture_timestamp": "20261115202320",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1850,7 +1975,6 @@
       "capture_timestamp": "20261117152510",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1868,7 +1992,6 @@
       "capture_timestamp": "20261108215446",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1886,7 +2009,6 @@
       "capture_timestamp": "20261113123946",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1904,7 +2026,6 @@
       "capture_timestamp": "20261118214421",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1922,7 +2043,6 @@
       "capture_timestamp": "20261111142508",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1940,7 +2060,6 @@
       "capture_timestamp": "20261112030423",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1958,7 +2077,6 @@
       "capture_timestamp": "20261111143042",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1976,7 +2094,6 @@
       "capture_timestamp": "20261109184307",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -1994,7 +2111,6 @@
       "capture_timestamp": "20261108121149",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2012,7 +2128,6 @@
       "capture_timestamp": "20261118195316",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2030,7 +2145,6 @@
       "capture_timestamp": "20261118184827",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2048,7 +2162,6 @@
       "capture_timestamp": "20261118155836",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2066,7 +2179,6 @@
       "capture_timestamp": "20261111111008",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2084,7 +2196,6 @@
       "capture_timestamp": "20261115050130",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2102,7 +2213,6 @@
       "capture_timestamp": "20261115041156",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2120,7 +2230,6 @@
       "capture_timestamp": "20261117091915",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2138,7 +2247,6 @@
       "capture_timestamp": "20261111200734",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2156,7 +2264,6 @@
       "capture_timestamp": "20261108214039",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2174,7 +2281,6 @@
       "capture_timestamp": "20261106232620",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2192,7 +2298,6 @@
       "capture_timestamp": "20261107174726",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2210,7 +2315,6 @@
       "capture_timestamp": "20261109075254",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2228,7 +2332,6 @@
       "capture_timestamp": "20261109091840",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2246,7 +2349,6 @@
       "capture_timestamp": "20261116082247",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2264,7 +2366,6 @@
       "capture_timestamp": "20261115103705",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2282,7 +2383,6 @@
       "capture_timestamp": "20261108090856",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2300,7 +2400,6 @@
       "capture_timestamp": "20261113062634",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2318,7 +2417,6 @@
       "capture_timestamp": "20261110171029",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2336,7 +2434,6 @@
       "capture_timestamp": "20261112180609",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2354,7 +2451,6 @@
       "capture_timestamp": "20261114042512",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2372,7 +2468,6 @@
       "capture_timestamp": "20261110200117",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2390,7 +2485,6 @@
       "capture_timestamp": "20261110134419",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2408,7 +2502,6 @@
       "capture_timestamp": "20261116114231",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2426,7 +2519,6 @@
       "capture_timestamp": "20261110162119",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2444,7 +2536,6 @@
       "capture_timestamp": "20261108151613",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2462,7 +2553,6 @@
       "capture_timestamp": "20261108031040",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2480,7 +2570,6 @@
       "capture_timestamp": "20261106222159",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2498,7 +2587,6 @@
       "capture_timestamp": "20261118100728",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2516,7 +2604,6 @@
       "capture_timestamp": "20261107053148",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2534,7 +2621,6 @@
       "capture_timestamp": "20261115134054",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2552,7 +2638,6 @@
       "capture_timestamp": "20261108074920",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2570,7 +2655,6 @@
       "capture_timestamp": "20261106231843",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2588,7 +2672,6 @@
       "capture_timestamp": "20261108183643",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2606,7 +2689,6 @@
       "capture_timestamp": "20261107151945",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2624,7 +2706,6 @@
       "capture_timestamp": "20261113205552",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2642,7 +2723,6 @@
       "capture_timestamp": "20261115223156",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2660,7 +2740,6 @@
       "capture_timestamp": "20261107080612",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2678,7 +2757,6 @@
       "capture_timestamp": "20261112173506",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2696,7 +2774,6 @@
       "capture_timestamp": "20261112201356",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2714,7 +2791,6 @@
       "capture_timestamp": "20261114051610",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2732,7 +2808,6 @@
       "capture_timestamp": "20261111141528",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2750,7 +2825,6 @@
       "capture_timestamp": "20261107151741",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2768,7 +2842,6 @@
       "capture_timestamp": "20261106174905",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2786,7 +2859,6 @@
       "capture_timestamp": "20261111202302",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2804,7 +2876,6 @@
       "capture_timestamp": "20261107120735",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2822,7 +2893,6 @@
       "capture_timestamp": "20261109032232",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2840,7 +2910,6 @@
       "capture_timestamp": "20261114161630",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2858,7 +2927,6 @@
       "capture_timestamp": "20261118191157",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2876,7 +2944,6 @@
       "capture_timestamp": "20261109222345",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2894,7 +2961,6 @@
       "capture_timestamp": "20261108094658",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2912,7 +2978,6 @@
       "capture_timestamp": "20261109010849",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2930,7 +2995,6 @@
       "capture_timestamp": "20261108061352",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2948,7 +3012,6 @@
       "capture_timestamp": "20261116052836",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2966,7 +3029,6 @@
       "capture_timestamp": "20261113060942",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -2984,7 +3046,6 @@
       "capture_timestamp": "20261110095202",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3002,7 +3063,6 @@
       "capture_timestamp": "20261109193507",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3020,7 +3080,6 @@
       "capture_timestamp": "20261106232209",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3038,7 +3097,6 @@
       "capture_timestamp": "20261111093519",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3056,7 +3114,6 @@
       "capture_timestamp": "20261108173858",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3074,7 +3131,6 @@
       "capture_timestamp": "20261115103506",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3092,7 +3148,6 @@
       "capture_timestamp": "20261115151709",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3110,7 +3165,6 @@
       "capture_timestamp": "20261113090906",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3128,7 +3182,6 @@
       "capture_timestamp": "20261113003159",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3146,7 +3199,6 @@
       "capture_timestamp": "20261110230355",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3164,7 +3216,6 @@
       "capture_timestamp": "20261119065814",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3182,7 +3233,6 @@
       "capture_timestamp": "20261113173638",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3200,7 +3250,6 @@
       "capture_timestamp": "20261117061957",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3218,7 +3267,6 @@
       "capture_timestamp": "20261112113118",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3236,7 +3284,6 @@
       "capture_timestamp": "20261118100320",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3254,7 +3301,6 @@
       "capture_timestamp": "20261111232131",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3272,7 +3318,6 @@
       "capture_timestamp": "20261109033305",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3290,7 +3335,6 @@
       "capture_timestamp": "20261114081915",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3308,7 +3352,6 @@
       "capture_timestamp": "20261109192918",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3326,7 +3369,6 @@
       "capture_timestamp": "20261116094821",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3344,7 +3386,6 @@
       "capture_timestamp": "20261114004328",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3362,7 +3403,6 @@
       "capture_timestamp": "20261107024551",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3380,7 +3420,6 @@
       "capture_timestamp": "20261110225406",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3398,7 +3437,6 @@
       "capture_timestamp": "20261109034950",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3416,7 +3454,6 @@
       "capture_timestamp": "20261106232629",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3434,7 +3471,6 @@
       "capture_timestamp": "20261109220116",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3452,7 +3488,6 @@
       "capture_timestamp": "20261113214526",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3470,7 +3505,6 @@
       "capture_timestamp": "20261108074106",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3488,7 +3522,6 @@
       "capture_timestamp": "20261107140710",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3506,7 +3539,6 @@
       "capture_timestamp": "20261107061809",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -3524,7 +3556,6 @@
       "capture_timestamp": "20261119031319",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -4989,7 +5020,6 @@
       "capture_timestamp": "20261006013704",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5007,7 +5037,6 @@
       "capture_timestamp": "20261016095247",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5025,7 +5054,6 @@
       "capture_timestamp": "20261005161116",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5043,7 +5071,6 @@
       "capture_timestamp": "20261008094554",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5061,7 +5088,6 @@
       "capture_timestamp": "20261017160752",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5079,7 +5105,6 @@
       "capture_timestamp": "20261013064306",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5097,7 +5122,6 @@
       "capture_timestamp": "20261006025941",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5115,7 +5139,6 @@
       "capture_timestamp": "20261017010849",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5133,7 +5156,6 @@
       "capture_timestamp": "20261012165404",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5151,7 +5173,6 @@
       "capture_timestamp": "20261016174654",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5169,7 +5190,6 @@
       "capture_timestamp": "20261008082748",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5187,7 +5207,6 @@
       "capture_timestamp": "20261010151716",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5205,7 +5224,6 @@
       "capture_timestamp": "20261012120728",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5223,7 +5241,6 @@
       "capture_timestamp": "20261017044418",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5241,7 +5258,6 @@
       "capture_timestamp": "20261007080600",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5259,7 +5275,6 @@
       "capture_timestamp": "20261012194826",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5277,7 +5292,6 @@
       "capture_timestamp": "20261015102228",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5295,7 +5309,6 @@
       "capture_timestamp": "20261007081631",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5313,7 +5326,6 @@
       "capture_timestamp": "20261015133812",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5331,7 +5343,6 @@
       "capture_timestamp": "20261006011232",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5349,7 +5360,6 @@
       "capture_timestamp": "20261009211054",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5367,7 +5377,6 @@
       "capture_timestamp": "20261013201324",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5385,7 +5394,6 @@
       "capture_timestamp": "20261018051343",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5403,7 +5411,6 @@
       "capture_timestamp": "20261011041157",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5421,7 +5428,6 @@
       "capture_timestamp": "20261006131818",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5439,7 +5445,6 @@
       "capture_timestamp": "20261014182142",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5457,7 +5462,6 @@
       "capture_timestamp": "20261013190047",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5475,7 +5479,6 @@
       "capture_timestamp": "20261009025948",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5493,7 +5496,6 @@
       "capture_timestamp": "20261015114501",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5511,7 +5513,6 @@
       "capture_timestamp": "20261008233808",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5529,7 +5530,6 @@
       "capture_timestamp": "20261017164508",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5547,7 +5547,6 @@
       "capture_timestamp": "20261010090922",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5565,7 +5564,6 @@
       "capture_timestamp": "20261013111351",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5583,7 +5581,6 @@
       "capture_timestamp": "20261013112009",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5601,7 +5598,6 @@
       "capture_timestamp": "20261013110446",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5619,7 +5615,6 @@
       "capture_timestamp": "20261013105512",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5637,7 +5632,6 @@
       "capture_timestamp": "20261011053002",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5655,7 +5649,6 @@
       "capture_timestamp": "20261012043123",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5673,7 +5666,6 @@
       "capture_timestamp": "20261006210750",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5691,7 +5683,6 @@
       "capture_timestamp": "20261008005517",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5709,7 +5700,6 @@
       "capture_timestamp": "20261010033423",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5727,7 +5717,6 @@
       "capture_timestamp": "20261005163028",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5745,7 +5734,6 @@
       "capture_timestamp": "20261012225233",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5763,7 +5751,6 @@
       "capture_timestamp": "20261007022000",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5781,7 +5768,6 @@
       "capture_timestamp": "20261016035708",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5799,7 +5785,6 @@
       "capture_timestamp": "20261006195550",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5817,7 +5802,6 @@
       "capture_timestamp": "20261018012252",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5835,7 +5819,6 @@
       "capture_timestamp": "20261013035559",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5853,7 +5836,6 @@
       "capture_timestamp": "20261013051302",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5871,7 +5853,6 @@
       "capture_timestamp": "20261010001121",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5889,7 +5870,6 @@
       "capture_timestamp": "20261013130500",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5907,7 +5887,6 @@
       "capture_timestamp": "20261014143135",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5925,7 +5904,6 @@
       "capture_timestamp": "20261014232950",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5943,7 +5921,6 @@
       "capture_timestamp": "20261008142938",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5961,7 +5938,6 @@
       "capture_timestamp": "20261007122036",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5979,7 +5955,6 @@
       "capture_timestamp": "20261016065543",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -5997,7 +5972,6 @@
       "capture_timestamp": "20261012110756",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6015,7 +5989,6 @@
       "capture_timestamp": "20261009080438",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6033,7 +6006,6 @@
       "capture_timestamp": "20261006230035",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6051,7 +6023,6 @@
       "capture_timestamp": "20261006220201",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6069,7 +6040,6 @@
       "capture_timestamp": "20261012011952",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6087,7 +6057,6 @@
       "capture_timestamp": "20261010185734",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6105,7 +6074,6 @@
       "capture_timestamp": "20261009164630",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6123,7 +6091,6 @@
       "capture_timestamp": "20261007021606",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6141,7 +6108,6 @@
       "capture_timestamp": "20261009025124",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6159,7 +6125,6 @@
       "capture_timestamp": "20261017160646",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6177,7 +6142,6 @@
       "capture_timestamp": "20261012165737",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6195,7 +6159,6 @@
       "capture_timestamp": "20261015001758",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6213,7 +6176,6 @@
       "capture_timestamp": "20261016131405",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6231,7 +6193,6 @@
       "capture_timestamp": "20261008110433",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6249,7 +6210,6 @@
       "capture_timestamp": "20261008045403",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6267,7 +6227,6 @@
       "capture_timestamp": "20261017003837",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6285,7 +6244,6 @@
       "capture_timestamp": "20261013202901",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6303,7 +6261,6 @@
       "capture_timestamp": "20261016111615",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6321,7 +6278,6 @@
       "capture_timestamp": "20261013141804",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6339,7 +6295,6 @@
       "capture_timestamp": "20261016101342",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6357,7 +6312,6 @@
       "capture_timestamp": "20261008234858",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6375,7 +6329,6 @@
       "capture_timestamp": "20261015030153",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6393,7 +6346,6 @@
       "capture_timestamp": "20261014195445",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6411,7 +6363,6 @@
       "capture_timestamp": "20261012115736",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6429,7 +6380,6 @@
       "capture_timestamp": "20261018034045",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6447,7 +6397,6 @@
       "capture_timestamp": "20261012161233",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6465,7 +6414,6 @@
       "capture_timestamp": "20261008115346",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6483,7 +6431,6 @@
       "capture_timestamp": "20261010183955",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6501,7 +6448,6 @@
       "capture_timestamp": "20261010184535",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6519,7 +6465,6 @@
       "capture_timestamp": "20261008235302",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6537,7 +6482,6 @@
       "capture_timestamp": "20261013072154",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6555,7 +6499,6 @@
       "capture_timestamp": "20261005224304",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6573,7 +6516,6 @@
       "capture_timestamp": "20261010154326",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6591,7 +6533,6 @@
       "capture_timestamp": "20261008235718",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6609,7 +6550,6 @@
       "capture_timestamp": "20261005130518",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6627,7 +6567,6 @@
       "capture_timestamp": "20261012100535",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6645,7 +6584,6 @@
       "capture_timestamp": "20261006175524",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6663,7 +6601,6 @@
       "capture_timestamp": "20261007143242",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6681,7 +6618,6 @@
       "capture_timestamp": "20261017103224",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6699,7 +6635,6 @@
       "capture_timestamp": "20261013052318",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6717,7 +6652,6 @@
       "capture_timestamp": "20261009070404",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -6735,7 +6669,6 @@
       "capture_timestamp": "20261009222055",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -7671,7 +7604,6 @@
       "capture_timestamp": "20260910112151",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:folders",
         "unknown"
       ]
     },
@@ -8369,7 +8301,6 @@
       "capture_timestamp": "20261005131204",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8387,7 +8318,6 @@
       "capture_timestamp": "20261014053551",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8405,7 +8335,6 @@
       "capture_timestamp": "20261012141435",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8423,7 +8352,6 @@
       "capture_timestamp": "20261011125044",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8441,7 +8369,6 @@
       "capture_timestamp": "20261013152408",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8459,7 +8386,6 @@
       "capture_timestamp": "20261014010220",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8477,7 +8403,6 @@
       "capture_timestamp": "20261013083131",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8495,7 +8420,6 @@
       "capture_timestamp": "20261013080911",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8513,7 +8437,6 @@
       "capture_timestamp": "20261014053647",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8531,7 +8454,6 @@
       "capture_timestamp": "20261007142155",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8549,7 +8471,6 @@
       "capture_timestamp": "20261006042436",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8603,7 +8524,6 @@
       "capture_timestamp": "20261017195931",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8621,7 +8541,6 @@
       "capture_timestamp": "20261018014240",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8693,7 +8612,6 @@
       "capture_timestamp": "20261016175854",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8711,7 +8629,6 @@
       "capture_timestamp": "20261016040920",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8729,7 +8646,6 @@
       "capture_timestamp": "20261007020129",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8765,7 +8681,6 @@
       "capture_timestamp": "20261010152340",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8783,7 +8698,6 @@
       "capture_timestamp": "20261010155703",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8801,7 +8715,6 @@
       "capture_timestamp": "20261010155503",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8819,7 +8732,6 @@
       "capture_timestamp": "20261011130238",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8855,7 +8767,6 @@
       "capture_timestamp": "20261016005804",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8873,7 +8784,6 @@
       "capture_timestamp": "20261009000136",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8891,7 +8801,6 @@
       "capture_timestamp": "20261009213317",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8909,7 +8818,6 @@
       "capture_timestamp": "20261007101234",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8927,7 +8835,6 @@
       "capture_timestamp": "20261007140637",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8981,7 +8888,6 @@
       "capture_timestamp": "20261016124157",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9017,7 +8923,6 @@
       "capture_timestamp": "20261006231505",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9035,7 +8940,6 @@
       "capture_timestamp": "20261017102710",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9071,7 +8975,6 @@
       "capture_timestamp": "20261014044414",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9089,7 +8992,6 @@
       "capture_timestamp": "20261007014808",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9107,7 +9009,6 @@
       "capture_timestamp": "20261008204811",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9125,7 +9026,6 @@
       "capture_timestamp": "20261017095634",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9143,7 +9043,6 @@
       "capture_timestamp": "20261015091846",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9161,7 +9060,6 @@
       "capture_timestamp": "20261011011314",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9179,7 +9077,6 @@
       "capture_timestamp": "20261013081625",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9197,7 +9094,6 @@
       "capture_timestamp": "20261014195759",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9215,7 +9111,6 @@
       "capture_timestamp": "20261015001718",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9233,7 +9128,6 @@
       "capture_timestamp": "20261016004841",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9251,7 +9145,6 @@
       "capture_timestamp": "20261008143547",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9269,7 +9162,6 @@
       "capture_timestamp": "20261007201038",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9287,7 +9179,6 @@
       "capture_timestamp": "20261012154813",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9305,7 +9196,6 @@
       "capture_timestamp": "20261010151105",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9323,7 +9213,6 @@
       "capture_timestamp": "20261018010144",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9359,7 +9248,6 @@
       "capture_timestamp": "20261011005326",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9377,7 +9265,6 @@
       "capture_timestamp": "20261016222944",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9431,7 +9318,6 @@
       "capture_timestamp": "20261010200502",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9449,7 +9335,6 @@
       "capture_timestamp": "20261016101445",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9485,7 +9370,6 @@
       "capture_timestamp": "20261013080234",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9503,7 +9387,6 @@
       "capture_timestamp": "20261018012221",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9521,7 +9404,6 @@
       "capture_timestamp": "20261017113818",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9539,7 +9421,6 @@
       "capture_timestamp": "20261014091517",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9575,7 +9456,6 @@
       "capture_timestamp": "20261016050137",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9665,7 +9545,6 @@
       "capture_timestamp": "20261006222951",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9683,7 +9562,6 @@
       "capture_timestamp": "20261013075132",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9701,7 +9579,6 @@
       "capture_timestamp": "20261007193927",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9719,7 +9596,6 @@
       "capture_timestamp": "20261005221309",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9737,7 +9613,6 @@
       "capture_timestamp": "20261007104912",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9755,7 +9630,6 @@
       "capture_timestamp": "20261012032829",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9773,7 +9647,6 @@
       "capture_timestamp": "20261006120404",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9791,7 +9664,6 @@
       "capture_timestamp": "20261010025804",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9809,7 +9681,6 @@
       "capture_timestamp": "20261008015004",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9827,7 +9698,6 @@
       "capture_timestamp": "20261011181900",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9845,7 +9715,6 @@
       "capture_timestamp": "20261006131332",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9863,7 +9732,6 @@
       "capture_timestamp": "20261015152740",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9881,7 +9749,6 @@
       "capture_timestamp": "20261010214810",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9899,7 +9766,6 @@
       "capture_timestamp": "20261012162846",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9917,7 +9783,6 @@
       "capture_timestamp": "20261013081156",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9935,7 +9800,6 @@
       "capture_timestamp": "20261006230601",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9953,7 +9817,6 @@
       "capture_timestamp": "20261010121920",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9989,7 +9852,6 @@
       "capture_timestamp": "20261012192838",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10025,7 +9887,6 @@
       "capture_timestamp": "20261010123643",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10043,7 +9904,6 @@
       "capture_timestamp": "20261017221502",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10079,7 +9939,6 @@
       "capture_timestamp": "20261018014250",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10097,7 +9956,6 @@
       "capture_timestamp": "20261015204333",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10115,7 +9973,6 @@
       "capture_timestamp": "20261016123958",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10133,7 +9990,6 @@
       "capture_timestamp": "20261014115800",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10151,7 +10007,6 @@
       "capture_timestamp": "20261010034546",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     }
@@ -10161,20 +10016,22 @@
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-47",
       "pattern": "folders",
-      "status": "ok",
-      "candidates": 100
+      "status": "error",
+      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com%2Fdrive%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus"
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-47",
       "pattern": "legacy_folders",
-      "status": "no_matches"
+      "status": "error",
+      "error": "502 Server Error: Bad Gateway for url: https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cs"
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-47",
       "pattern": "mobile_folders",
-      "status": "no_matches"
+      "status": "error",
+      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Fmobile%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2"
     },
     {
       "provider": "commoncrawl",
@@ -10193,8 +10050,8 @@
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "folders",
-      "status": "ok",
-      "candidates": 100
+      "status": "error",
+      "error": "502 Server Error: Bad Gateway for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fdrive%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus%2Cmi"
     },
     {
       "provider": "commoncrawl",
@@ -10206,14 +10063,15 @@
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "mobile_folders",
-      "status": "no_matches"
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Fmobile%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctime"
     },
     {
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "files",
-      "status": "ok",
-      "candidates": 100
+      "status": "error",
+      "error": "504 Server Error: Gateway Time-out for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Ffile%2Fd%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus%2Cmime"
     },
     {
       "provider": "commoncrawl",
@@ -10223,8 +10081,45 @@
     },
     {
       "provider": "searxng",
-      "status": "skipped",
-      "reason": "Nenhuma instância HTTPS com JSON validado no relatório atual."
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"video\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"filmes\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"desenhos\"",
+      "status": "ok",
+      "candidates": 2
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"documentários\"",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/file/d/ \"mp4\"",
+      "status": "ok",
+      "candidates": 6
+    },
+    {
+      "provider": "searxng",
+      "instance": "https://search.lumy.live",
+      "query": "site:drive.google.com/drive/folders \"coleção\" OR \"acervo\"",
+      "status": "ok",
+      "candidates": 0
     }
   ],
   "notice": "Candidatos descobertos por índices públicos. Acesso, direitos e reprodução ainda precisam de validação; nenhum conteúdo foi baixado."

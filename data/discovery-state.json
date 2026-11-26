@@ -1,8 +1,8 @@
 {
-  "runs": 6,
-  "provider_rotation": 6,
-  "last_run_at": "2026-11-25T08:55:36.163599+00:00",
-  "last_new_candidates": 0,
-  "last_total_candidates": 575,
-  "last_successful_provider_checks": 4
+  "runs": 7,
+  "provider_rotation": 7,
+  "last_run_at": "2026-11-26T08:42:13.500864+00:00",
+  "last_new_candidates": 7,
+  "last_total_candidates": 582,
+  "last_successful_provider_checks": 7
 }
