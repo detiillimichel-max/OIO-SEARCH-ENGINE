@@ -79,13 +79,19 @@
       if (!line) continue;
 
       const nextCategory = classifyHeading(line, category);
-      if (nextCategory !== category || /^(?:filmes?|s[eé]ries?)$/i.test(line)) {
+      if (/^(?:filmes?|s[eé]ries?)$/i.test(line)) {
         category = nextCategory;
-        if (/^(?:filmes?|s[eé]ries?)$/i.test(line) || /^(?:filme|s[eé]rie)\s+/i.test(line)) {
-          if (/^(?:filme|s[eé]rie)\s+/i.test(line)) context.push(line);
-          else context = [];
-          continue;
-        }
+        context = [];
+        continue;
+      }
+      if (/^(?:filme|s[eé]rie)\s+/i.test(line)) {
+        category = nextCategory;
+        context.push(line);
+        continue;
+      }
+      if (nextCategory !== category) {
+        category = nextCategory;
+        context = [];
       }
 
       if (/^https?:\/\//i.test(line)) {

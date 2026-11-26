@@ -171,6 +171,7 @@ async function loadCatalog() {
     let localItems = [];
     let gatewayItems = [];
     let driveBuscasItems = [];
+    let driveBuscasMeta = {};
     let localError = null;
     let gatewayError = null;
     let driveBuscasError = null;
@@ -210,6 +211,7 @@ async function loadCatalog() {
 
     if (driveBuscasResult.status === "fulfilled" && driveBuscasResult.value && Array.isArray(driveBuscasResult.value.items)) {
       driveBuscasItems = driveBuscasResult.value.items;
+      driveBuscasMeta = driveBuscasResult.value.meta || {};
     } else {
       driveBuscasError = driveBuscasResult.status === "rejected"
         ? driveBuscasResult.reason
@@ -250,9 +252,12 @@ async function loadCatalog() {
       : gatewayCache === "STALE" ? " • última cópia válida preservada"
       : gatewayCache === "HIT" ? " • cache do Gateway" : "";
     const driveBuscasCount = driveBuscasItems.filter(item => safeUrl(item.url)).length;
+    const driveBuscasRawCount = Number(driveBuscasMeta.raw_records || driveBuscasCount);
+    const driveBuscasDuplicateCount = Number(driveBuscasMeta.duplicate_records || 0);
     const importLabel = driveBuscasError
       ? " • Drive-buscas indisponível"
-      : " • " + driveBuscasCount + " registros Drive-buscas antes de deduplicar";
+      : " • Drive-buscas: " + driveBuscasCount + " registros únicos de " + driveBuscasRawCount +
+        " referências (" + driveBuscasDuplicateCount + " duplicadas)";
     statusEl.textContent = sourceLabel + " • " + catalog.length +
       " itens (" + localCount + " catálogo original + " + gatewayCount + " Gateway antes de deduplicar)" + importLabel + refreshLabel;
     render();
