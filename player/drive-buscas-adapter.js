@@ -125,10 +125,19 @@
       if (!line) continue;
 
       if (/^(?:filmes?(?:\s+drive)?|s[eé]ries?)$/i.test(line)) {
-        category = classifyHeading(line, category);
+        const nextCategory = classifyHeading(line, category);
+        if (nextCategory !== category) {
+          currentSeriesTitle = "";
+          currentSeason = "";
+        } else if (nextCategory === "series") {
+          const priorTitles = context
+            .map(cleanContextLine)
+            .filter(Boolean)
+            .filter(value => !isSeasonLine(value) && !isEpisodeLine(value));
+          if (priorTitles.length) currentSeriesTitle = priorTitles[priorTitles.length - 1];
+        }
+        category = nextCategory;
         context = [];
-        currentSeriesTitle = "";
-        currentSeason = "";
         continue;
       }
 
