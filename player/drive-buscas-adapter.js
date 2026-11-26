@@ -31,20 +31,60 @@
       .trim();
   }
 
-  function inferRecord(lines, category, url, lot, lineNumber) {
+  function normalizeLabel(value) {
+    return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").replace(/\s+/g, " ").trim();
+  }
+
+  function isSeasonLine(line) {
+    const value = normalizeLabel(line);
+    return /^(?:(?:primeira|segunda|terceira|quarta|quinta|sexta|setima|oitava|nona|decima|\d{1,2}[ªº°]?)\s*(?:temporada|temp\.?)|(?:temporada|season)\s*(?:primeira|segunda|terceira|quarta|quinta|sexta|setima|oitava|nona|decima|\d{1,2}))$/i.test(value);
+  }
+
+  function isEpisodeLine(line) {
+    return /^epis[oó]dio\s*\d+(?:\s+final)?$/i.test(String(line || "").trim());
+  }
+
+  function inferRecord(lines, category, url, lot, lineNumber, previousSeriesTitle, previousSeason) {
     const useful = lines
       .map(cleanContextLine)
       .filter(Boolean)
       .filter(line => !/^observa[cç][aã]o\b/i.test(line))
       .filter(line => !/^em ingl[eê]s$/i.test(line));
 
-    let title = useful.length ? useful[useful.length - 1] : "Conteúdo sem título";
-    if (/^epis[oó]dio\s*\d+/i.test(title) && useful.length > 1) {
-      title = useful[useful.length - 2] + " — " + title;
-    }
-
+    const episode = useful.slice().reverse().find(isEpisodeLine) || "";
+    const season = useful.slice().reverse().find(isSeasonLine) || previousSeason || "";
+    const titleLines = useful.filter(line => !isSeasonLine(line) && !isEpisodeLine(line));
+    let title = "";
     let finalCategory = category;
-    if (/temporada|epis[oó]dio/i.test(title)) finalCategory = "series";
+    let seriesTitle = previousSeriesTitle || "";
+    let seriesSeason = previousSeason || "";
+
+    if (episode) {
+      const currentTitle = titleLines.length ? titleLines[titleLines.length - 1] : "";
+      if (currentTitle) seriesTitle = currentTitle;
+      if (season) seriesSeason = season;
+      if (seriesTitle) {
+        title = seriesTitle + (seriesSeason ? " — " + seriesSeason : "") + " — " + episode;
+      } else {
+        title = episode;
+      }
+      finalCategory = "series";
+    } else if (useful.length && isSeasonLine(useful[useful.length - 1])) {
+      const currentTitle = titleLines.length ? titleLines[titleLines.length - 1] : "";
+      if (currentTitle) seriesTitle = currentTitle;
+      seriesSeason = useful[useful.length - 1];
+      title = (seriesTitle || "Série") + " — " + seriesSeason;
+      finalCategory = "series";
+    } else {
+      title = useful.length ? useful[useful.length - 1] : (previousSeriesTitle || "Conteúdo sem título");
+      if (finalCategory === "series") {
+        seriesTitle = title;
+        seriesSeason = season || "";
+      } else {
+        seriesTitle = "";
+        seriesSeason = "";
+      }
+    }
 
     const isPhotos = /(?:photos\.google\.com|photos\.app\.goo\.gl)/i.test(url);
     const isFolder = /drive\.google\.com\/(?:drive\/(?:mobile\/)?folders\/|folders\/)/i.test(url);
@@ -52,19 +92,23 @@
     const id = extractSourceId(url);
 
     return {
-      id: id,
-      title: title,
-      url: url,
-      category: finalCategory,
-      source: "DRIVE_BUSCAS",
-      source_id: id,
-      source_key: "DRIVE_BUSCAS:" + recordType + ":" + id,
-      record_type: recordType,
-      playback_type: recordType === "drive_file" ? "drive_preview" : "external",
-      access: "UNVERIFIED",
-      origin_lot: lot,
-      origin_line: lineNumber,
-      description: "Registro importado de " + lot + ". Acesso, autorização e reprodução ainda não verificados."
+      item: {
+        id: id,
+        title: title,
+        url: url,
+        category: finalCategory,
+        source: "DRIVE_BUSCAS",
+        source_id: id,
+        source_key: "DRIVE_BUSCAS:" + recordType + ":" + id + ":" + normalizeLabel(title),
+        record_type: recordType,
+        playback_type: recordType === "drive_file" ? "drive_preview" : "external",
+        access: "UNVERIFIED",
+        origin_lot: lot,
+        origin_line: lineNumber,
+        description: "Registro importado de " + lot + ". Acesso, autorização e reprodução ainda não verificados."
+      },
+      seriesTitle: seriesTitle,
+      season: seriesSeason
     };
   }
 
@@ -73,30 +117,43 @@
     const items = [];
     let category = "filmes";
     let context = [];
+    let currentSeriesTitle = "";
+    let currentSeason = "";
 
     for (let index = 0; index < lines.length; index += 1) {
       const line = lines[index].trim();
       if (!line) continue;
 
-      const nextCategory = classifyHeading(line, category);
-      if (/^(?:filmes?|s[eé]ries?)$/i.test(line)) {
-        category = nextCategory;
+      if (/^(?:filmes?(?:\s+drive)?|s[eé]ries?)$/i.test(line)) {
+        category = classifyHeading(line, category);
         context = [];
+        currentSeriesTitle = "";
+        currentSeason = "";
         continue;
       }
+
+      const nextCategory = classifyHeading(line, category);
       if (/^(?:filme|s[eé]rie)\s+/i.test(line)) {
         category = nextCategory;
-        context.push(line);
+        context = [line];
+        currentSeriesTitle = "";
+        currentSeason = "";
         continue;
       }
       if (nextCategory !== category) {
         category = nextCategory;
         context = [];
+        currentSeriesTitle = "";
+        currentSeason = "";
       }
 
       if (/^https?:\/\//i.test(line)) {
-        const item = inferRecord(context, category, line, lot, index + 1);
-        if (item.id) items.push(item);
+        const result = inferRecord(context, category, line, lot, index + 1, currentSeriesTitle, currentSeason);
+        if (result.item.id) {
+          items.push(result.item);
+          currentSeriesTitle = result.seriesTitle;
+          currentSeason = result.season;
+        }
         context = [];
         continue;
       }
@@ -105,7 +162,6 @@
     }
     return items;
   }
-
   let cachedLoad = null;
 
   async function load() {
@@ -129,7 +185,10 @@
         }
         rawCount += result.value.items.length;
         for (const item of result.value.items) {
-          const key = item.id || item.url;
+          const collection = item.record_type === "drive_folder" || item.record_type === "google_photos_share";
+          const key = collection
+            ? item.record_type + ":" + item.id + ":" + normalizeLabel(item.title)
+            : "file:" + (item.id || item.url);
           if (seen.has(key)) continue;
           seen.add(key);
           items.push(item);
