@@ -159,18 +159,21 @@ async function loadCatalog() {
   statusEl.textContent = "Carregando catálogo local e Gateway…";
   try {
     // As duas fontes são lidas separadamente. O catálogo local nunca é substituído.
-    const [localResult, gatewayResult] = await Promise.allSettled([
+    const [localResult, gatewayResult, driveBuscasResult] = await Promise.allSettled([
       fetch(CATALOG_URL + "?v=" + Date.now(), { cache: "no-store" }).then(async response => {
         if (!response.ok) throw new Error("Catálogo local: HTTP " + response.status);
         return response.json();
       }),
-      fetchGatewayCatalog()
+      fetchGatewayCatalog(),
+      window.OIODriveBuscas.load()
     ]);
 
     let localItems = [];
     let gatewayItems = [];
+    let driveBuscasItems = [];
     let localError = null;
     let gatewayError = null;
+    let driveBuscasError = null;
     let gatewayCache = "";
 
     if (localResult.status === "fulfilled") {
@@ -205,6 +208,15 @@ async function loadCatalog() {
       console.warn("OIO Media: Gateway indisponível; mantendo catálogo local.", gatewayError);
     }
 
+    if (driveBuscasResult.status === "fulfilled" && driveBuscasResult.value && Array.isArray(driveBuscasResult.value.items)) {
+      driveBuscasItems = driveBuscasResult.value.items;
+    } else {
+      driveBuscasError = driveBuscasResult.status === "rejected"
+        ? driveBuscasResult.reason
+        : new Error("Adaptador Drive-buscas sem catálogo válido.");
+      console.warn("OIO Media: importação Drive-buscas indisponível; mantendo as fontes existentes.", driveBuscasError);
+    }
+
     if (localError && gatewayError) {
       throw new Error("Não foi possível carregar nenhuma fonte. " +
         String(localError.message || localError) + " / " +
@@ -214,7 +226,7 @@ async function loadCatalog() {
     // Mantém primeiro os itens antigos e acrescenta os novos sem duplicar IDs do Drive.
     const merged = [];
     const seen = new Set();
-    for (const item of [...localItems, ...gatewayItems]) {
+    for (const item of [...localItems, ...gatewayItems, ...driveBuscasItems]) {
       const url = item.url || item.previewUrl || item.embed_url || "";
       const key = String(item.id || driveFileId(url) || url).trim();
       if (!key || seen.has(key)) continue;
@@ -237,8 +249,12 @@ async function loadCatalog() {
       : gatewayCache === "COOLDOWN" ? " • atualização recente; cache preservado"
       : gatewayCache === "STALE" ? " • última cópia válida preservada"
       : gatewayCache === "HIT" ? " • cache do Gateway" : "";
+    const driveBuscasCount = driveBuscasItems.filter(item => safeUrl(item.url)).length;
+    const importLabel = driveBuscasError
+      ? " • Drive-buscas indisponível"
+      : " • " + driveBuscasCount + " registros Drive-buscas antes de deduplicar";
     statusEl.textContent = sourceLabel + " • " + catalog.length +
-      " vídeos (" + localCount + " antigos + " + gatewayCount + " do Gateway antes de deduplicar)" + refreshLabel;
+      " itens (" + localCount + " catálogo original + " + gatewayCount + " Gateway antes de deduplicar)" + importLabel + refreshLabel;
     render();
   } catch (error) {
     statusEl.textContent = "Falha ao carregar catálogo";
