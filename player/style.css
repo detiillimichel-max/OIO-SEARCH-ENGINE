@@ -20,3 +20,22 @@ footer{padding:28px 18px;text-align:center;border-top:1px solid #ffffff12;color:
 @media(max-width:620px){body{padding-bottom:78px}.topbar{height:62px;padding:0 14px;gap:10px}.brand-mark{width:36px;height:36px;font-size:22px}.brand{gap:8px;font-size:13px}.status{font-size:9px;max-width:55%}.layout{width:94vw}.hero{min-height:510px;margin:13px 0 17px;border-radius:21px}.hero-backdrop{background-position:center}.hero-shade{background:linear-gradient(0deg,#080b19 0%,#080b19e8 22%,#080b1970 62%,#080b1920 100%)}.hero-copy{width:100%;justify-content:end;padding:26px 21px 35px}.hero-kicker{margin-top:18px}.hero h1{font-size:clamp(36px,10vw,54px)}.hero-description{font-size:14px}.hero-index{right:17px;top:17px;bottom:auto;font-size:10px}.search{height:52px}.workspace-tabs{margin:18px 0 25px}.player-section,.library-section,.discoveries-section{margin:34px 0 45px}.section-heading h2{font-size:23px}.player-frame{aspect-ratio:16/10;min-height:210px;border-radius:15px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.media-card{border-radius:15px}.poster-placeholder{aspect-ratio:3/4}.media-info{padding:10px}.media-info h3{font-size:12px}.media-info p{font-size:10px}.discovery-grid,.defined-grid{grid-template-columns:1fr}.filter,.discovery-filter{padding:10px 14px;font-size:11px}.bottom-nav{padding-top:8px}.bottom-link span{font-size:20px}.bottom-link small{font-size:8px}}
 @media(min-width:621px) and (max-width:900px){.media-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-copy{width:80%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* OIO MEDIA · posters cinematográficos v2.1 */
+.media-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.media-card{position:relative;isolation:isolate;min-height:0;aspect-ratio:2/3;border-radius:20px;background:#080d19;box-shadow:0 14px 34px #0006;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.media-card .poster-placeholder{position:absolute;inset:0;aspect-ratio:auto;background:radial-gradient(circle at 50% 35%,#354b76,#111a30 70%)}
+.media-card .poster-image{object-position:center center}
+.media-card .poster-shade{inset:25% 0 0;background:linear-gradient(180deg,transparent 15%,#05081735 48%,#050817f2 100%);z-index:1}
+.media-card .poster-tag{z-index:3;top:13px;left:13px;padding:7px 10px;font-size:10px;backdrop-filter:blur(12px)}
+.media-card .poster-play{z-index:3;width:52px;height:52px;background:#07101caa;backdrop-filter:blur(10px);box-shadow:0 5px 24px #0006}
+.media-card .media-info{position:absolute;z-index:2;right:0;bottom:0;left:0;padding:48px 16px 17px;background:linear-gradient(180deg,transparent,#050817e8 38%,#050817f5 100%)}
+.media-card .media-info h3{display:-webkit-box;overflow:hidden;margin:0 0 7px;color:#fff;font-size:clamp(14px,1.25vw,18px);font-weight:850;line-height:1.25;white-space:normal;text-overflow:clip;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.media-card .media-info p{margin:0;color:#b9c9e1;font-size:11px;letter-spacing:.035em}
+.media-card:hover,.media-card:focus-visible{transform:translateY(-5px) scale(1.012);border-color:#55d8ff;box-shadow:0 20px 42px #0009,0 0 0 1px #55d8ff33;outline:none}
+.search:focus-within{border-color:var(--cyan);box-shadow:0 0 0 3px #45d3f522,0 10px 28px #0004}
+#result-count{min-width:80px;text-align:right}
+@media(max-width:900px){.media-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}}
+@media(max-width:620px){.media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.media-card{aspect-ratio:2/3;border-radius:17px}.media-card .media-info{padding:42px 12px 14px}.media-card .media-info h3{font-size:13px;line-height:1.28}.media-card .media-info p{font-size:10px}.media-card .poster-tag{top:10px;left:10px;font-size:9px}.media-card .poster-play{width:44px;height:44px}}
+@media(min-width:1100px){.media-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}}
