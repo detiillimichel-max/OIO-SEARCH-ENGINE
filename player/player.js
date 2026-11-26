@@ -165,7 +165,12 @@ async function loadCatalog() {
         return response.json();
       }),
       fetchGatewayCatalog(),
-      window.OIODriveBuscas.load()
+      Promise.resolve().then(() => {
+        if (!window.OIODriveBuscas || typeof window.OIODriveBuscas.load !== "function") {
+          throw new Error("Adaptador Drive-buscas não carregado.");
+        }
+        return window.OIODriveBuscas.load();
+      })
     ]);
 
     let localItems = [];
