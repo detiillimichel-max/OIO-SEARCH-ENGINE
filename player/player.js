@@ -16,6 +16,15 @@ let currentIndex = -1;
 let currentDriveUrl = "";
 let driveStarted = false;
 
+function normalizeSearchText(value) {
+  return String(value == null ? "" : value)
+    .normalize("NFD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .toLocaleLowerCase("pt-BR")
+    .replace(/[^\\p{L}\\p{N}]+/gu, " ")
+    .trim();
+}
+
 function safeUrl(value) {
   try { const u = new URL(value); return ["https:", "http:"].includes(u.protocol) ? u.href : null; }
   catch { return null; }
@@ -119,8 +128,9 @@ function playNextEpisode() {
 function render() {
   const filtered = catalog.map((item,index)=>({item,index})).filter(({item})=>{
     const categoryOk = activeCategory === "todos" || item.category === activeCategory;
-    const text = [item.title,item.description,item.category,...(item.tags||[])].join(" ").toLocaleLowerCase("pt-BR");
-    return categoryOk && text.includes(searchTerm);
+    const text = normalizeSearchText([item.title,item.name,item.filename,item.description,item.category,item.kind,item.source,...(item.tags||[])].join(" "));
+    const terms = searchTerm.split(" ").filter(Boolean);
+    return categoryOk && terms.every(term => text.includes(term));
   });
   countEl.textContent = filtered.length + (filtered.length === 1 ? " título" : " títulos");
   grid.replaceChildren();
@@ -277,7 +287,7 @@ async function loadCatalog() {
   } finally {
   }
 }
-searchInput.addEventListener("input",()=>{searchTerm=searchInput.value.trim().toLocaleLowerCase("pt-BR");render();});
+searchInput.addEventListener("input",()=>{searchTerm=normalizeSearchText(searchInput.value);render();});
 document.querySelectorAll(".filter").forEach(button=>button.addEventListener("click",()=>{
   document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
   button.classList.add("active"); activeCategory=button.dataset.category; render();
