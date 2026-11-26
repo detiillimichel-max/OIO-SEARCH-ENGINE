@@ -127,8 +127,10 @@ function playNextEpisode() {
 }
 function render() {
   const filtered = catalog.map((item,index)=>({item,index})).filter(({item})=>{
-    const categoryOk = activeCategory === "todos" || item.category === activeCategory;
-    const text = normalizeSearchText([item.title,item.name,item.filename,item.description,item.category,item.kind,item.source,...(item.tags||[])].join(" "));
+    // Uma pesquisa digitada sempre consulta a biblioteca unificada inteira,
+    // mesmo que uma aba de categoria estivesse selecionada anteriormente.
+    const categoryOk = Boolean(searchTerm) || activeCategory === "todos" || item.category === activeCategory;
+    const text = normalizeSearchText([item.title,item.name,item.filename,item.fileName,item.folder_title,item.description,item.category,item.kind,item.source,item.origin_lot,item.season,item.episode,...(item.tags||[])].join(" "));
     const terms = searchTerm.split(" ").filter(Boolean);
     return categoryOk && terms.every(term => text.includes(term));
   });
@@ -207,7 +209,9 @@ async function loadCatalog() {
         // O Gateway só inclui itens cujo acesso anônimo foi confirmado.
         gatewayItems = payload.videos.map(video => ({
           id: video.id,
-          title: video.title || video.name || "Vídeo sem título",
+          title: video.title || video.name || video.fileName || video.filename || "Vídeo sem título",
+          filename: video.name || video.fileName || video.filename || "",
+          mimeType: video.mimeType || "",
           url: video.url || video.webViewLink || video.previewUrl || "",
           poster: video.thumbnailUrl || "",
           category: "videos",
@@ -245,8 +249,12 @@ async function loadCatalog() {
     const seen = new Set();
     for (const item of [...localItems, ...gatewayItems, ...driveBuscasItems]) {
       const url = item.url || item.previewUrl || item.embed_url || "";
-      const key = String(item.id || driveFileId(url) || url).trim();
-      if (!key || seen.has(key)) continue;
+      const collection = item.record_type === "drive_folder" || item.record_type === "google_photos_share";
+      const sourceId = String(item.id || driveFileId(url) || url).trim();
+      const key = collection
+        ? "collection:" + item.record_type + ":" + sourceId + ":" + normalizeSearchText(item.title)
+        : "file:" + String(driveFileId(url) || item.id || url).trim();
+      if (!sourceId || seen.has(key)) continue;
       seen.add(key);
       merged.push({
         ...item,
