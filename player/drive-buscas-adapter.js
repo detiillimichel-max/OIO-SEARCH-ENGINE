@@ -184,9 +184,14 @@
       }));
 
       const items = [];
-      const seen = new Set();
+      const seen = new Map();
       const failedLots = [];
       let rawCount = 0;
+      function titleQuality(value) {
+        const title = String(value || "").trim();
+        if (!title || /^(?:conte[uú]do sem t[ií]tulo|v[ií]deo sem t[ií]tulo|sem t[ií]tulo|arquivo)$/i.test(title)) return 0;
+        return Math.min(1000, normalizeLabel(title).length);
+      }
       for (const result of results) {
         if (result.status !== "fulfilled") {
           failedLots.push(String(result.reason && result.reason.message || result.reason));
@@ -198,8 +203,14 @@
           const key = collection
             ? item.record_type + ":" + item.id + ":" + normalizeLabel(item.title)
             : "file:" + (item.id || item.url);
-          if (seen.has(key)) continue;
-          seen.add(key);
+          if (seen.has(key)) {
+            const existingIndex = seen.get(key);
+            if (titleQuality(item.title) > titleQuality(items[existingIndex].title)) {
+              items[existingIndex] = item;
+            }
+            continue;
+          }
+          seen.set(key, items.length);
           items.push(item);
         }
       }
