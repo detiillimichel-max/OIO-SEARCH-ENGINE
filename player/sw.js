@@ -1,13 +1,14 @@
 const CACHE_PREFIX = "oio-media-player-";
-const CACHE_NAME = CACHE_PREFIX + "v14";
+const CACHE_NAME = CACHE_PREFIX + "v15";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./style.css?v=1.1.3.10",
+  "./style.css?v=2.0.0",
   "./player.js?v=1.1.3.12",
   "./drive-buscas-adapter.js?v=1.0.0",
   "./manifest.json",
-  "./icons/oio-media.svg"
+  "./icons/oio-media.svg",
+  "./cinematic-ui.js?v=1.0.0"
 ];
 
 self.addEventListener("install", event => {

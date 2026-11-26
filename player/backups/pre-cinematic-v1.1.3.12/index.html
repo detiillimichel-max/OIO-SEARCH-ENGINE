@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080d17">
+  <meta name="description" content="Biblioteca de vídeos públicos e autorizados do OIO.">
+  <title>OIO Media Player</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css?v=1.1.3.10">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./"><span class="brand-mark">O</span><span>OIO <b>MEDIA</b></span></a>
+  <span class="status" id="catalog-status">Carregando catálogo…</span>
+</header>
+<main class="layout">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">BIBLIOTECA DE MÍDIA</p>
+      <h1>Encontre. Escolha. <span>Assista.</span></h1>
+      <p class="muted">Conteúdos públicos ou disponibilizados com autorização.</p>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Pesquisar filmes, séries, desenhos…" autocomplete="off"></label>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="play-symbol">▶</div></div>
+  </section>
+
+  <nav class="workspace-tabs" aria-label="Áreas do OIO"><button class="workspace-tab active" type="button" data-workspace="existing">Já temos</button><button class="workspace-tab" type="button" data-workspace="defined">Definido</button></nav>
+  <section id="workspace-existing" class="workspace-panel active">
+  <section class="player-section" aria-label="Player de vídeo">
+    <div class="section-heading">
+      <div><p class="eyebrow">AGORA NO PLAYER</p><h2 id="now-title">Selecione um conteúdo</h2></div>
+      <span class="pill" id="player-kind">AGUARDANDO</span>
+    </div>
+    <div class="player-frame" id="player-frame"><div class="empty-player"><div class="large-play">▶</div><p>Seu conteúdo aparecerá aqui</p><small>Selecione um item da biblioteca abaixo.</small></div></div>
+    <div class="player-controls"><button id="fullscreen-btn" type="button">Tela cheia</button><button id="next-btn" type="button" disabled>Próximo episódio　›</button></div>
+    <p class="player-note" id="player-note">O player usa a pré-visualização oficial do Drive quando o compartilhamento permite incorporação.</p>
+  </section>
+
+  <section class="library-section">
+    <div class="section-heading"><div><p class="eyebrow">CATÁLOGO</p><h2>Biblioteca</h2></div><span class="count" id="result-count">0 títulos</span></div>
+    <nav class="filters" aria-label="Filtrar categoria">
+      <button class="filter active" data-category="todos">Todos</button>
+      <button class="filter" data-category="videos">Vídeos do Gateway</button>
+      <button class="filter" data-category="filmes">Filmes</button>
+      <button class="filter" data-category="series">Séries</button>
+      <button class="filter" data-category="desenhos">Desenhos</button>
+      <button class="filter" data-category="documentarios">Documentários</button>
+    </nav>
+    <div class="media-grid" id="media-grid"><div class="empty-library">Carregando biblioteca…</div></div>
+  </section>
+  <section class="discoveries-section" aria-label="Novas descobertas">
+    <div class="section-heading">
+      <div><p class="eyebrow">MOTOR DE DESCOBERTA</p><h2>Descobertas</h2></div>
+      <span class="count" id="discovery-count">Carregando candidatos…</span>
+    </div>
+    <p class="player-note">Resultados encontrados pelo motor. A classificação indica apenas o resultado da verificação da página; não confirma propriedade, autorização ou reprodução.</p>
+    <label class="search discovery-search"><span aria-hidden="true">⌕</span><input id="discovery-search" type="search" placeholder="Pesquisar descobertas…" autocomplete="off"></label>
+    <nav class="filters discovery-filters" aria-label="Filtrar categoria de mídia">
+      <button class="discovery-filter active" type="button" data-discovery-status="all">Todas</button>
+      <button class="discovery-filter" type="button" data-discovery-status="videos">Vídeos</button>
+      <button class="discovery-filter" type="button" data-discovery-status="filmes_series">Filmes e séries</button>
+      <button class="discovery-filter" type="button" data-discovery-status="desenhos_animacoes">Desenhos</button>
+      <button class="discovery-filter" type="button" data-discovery-status="musicas">Músicas</button>
+    </nav>
+    <div class="discovery-grid" id="discovery-grid"><div class="empty-library">Carregando descobertas…</div></div>
+  </section>
+</section>
+  <section id="workspace-defined" class="workspace-panel" hidden>
+    <div class="section-heading"><div><p class="eyebrow">PRÓXIMA ETAPA</p><h2>O que está definido</h2></div><span class="pill">PLANEJADO</span></div>
+    <p class="muted">Esta área documenta a arquitetura aprovada. Ela ainda não carrega canais nem altera a biblioteca que já funciona.</p>
+    <div class="defined-grid">
+      <article class="defined-card"><span class="defined-index">01</span><h3>Fontes originais</h3><code>data/iptv-br/sources/</code><p>Guardar as quatro listas M3U/M3U8 e CSV, identificadas pela origem.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">02</span><h3>Catálogo unificado</h3><code>data/iptv-br/catalog.json</code><p>Reunir emissora, cidade, estado, categoria, logo, EPG e arquivo de origem.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">03</span><h3>Motor de catálogo</h3><code>scripts/build_iptv_catalog.py</code><p>Ler M3U e CSV, normalizar metadados, identificar duplicados e excluir URLs com credenciais aparentes.</p><span class="defined-state">Definido · ainda não criado</span></article>
+      <article class="defined-card"><span class="defined-index">04</span><h3>Cards e player de TV</h3><code>player/</code><p>Nova área para canais com pesquisa, filtros, cards e player HLS, mantendo a biblioteca atual em separado.</p><span class="defined-state">Definido · ainda não integrado</span></article>
+      <article class="defined-card"><span class="defined-index">05</span><h3>Automação</h3><code>.github/workflows/</code><p>GitHub Actions para reconstruir o catálogo quando as fontes ou o motor forem atualizados.</p><span class="defined-state">Definido · ainda não criado</span></article>
+    </div>
+    <p class="player-note">Os links serão tratados como fontes não verificadas até que passem por auditoria de disponibilidade, compatibilidade e autorização de uso. A grade EPG será integrada separadamente.</p>
+  </section>
+</main>
+<footer>OIO MEDIA PLAYER <span>•</span> Use somente conteúdo que você tenha autorização para acessar e transmitir.</footer>
+<script src="./drive-buscas-adapter.js?v=1.0.0" defer></script>
+<script src="./player.js?v=1.1.3.12" defer></script>
+<script>
+if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+</script>
+</body>
+</html>
