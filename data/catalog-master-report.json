@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-27T18:01:23.796Z",
+  "target_repository": "detiillimichel-max/OIO-SEARCH-ENGINE",
+  "sources": {
+    "original": {
+      "path": "data/catalog.json",
+      "declared_total": 225,
+      "items": 225,
+      "unique_ids": 225
+    },
+    "gateway": {
+      "endpoint": "https://oio-drive-gateway.vercel.app/api/catalog",
+      "status": "DRIVE_SCAN_MERGED",
+      "total": 712,
+      "items": 712,
+      "updatedAt": "2026-11-25T19:39:16.906Z",
+      "diagnostics": {
+        "scannedEntries": 642,
+        "scannedVideos": 494,
+        "scannedFolders": 42,
+        "scannedShortcuts": 12,
+        "shortcutTargetsResolved": 12,
+        "shortcutErrors": 0,
+        "folderErrors": 0,
+        "driveApiRequests": 55,
+        "publicAccessConfirmed": 0,
+        "notPublicOrUnavailable": 0,
+        "accessUnknown": 494,
+        "truncated": false
+      }
+    },
+    "lots": {
+      "repository": "detiillimichel-max/Drive-buscas-",
+      "files": [
+        "lotes/lote-001.md",
+        "lotes/lote-002.md",
+        "lotes/lote-003.md",
+        "lotes/lote-004.md",
+        "lotes/lote-005.md"
+      ],
+      "raw_links": 286,
+      "unique_ids": 276,
+      "duplicate_links": 10,
+      "folder_links": 49,
+      "unique_folder_ids": 47,
+      "file_links": 237,
+      "unique_file_ids": 229
+    }
+  },
+  "reconciliation": {
+    "original_ids_also_in_gateway": 225,
+    "gateway_ids_not_in_original": 487,
+    "lot_ids_already_in_gateway": 1,
+    "lot_ids_not_in_gateway": 275,
+    "master_unique_ids": 987,
+    "gateway_video_records": 712,
+    "lot_folder_seeds": 47,
+    "pending_lot_file_references": 236
+  },
+  "deduplication": {
+    "key": "Google Drive ID",
+    "title_is_not_used_as_identity": true
+  },
+  "preservation": {
+    "original_catalog_unchanged": true,
+    "gateway_blob_unchanged": true,
+    "drive_buscas_lot_files_unchanged": true
+  },
+  "next_required_action": "Executar leitura autenticada do conteúdo das 47 pastas seed, expandir temporadas/subpastas e enriquecer 228 referências de arquivo pendentes. Esta etapa não comprova acesso público."
+}
