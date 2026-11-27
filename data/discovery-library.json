@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-26T08:45:38.622517+00:00",
+  "generated_at": "2026-11-27T08:55:49.073447+00:00",
   "test_collection": {
     "root_id": "0B1lPp7clarJhNVRIdVBoNGdROHc",
     "root_url": "https://drive.google.com/drive/folders/0B1lPp7clarJhNVRIdVBoNGdROHc",
@@ -12,9 +12,9 @@
       "HTTP 401": 8
     }
   },
-  "folders_considered": 6,
-  "folders_with_media": 6,
-  "media_files": 142,
+  "folders_considered": 7,
+  "folders_with_media": 7,
+  "media_files": 144,
   "status_counts": {
     "HTTP 401": 8
   },
@@ -25,6 +25,39 @@
     "videos": "Vídeos"
   },
   "items": [
+    {
+      "id": "0B9_91vL-m86zaVY5Nk5sLTlUTE0",
+      "url": "https://drive.google.com/drive/folders/0B9_91vL-m86zaVY5Nk5sLTlUTE0",
+      "title": "Administração ( Introdução, Fundamentos e Teoria Geral da...)",
+      "verification_status": "page_reachable_unverified",
+      "files": [
+        {
+          "id": "1BWYR0EctcvyohENaeqZbbY4V1E5Rb1Cu",
+          "name": "Animação - fundamentos de adm.avi",
+          "url": "https://drive.google.com/file/d/1BWYR0EctcvyohENaeqZbbY4V1E5Rb1Cu/view",
+          "media_type": "video",
+          "category": "desenhos_animacoes"
+        },
+        {
+          "id": "128BSc9ZoFR-RBaiqWpELVSPX2S3xyc64",
+          "name": "video.mp4",
+          "url": "https://drive.google.com/file/d/128BSc9ZoFR-RBaiqWpELVSPX2S3xyc64/view",
+          "media_type": "video",
+          "category": "desenhos_animacoes"
+        }
+      ],
+      "counts": {
+        "videos": 2,
+        "audios": 0,
+        "outros_ignorados": 0
+      },
+      "category": "desenhos_animacoes",
+      "classification": "entertainment",
+      "inspection_status": "listed",
+      "evidence": "Classificação baseada no nome da pasta e nos nomes dos arquivos; documentos/imagens não são publicados.",
+      "classification_reason": "name_context",
+      "included": true
+    },
     {
       "id": "0B7FWlRY0OeVNOGFHWE5YNHBrcGs",
       "url": "https://drive.google.com/drive/folders/0B7FWlRY0OeVNOGFHWE5YNHBrcGs",
