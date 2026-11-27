@@ -4,7 +4,9 @@
   const LOTS = [
     "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-001.md",
     "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-002.md",
-    "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-003.md"
+    "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-003.md",
+    "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-004.md",
+    "https://raw.githubusercontent.com/detiillimichel-max/Drive-buscas-/main/lotes/lote-005.md"
   ];
 
   function extractSourceId(url) {
