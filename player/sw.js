@@ -1,12 +1,12 @@
 const CACHE_PREFIX = "oio-media-player-";
-const CACHE_NAME = CACHE_PREFIX + "v18";
+const CACHE_NAME = CACHE_PREFIX + "v19";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css?v=2.1.0",
   "./electric-cinema.css?v=1.0.0",
   "./player.js?v=1.1.3.14",
-  "./drive-buscas-adapter.js?v=1.1.0",
+  "./drive-buscas-adapter.js?v=1.1.1",
   "./manifest.json",
   "./icons/oio-media.svg",
   "./cinematic-ui.js?v=1.0.1"
