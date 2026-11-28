@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "project": "OIO-SEARCH-ENGINE",
-  "updated_at": "2026-11-27T08:52:34.090672+00:00",
+  "updated_at": "2026-11-28T08:11:17.055854+00:00",
   "total_candidates": 586,
-  "new_candidates_this_run": 1,
+  "new_candidates_this_run": 0,
   "items": [
     {
       "id": "0B9_91vL-m86zaVY5Nk5sLTlUTE0",
@@ -19,7 +19,7 @@
       "description": "LINK FILMES.docx. В общем доступе.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
-        "searxng:dork"
+        "unknown"
       ]
     },
     {
@@ -53,7 +53,6 @@
       "description": "Last modified. File size. Sotto_no_comando.mp4. Oct 2, 2010.",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -71,7 +70,6 @@
       "description": "Папки. Video Marketing Photos Feed. 11 окт. 2017 г. — Скачать. Файлы. Изображение. Create Marketing Video.jpg. 11 окт. 2017 г. 239 КБ.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -89,7 +87,6 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -107,7 +104,6 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -125,7 +121,6 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -262,7 +257,6 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -280,7 +274,6 @@
       "description": "Загрузка…",
       "search_query": "site:drive.google.com/file/d/ \"mp4\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -315,7 +308,6 @@
       "description": "Путь к папке. Plantas e Desenhos Técnicos. Anexo III. Mercado Distrital do Cruzeiro.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -333,7 +325,6 @@
       "description": "A arte da contestação na Academia de Coimbra nos anos 60( Desenhos, caricaturas e Praxe) Aníbal Frias - in Actas dos ateliers do V Congresso Português de Sociologia.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -351,7 +342,6 @@
       "description": "Contrastes da cidade a partir dos desenhos de crianças de uma escola particular na.pdf. В общем доступе. 24 июл. 2008 г.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -369,7 +359,6 @@
       "description": "Путь к папке. Plantas e Desenhos Técnicos. Anexo VI.",
       "search_query": "site:drive.google.com/drive/folders \"desenhos\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -421,7 +410,6 @@
       "description": "WWW.COMANDO-FILMES.COM.txt. В общем доступе. 8 нояб. 2014 г.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -473,7 +461,6 @@
       "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -491,7 +478,6 @@
       "description": "Эта версия браузера больше не поддерживается. Установите поддерживаемую версию браузера.",
       "search_query": "site:drive.google.com/drive/folders \"filmes\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -526,7 +512,6 @@
       "description": "affordable video production glasgow. В общем доступе. 13 апр. 2017 г.Video Production Leicester - httpyoutu.beDPN2X1qyPa4.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -544,7 +529,6 @@
       "description": "Video Marketing Videos. 10 авг. 2017 г. — Download. Corporate Video Production Atlanta. В общем доступе.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -562,7 +546,6 @@
       "description": "local business video marketing.jpg. В общем доступе.Video Production Atlanta Georgia.jpg. В общем доступе.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -580,7 +563,6 @@
       "description": "SeriouslySensual - Control Body Shapewear Brand Video.SeriouslySensual - Provocative Lingerie Brand Video. В общем доступе. 12 июл. 2017 г.",
       "search_query": "site:drive.google.com/drive/folders \"video\"",
       "discovery_methods": [
-        "searxng:dork",
         "unknown"
       ]
     },
@@ -8574,7 +8556,6 @@
       "capture_timestamp": "20261005131204",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8592,7 +8573,6 @@
       "capture_timestamp": "20261014053551",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8610,7 +8590,6 @@
       "capture_timestamp": "20261012141435",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8628,7 +8607,6 @@
       "capture_timestamp": "20261011125044",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8646,7 +8624,6 @@
       "capture_timestamp": "20261013152408",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8664,7 +8641,6 @@
       "capture_timestamp": "20261014010220",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8682,7 +8658,6 @@
       "capture_timestamp": "20261013083131",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8700,7 +8675,6 @@
       "capture_timestamp": "20261013080911",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8718,7 +8692,6 @@
       "capture_timestamp": "20261014053647",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8736,7 +8709,6 @@
       "capture_timestamp": "20261007142155",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8754,7 +8726,6 @@
       "capture_timestamp": "20261006042436",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8808,7 +8779,6 @@
       "capture_timestamp": "20261017195931",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8826,7 +8796,6 @@
       "capture_timestamp": "20261018014240",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8898,7 +8867,6 @@
       "capture_timestamp": "20261016175854",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8916,7 +8884,6 @@
       "capture_timestamp": "20261016040920",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8934,7 +8901,6 @@
       "capture_timestamp": "20261007020129",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8970,7 +8936,6 @@
       "capture_timestamp": "20261010152340",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -8988,7 +8953,6 @@
       "capture_timestamp": "20261010155703",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9006,7 +8970,6 @@
       "capture_timestamp": "20261010155503",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9024,7 +8987,6 @@
       "capture_timestamp": "20261011130238",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9060,7 +9022,6 @@
       "capture_timestamp": "20261016005804",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9078,7 +9039,6 @@
       "capture_timestamp": "20261009000136",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9096,7 +9056,6 @@
       "capture_timestamp": "20261009213317",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9114,7 +9073,6 @@
       "capture_timestamp": "20261007101234",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9132,7 +9090,6 @@
       "capture_timestamp": "20261007140637",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9186,7 +9143,6 @@
       "capture_timestamp": "20261016124157",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9222,7 +9178,6 @@
       "capture_timestamp": "20261006231505",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9240,7 +9195,6 @@
       "capture_timestamp": "20261017102710",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9276,7 +9230,6 @@
       "capture_timestamp": "20261014044414",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9294,7 +9247,6 @@
       "capture_timestamp": "20261007014808",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9312,7 +9264,6 @@
       "capture_timestamp": "20261008204811",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9330,7 +9281,6 @@
       "capture_timestamp": "20261017095634",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9348,7 +9298,6 @@
       "capture_timestamp": "20261015091846",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9366,7 +9315,6 @@
       "capture_timestamp": "20261011011314",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9384,7 +9332,6 @@
       "capture_timestamp": "20261013081625",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9402,7 +9349,6 @@
       "capture_timestamp": "20261014195759",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9420,7 +9366,6 @@
       "capture_timestamp": "20261015001718",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9438,7 +9383,6 @@
       "capture_timestamp": "20261016004841",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9456,7 +9400,6 @@
       "capture_timestamp": "20261008143547",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9474,7 +9417,6 @@
       "capture_timestamp": "20261007201038",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9492,7 +9434,6 @@
       "capture_timestamp": "20261012154813",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9510,7 +9451,6 @@
       "capture_timestamp": "20261010151105",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9528,7 +9468,6 @@
       "capture_timestamp": "20261018010144",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9564,7 +9503,6 @@
       "capture_timestamp": "20261011005326",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9582,7 +9520,6 @@
       "capture_timestamp": "20261016222944",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9636,7 +9573,6 @@
       "capture_timestamp": "20261010200502",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9654,7 +9590,6 @@
       "capture_timestamp": "20261016101445",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9690,7 +9625,6 @@
       "capture_timestamp": "20261013080234",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9708,7 +9642,6 @@
       "capture_timestamp": "20261018012221",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9726,7 +9659,6 @@
       "capture_timestamp": "20261017113818",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9744,7 +9676,6 @@
       "capture_timestamp": "20261014091517",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9780,7 +9711,6 @@
       "capture_timestamp": "20261016050137",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9870,7 +9800,6 @@
       "capture_timestamp": "20261006222951",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9888,7 +9817,6 @@
       "capture_timestamp": "20261013075132",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9906,7 +9834,6 @@
       "capture_timestamp": "20261007193927",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9924,7 +9851,6 @@
       "capture_timestamp": "20261005221309",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9942,7 +9868,6 @@
       "capture_timestamp": "20261007104912",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9960,7 +9885,6 @@
       "capture_timestamp": "20261012032829",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9978,7 +9902,6 @@
       "capture_timestamp": "20261006120404",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -9996,7 +9919,6 @@
       "capture_timestamp": "20261010025804",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10014,7 +9936,6 @@
       "capture_timestamp": "20261008015004",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10032,7 +9953,6 @@
       "capture_timestamp": "20261011181900",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10050,7 +9970,6 @@
       "capture_timestamp": "20261006131332",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10068,7 +9987,6 @@
       "capture_timestamp": "20261015152740",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10086,7 +10004,6 @@
       "capture_timestamp": "20261010214810",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10104,7 +10021,6 @@
       "capture_timestamp": "20261012162846",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10122,7 +10038,6 @@
       "capture_timestamp": "20261013081156",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10140,7 +10055,6 @@
       "capture_timestamp": "20261006230601",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10158,7 +10072,6 @@
       "capture_timestamp": "20261010121920",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10194,7 +10107,6 @@
       "capture_timestamp": "20261012192838",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10230,7 +10142,6 @@
       "capture_timestamp": "20261010123643",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10248,7 +10159,6 @@
       "capture_timestamp": "20261017221502",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10284,7 +10194,6 @@
       "capture_timestamp": "20261018014250",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10302,7 +10211,6 @@
       "capture_timestamp": "20261015204333",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10320,7 +10228,6 @@
       "capture_timestamp": "20261016123958",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10338,7 +10245,6 @@
       "capture_timestamp": "20261014115800",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     },
@@ -10356,7 +10262,6 @@
       "capture_timestamp": "20261010034546",
       "mime": "text/html",
       "discovery_methods": [
-        "commoncrawl:files",
         "unknown"
       ]
     }
@@ -10373,8 +10278,7 @@
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-47",
       "pattern": "legacy_folders",
-      "status": "error",
-      "error": "502 Server Error: Bad Gateway for url: https://index.commoncrawl.org/CC-MAIN-2026-47-index?url=drive.google.com%2Fdrive%2Fu%2F%2A%2Ffolders%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cs"
+      "status": "no_matches"
     },
     {
       "provider": "commoncrawl",
@@ -10418,8 +10322,8 @@
       "provider": "commoncrawl",
       "crawl": "CC-MAIN-2026-43",
       "pattern": "files",
-      "status": "ok",
-      "candidates": 100
+      "status": "error",
+      "error": "502 Server Error: Bad Gateway for url: https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=drive.google.com%2Ffile%2Fd%2F%2A&output=json&filter=status%3A200&fl=url%2Ctimestamp%2Cstatus%2Cmime&limi"
     },
     {
       "provider": "commoncrawl",
@@ -10429,45 +10333,8 @@
     },
     {
       "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/drive/folders \"video\"",
-      "status": "ok",
-      "candidates": 6
-    },
-    {
-      "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/drive/folders \"filmes\"",
-      "status": "ok",
-      "candidates": 6
-    },
-    {
-      "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/drive/folders \"desenhos\"",
-      "status": "ok",
-      "candidates": 4
-    },
-    {
-      "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/drive/folders \"documentários\"",
-      "status": "ok",
-      "candidates": 0
-    },
-    {
-      "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/file/d/ \"mp4\"",
-      "status": "ok",
-      "candidates": 6
-    },
-    {
-      "provider": "searxng",
-      "instance": "https://search.lumy.live",
-      "query": "site:drive.google.com/drive/folders \"coleção\" OR \"acervo\"",
-      "status": "ok",
-      "candidates": 0
+      "status": "skipped",
+      "reason": "Nenhuma instância HTTPS com JSON validado no relatório atual."
     }
   ],
   "notice": "Candidatos descobertos por índices públicos. Acesso, direitos e reprodução ainda precisam de validação; nenhum conteúdo foi baixado."
